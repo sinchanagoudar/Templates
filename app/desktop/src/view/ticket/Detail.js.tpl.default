@@ -14,7 +14,7 @@ Ext.define('{appName}.view.ticket.Detail', {
     ],
 
     bind: {
-        title: 'Ticket - {theTicket.id}'
+        title: 'Ticket - { theTicket.id}'
     },
 
     layout: {
@@ -37,7 +37,7 @@ Ext.define('{appName}.view.ticket.Detail', {
 
     items: [{
         xtype: 'component',
-        bind: '{theTicket.title}',
+        bind: '{ theTicket.title}',
         cls: 'title',
         margin: '0 0 20 0'
     }, {
@@ -53,7 +53,7 @@ Ext.define('{appName}.view.ticket.Detail', {
             xtype: 'textfield',
             fieldLabel: 'Title',
             allowBlank: false,
-            bind: '{theTicket.title}',
+            bind: '{ theTicket.title}',
             publishes: ['value']
         }, {
             xtype: 'combobox',
@@ -65,8 +65,8 @@ Ext.define('{appName}.view.ticket.Detail', {
             displayField: 'name',
             publishes: ['value'],
             bind: {
-                store: '{theTicket.project.users}',
-                value: '{theTicket.assigneeId}'
+                store: '{ theTicket.project.users}',
+                value: '{ theTicket.assigneeId}'
             }
         }, {
             xtype: 'combobox',
@@ -78,7 +78,7 @@ Ext.define('{appName}.view.ticket.Detail', {
             valueField: 'id',
             displayField: 'name',
             publishes: ['value'],
-            bind: '{theTicket.status}',
+            bind: '{ theTicket.status}',
             store: {
                 fields: ['id', 'name'],
                 data: [
@@ -96,7 +96,7 @@ Ext.define('{appName}.view.ticket.Detail', {
     }, {
         xtype: 'dataview',
         flex: 1,
-        bind: '{theTicket.comments}',
+        bind: '{ theTicket.comments}',
         disableSelection: true,
         cls: 'comments',
         scrollable: true,

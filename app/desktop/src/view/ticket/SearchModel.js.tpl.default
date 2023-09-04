@@ -27,13 +27,13 @@ Ext.define('{appName}.view.ticket.SearchModel', {
             remoteFilter: true,
             filters: [{
                 property: 'status',
-                value: '{statusField.value}'
+                value: '{ statusField.value}'
             }, {
                 property: 'assigneeId',
-                value: '{assigneeField.value}'
+                value: '{ assigneeField.value}'
             }, {
                 property: 'projectId',
-                value: '{theProject.id}'
+                value: '{ theProject.id}'
             }]
         },
 

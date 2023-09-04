@@ -21,7 +21,7 @@ Ext.define('{appName}.view.user.Group', {
 
     items: [{
         xtype: 'grid',
-        bind: '{currentOrg.groups}',
+        bind: '{ currentOrg.groups}',
         reference: 'groupGrid',
 
         title: 'Groups',
@@ -36,8 +36,8 @@ Ext.define('{appName}.view.user.Group', {
     }, {
         xtype: 'multiselector',
         bind: {
-            store: '{groupGrid.selection.users}',
-            title: 'Users - {groupGrid.selection.name}'
+            store: '{ groupGrid.selection.users}',
+            title: 'Users - { groupGrid.selection.name}'
         },
 
         title: 'Users',

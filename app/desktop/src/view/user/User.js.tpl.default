@@ -16,7 +16,7 @@ Ext.define('{appName}.view.user.User', {
     },
 
     // As a Window the default property we are binding is "title":
-    bind: 'Edit User: {theUser.name}',
+    bind: 'Edit User: { theUser.name}',
 
     modal: true,
 
@@ -34,12 +34,12 @@ Ext.define('{appName}.view.user.User', {
         labelWidth: 70,
 
         // As a textfield the default property we are binding is "value":
-        bind: '{theUser.name}'
+        bind: '{ theUser.name}'
     }, {
         // The multiselector is basically a grid that displays the currently selected
         // items. To add items there is a Search tool configured below.
         xtype: 'multiselector',
-        bind: '{theUser.groups}',
+        bind: '{ theUser.groups}',
 
         title: 'Groups',
 

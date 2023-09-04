@@ -33,13 +33,13 @@ Ext.define('{appName}.view.main.Main', {
         }, {
             xtype: 'component',
             cls: 'app-header-text',
-            bind: '{currentOrg.name}',
+            bind: '{ currentOrg.name}',
             flex: 1
         }, {
             xtype: 'component',
             id: 'app-header-username',
             cls: 'app-header-text',
-            bind: '{currentUser.name}',
+            bind: '{ currentUser.name}',
             listeners: {
                 click: 'onClickUserName',
                 element: 'el'
@@ -60,10 +60,10 @@ Ext.define('{appName}.view.main.Main', {
             }
         },
         bind: {
-            store: '{currentOrg.projects}',
+            store: '{ currentOrg.projects}',
             // Bind the project for the current user as the default selection (single).
             selection: {
-                bindTo: '{currentUser.project}',
+                bindTo: '{ currentUser.project}',
                 single: true
             }
         },
