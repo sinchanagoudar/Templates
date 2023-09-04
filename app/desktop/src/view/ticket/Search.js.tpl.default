@@ -21,7 +21,7 @@ Ext.define('{appName}.view.ticket.Search', {
     },
 
     bind: {
-        title: 'Search - {theProject.name}',
+        title: 'Search - { theProject.name}',
         store: '{tickets}'
     },
 
@@ -43,7 +43,7 @@ Ext.define('{appName}.view.ticket.Search', {
         publishes: ['value'],
 
         bind: {
-            store: '{theProject.users}',
+            store: '{ theProject.users}',
             value: '{defaultUser}'  // this is a formula in our ViewModel so just oneway
         }
     }, {
