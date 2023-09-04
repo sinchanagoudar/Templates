@@ -36,7 +36,7 @@ Ext.define('{appName}.view.dashboard.Dashboard', {
             margin: '10 0 20 0',
             cls: 'title',
             html: 'Project Summary',
-            bind: 'Project Summary - {theProject.name}'
+            bind: 'Project Summary - { theProject.name}'
         }]
     }, {
         xtype: 'container',
@@ -59,7 +59,7 @@ Ext.define('{appName}.view.dashboard.Dashboard', {
                 layout: 'fit',
                 items: {
                     xtype: 'polar',
-                    bind: '{ticketStatusSummary}',
+                    bind: '{ ticketStatusSummary}',
                     interactions: 'rotate',
                     animate: {
                         duration: 500,
@@ -86,7 +86,7 @@ Ext.define('{appName}.view.dashboard.Dashboard', {
                 layout: 'fit',
                 items: {
                     xtype: 'cartesian',
-                    bind: '{ticketOpenSummary}',
+                    bind: '{ ticketOpenSummary}',
                     axes: [{
                         type: 'numeric',
                         position: 'left',
@@ -125,7 +125,7 @@ Ext.define('{appName}.view.dashboard.Dashboard', {
                     itemdblclick: 'onTicketDblClick'
                 },
                 title: 'My Active Tickets',
-                bind: '{myActiveTickets}',
+                bind: '{ myActiveTickets}',
                 viewConfig: {
                     emptyText: 'You have no active tickets for this project'
                 },
@@ -163,7 +163,7 @@ Ext.define('{appName}.view.dashboard.Dashboard', {
                 margin: '20 0 0 0',
                 bind: {
                     store: '{sortedUsers}',
-                    title: 'Project Members - Lead: {theProject.lead.name}'
+                    title: 'Project Members - Lead: { theProject.lead.name}'
                 },
                 columns: [{
                     text: 'Name',

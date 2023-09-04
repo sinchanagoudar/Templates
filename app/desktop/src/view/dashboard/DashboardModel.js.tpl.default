@@ -39,7 +39,7 @@ Ext.define('{appName}.view.dashboard.DashboardModel', {
             remoteFilter: true,
             filters: [{
                 property: 'assigneeId',
-                value: '{currentUser.id}'
+                value: '{ currentUser.id}'
             }, {
                 property: 'projectId',
                 value: '{projectId}'
@@ -49,7 +49,7 @@ Ext.define('{appName}.view.dashboard.DashboardModel', {
             }]
         },
         sortedUsers: {
-            source: '{projects.selection.users}',
+            source: '{ projects.selection.users}',
             sorters: [{
                 property: 'name',
                 direction: 'DESC'
