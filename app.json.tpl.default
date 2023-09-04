@@ -1,89 +1,80 @@
 {
-  "name": "{name}",
-  "namespace": "{name}",
+  "name": "executedashboard",
+  "namespace": "executedashboard",
   "version": "1.0.0.0",
   "bypass_lp" : true,
-  "framework": "{frameworkKey}",
-  "template": "{template}",
+  "framework": "ext",
+  "template": "folder",
   "indexHtmlPath": "index.html",
   "requires": [
-    "font-awesome"
+    "font-awesome",
+    "charts"
   ],
-<tpl if="universal == true">
+
   "builds": {
     "desktop": {
       "toolkit": "classic",
-      "theme": "{classicTheme}",
+      "theme": "theme-triton",
       "sass": {
         "generated": {
-          "var": "$\u007Bbuild.id}/sass/save.scss",
-          "src": "$\u007Bbuild.id}/sass/save"
+          "var": "${build.id}/sass/save.scss",
+          "src": "${build.id}/sass/save"
         }
       }
     }
   },
-</tpl>
-  "classpath": ["<tpl if="universal == true">app/shared/</tpl>src"<tpl if="universal == true">,"app/$\u007Bbuild.id}/src"</tpl>],
-  "overrides": ["<tpl if="universal == true">app/shared/</tpl>overrides"<tpl if="universal == true">,"app/$\u007Bbuild.id}/overrides"</tpl>],
-<tpl if="universal == true">
+
+  "classpath": ["app/shared/src","app/${build.id}/src"],
+  "overrides": ["app/shared/overrides","app/${build.id}/overrides"],
+
   "sass": {
-    "namespace": "{name}",
+    "namespace": "executedashboard",
     "etc": [
-      "sass/etc/all.scss"
+      "app/sass/etc/all.scss"
     ],
     "var": [
       "app/shared/sass/var.scss",
-      "app/$\u007Bbuild.id}/sass/var.scss"
+      "app/${build.id}/sass/var.scss"
     ],
     "src": [
       "app/shared/src/sass/src.scss",
-      "app/$\u007Bbuild.id}/sass/src.scss"
+      "app/${build.id}/sass/src.scss"
     ]
   },
-</tpl>
+
   "resources": [
     { "path": "resources", "output": "shared" }
-<tpl if="universal == true">
-    ,{ "path": "resources/$\u007Bbuild.id}" }
-</tpl>
+
+    ,{ "path": "resources/${build.id}" }
+
   ],
-<tpl if="universal == true">
+
   "output": {
-    "base": "$\u007Bworkspace.build.dir}/$\u007Bbuild.environment}/$\u007bapp.name}",
+    "base": "${workspace.build.dir}/${build.environment}/${app.name}",
     "page": "index.html",
-    "manifest": "generatedFiles/$\u007Bbuild.id}.json",
-    "js": "generatedFiles/$\u007Bbuild.id}/app.js",
+    "manifest": "generatedFiles/${build.id}.json",
+    "js": "generatedFiles/${build.id}/app.js",
     "appCache": {"enable": false},
     "resources": {
-      "path": "$\u007Bbuild.id}/resources",
+      "path": "${build.id}/resources",
       "shared": "resources"
     }
   },
-  <tpl else>
-  "output": {
-    "base": "$\u007bworkspace.build.dir}/$\u007bbuild.environment}/$\u007bapp.name}",
-    "appCache": {
-      "enable": false
-    }
-  },
-</tpl>
+  
   "fashion": {
-<tpl if="frameworkIsV65 == true">"missingParameters": "error",</tpl>
+"missingParameters": "error",
     "inliner": {"enable": false}
   },
 
-  "js": [<tpl if="universal == false">
-    {
-      "path": "$\u007Bframework.dir}/build/ext-<tpl if="toolkit == 'modern'">modern-all<tpl else>all-rtl</tpl>-debug.js"
-    }</tpl>
+  "js": [
   ],
-<tpl if="universal == true">
+
   "classic": {"js": []},
   "modern": {"js": []},
-</tpl>
+
   "css": [
     {
-      "path": "$\u007bbuild.out.css.path}",
+      "path": "${build.out.css.path}",
       "bundle": true,
       "exclude": ["fashion"]
     }
@@ -95,7 +86,7 @@
   "production": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "$\u007bapp.webpack.bundle}", "compress": false }
+      {"path": "${app.webpack.bundle}", "compress": false }
     ],
     "output": {
       "appCache": {
@@ -104,7 +95,7 @@
       }
     },
     "loader": {
-      "cache": "$\u007Bbuild.timestamp}"
+      "cache": "${build.timestamp}"
     },
     "cache": {
       "enable": true
@@ -116,7 +107,7 @@
   "testing": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "$\u007bapp.webpack.bundle}", "compress": false }
+      {"path": "${app.webpack.bundle}", "compress": false }
     ]
   },
   "development": {
@@ -129,52 +120,26 @@
     }
   },
   "bootstrap": {
-    "base": "$\u007bapp.dir}",
-<tpl if="universal == true">"manifest": "generatedFiles/$\u007bbuild.id}.json",</tpl>
+    "base": "${app.dir}",
+"manifest": "generatedFiles/${build.id}.json",
     "microloader": "generatedFiles/bootstrap.js",
     "css": "generatedFiles/bootstrap.css"
   },
-<tpl if="universal == true">
+
   "cache": {
     "enable": false,
-    "deltas": "$\u007Bbuild.id}/deltas"
+    "deltas": "${build.id}/deltas"
   },
-<tpl else>
-  "cache": {
-    "enable": false,
-    "deltas": true
-  },
-</tpl>
+
   "appCache": {
     "cache": ["index.html"],
     "network": ["*"],
     "fallback": []
   },
-<tpl if="universal == false"><tpl if="toolkit == 'classic'">
-  "slicer": {
-    "js": [
-      {
-        "path": "sass/example/custom.js",
-        "isWidgetManifest": true
-      }
-    ],
-    "output": {
-      "appCache": {
-        "enable": false
-      }
-    },
-    "cache": {
-      "enable": false
-    }
-  },
-<tpl else>
-  "slicer": null,
-</tpl></tpl>
-<tpl if="universal == true">
-  "archivePath": "archive/$\u007Bbuild.id}",
-<tpl else>
-  "archivePath": "archive",
-</tpl>
+
+
+  "archivePath": "archive/${build.id}",
+
   "ignore": ["(^|/)CVS(/?$|/.*?$)"],
-  "id": "{uniqueId}"
+  "id": "f66c0bee-bc00-4032-85c3-d30e4ae20a4c"
 }

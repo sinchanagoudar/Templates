@@ -1,10 +1,4 @@
 Ext.application({
 	extend: '{appName}.Application',
-	name: '{appName}',
-
-	requires: [
-        // This will automatically load all classes in the Ticket namespace
-        // so that application classes do not need to require each other.
-        '{appName}.*'
-    ]
+	name: '{appName}'
 });

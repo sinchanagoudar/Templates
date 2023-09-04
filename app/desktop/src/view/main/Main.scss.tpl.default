@@ -1,47 +1,126 @@
-/*
- * This file contains styling for the Main view.
- */
+// COLOR PALETTE
 
-/*
+$exec-dark-background: dynamic(#3e4752);
+$exec-light-background: dynamic(#ececec);
+$exec-tile-background: dynamic(#ffffff);
+
+$exec-blue-color: dynamic(#2e6eaf);
+$exec-red-color: dynamic(#f1495b);
+$exec-green-color: dynamic(#11c897);
+$exec-light-blue-color: dynamic(saturate(lighten($exec-blue-color, 53%), 70%));
+
+$exec-font-light-color: dynamic(#a0a7b8);
+$exec-font-color: dynamic(#878ea2);
+$exec-font-dark-color: dynamic($exec-dark-background);
+
+//Proxima Nova is preferred font, but it is not a free font.
+$exec-font-family: dynamic("Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif);
+
+$exec-font-size-small-content: dynamic(10px);
+$exec-font-size-content: dynamic(12px);
+$exec-font-size-small-title: dynamic(14px);
+$exec-font-size-medium-title: dynamic(18px);
+$exec-font-size-large-title: dynamic(20px);
+$exec-font-size-xlarge-title: dynamic(28px);
+
+$exec-font-regular: dynamic(400);
+$exec-font-semibold: dynamic(500);
+$exec-font-bold: dynamic(800);
+
+// GENERAL APP STYLE
+
+$base-color: dynamic($exec-blue-color);
+$color: dynamic($exec-font-dark-color);
+$font-family: dynamic($exec-font-family);
+$body-background-color: dynamic($exec-light-background);
+
+// PANEL
+
+$panel-body-color: dynamic($exec-font-dark-color);
+$panel-body-background-color: dynamic($exec-light-background);
+
+// TOOLBAR
+
+$toolbar-background-color: dynamic($exec-light-background);
+
+// GRID
+
+$grid-cell-inner-padding: dynamic(15px);
+$grid-header-padding: dynamic(15px);
+$grid-grouped-header-padding: dynamic(15px);
+
+$grid-column-header-font-weight: dynamic($exec-font-bold);
+$grid-row-cell-font-weight: dynamic($exec-font-semibold);
+
+$grid-row-cell-color: dynamic($exec-font-color);
+$grid-column-header-color: dynamic($exec-font-dark-color);
+
+$grid-grouped-header-border-width: dynamic(0);
+
+$grid-grouped-header-background-color: dynamic($exec-light-blue-color);
+
+// BUTTON
+// since only small (default) buttons are used, only small button styles are defined here
+
+$button-small-border-radius: dynamic(3px);
+$button-default-border-color: dynamic($exec-blue-color);
+$button-toolbar-border-color: dynamic($button-default-border-color);
+
+$button-default-background-color: dynamic($exec-blue-color);
+$button-toolbar-background-color: dynamic($button-default-background-color);
+
+$button-default-color: dynamic(white);
+$button-toolbar-color: dynamic($button-default-color);
+
+$button-toolbar-inner-border-color-focus: dynamic(mix($button-toolbar-background-color, $button-toolbar-color, 20%));
+
+$button-small-font-size: dynamic($exec-font-size-content);
+$button-small-font-weight: dynamic($exec-font-bold);
+
+// MENU
+
+$menu-text-color: dynamic($exec-font-dark-color);
+
+// BORDERS
+
+$light-grey-borders: dynamic($exec-font-color);
+
+/**
  * Generates a set of style rules for the "navigation" tab UI.
  */
-@include extjs-tab-panel-ui(
+ @include extjs-tab-panel-ui(
     $ui: 'navigation',
     $ui-tab-background-color: transparent,
-    $ui-tab-background-color-over: #505050,
-    $ui-tab-background-color-active: #303030,
-    $ui-tab-background-gradient: 'none',
-    $ui-tab-background-gradient-over: 'none',
-    $ui-tab-background-gradient-active: 'none',
-    $ui-tab-color: #acacac,
-    $ui-tab-color-over: #c4c4c4,
+    $ui-tab-background-color-over: transparent,
+    $ui-tab-background-color-active: transparent,
+    $ui-tab-color: #fff,
+    $ui-tab-color-over: #fff,
     $ui-tab-color-active: #fff,
-    $ui-tab-glyph-color: #acacac,
-    $ui-tab-glyph-color-over: #c4c4c4,
+    $ui-tab-glyph-color: #fff,
+    $ui-tab-glyph-color-over: #fff,
     $ui-tab-glyph-color-active: #fff,
     $ui-tab-glyph-opacity: 1,
     $ui-tab-border-radius: 0,
     $ui-tab-border-width: 0,
-    $ui-tab-inner-border-width: 0,
-    $ui-tab-padding: 24px,
+    $ui-tab-padding: 24px 20px,
     $ui-tab-margin: 0,
-    $ui-tab-font-size: 15px,
-    $ui-tab-font-size-over: 15px,
-    $ui-tab-font-size-active: 15px,
-    $ui-tab-line-height: 19px,
-    $ui-tab-font-weight: bold,
-    $ui-tab-font-weight-over: bold,
-    $ui-tab-font-weight-active: bold,
-    $ui-tab-icon-width: 24px,
-    $ui-tab-icon-height: 24px,
-    $ui-tab-icon-spacing: 5px,
-    $ui-bar-background-color: #404040,
+    $ui-tab-font-size: 14px,
+    $ui-tab-font-size-over: 14px,
+    $ui-tab-font-size-active: 14px,
+    $ui-tab-line-height: 20px,
+    $ui-tab-font-weight: 600,
+    $ui-tab-font-weight-over: 600,
+    $ui-tab-font-weight-active: 600,
+    $ui-tab-icon-width: 20px,
+    $ui-tab-icon-height: 20px,
+    $ui-tab-icon-spacing: 15px,
+    $ui-bar-background-color: #3e4752,
     $ui-bar-background-gradient: 'none',
     $ui-bar-padding: 0,
     $ui-strip-height: 0
 );
 
-/*
+/**
  * Generates a set of style rules for the "navigation" panel UI.
  */
 @include extjs-panel-ui(
@@ -49,39 +128,180 @@
     $ui-header-color: #fff,
     $ui-header-glyph-color: #fff,
     $ui-header-glyph-opacity: 1,
-    $ui-header-font-size: 20px,
-    $ui-header-line-height: 24px,
-    $ui-header-font-weight: bold,
-    $ui-header-icon-height: 24px,
-    $ui-header-icon-width: 24px,
-    $ui-header-icon-spacing: 15px,
-    $ui-header-background-color: $base-color,
+    $ui-header-font-size: 32px,
+    $ui-header-line-height: 48px,
+    $ui-header-font-weight: 600,
+    $ui-header-icon-height: 32px,
+    $ui-header-icon-width: 32px,
+    $ui-header-icon-spacing: 16px,
+    $ui-header-background-color: #f1495b,
     $ui-header-padding: 0,
-    $ui-header-text-margin: 36px,
+    $ui-header-text-margin: 26px 36px,
     $ui-header-noborder-adjust: false
 );
 
-.x-title-icon-navigation {
-    font-family: 'Font Awesome 5 Free';
-    color: #fff;
-    font-size: 24px;
-    line-height: 24px;
+.x-tab-navigation {
+    // TODO: add opacity support to extjs-tab-panel-ui mixin
+    @include opacity(0.5);
+
+    // Important added here to overcome background-color:transparent added by framing in IE8
+    // TODO: can we remove the !important rule from the framework?
+    &.x-tab-over {
+        background-color: mix(#000, $exec-dark-background, 10%) !important;
+        @include opacity(0.8);
+    }
+
+    &.x-tab-active {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
+
+    &.x-tab-pressed {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
 }
 
+.x-tab-inner-navigation {
+    white-space: normal;
+
+    .x-ie8 & {
+        font-size: 13px;
+    }
+}
+
+.x-panel-header-title-navigation {
+    text-align: left;
+}
+
+.exec-header-icon,
 .x-tab-icon-el-navigation {
-    font-family: 'Font Awesome 5 Free';
-    color: #acacac;
+    background-size: contain;
+}
 
-    .x-tab-over & {
-        color: #c4c4c4;
-    }
+.exec-header-icon {
+    background-image: url(icons/mybiz.png);
 
-    .x-tab-active & {
-        color: #fff;
+    .x-ie8 & {
+        background-image: url(icons/mybiz-small.png);
     }
 }
 
-.x-panel-header-title-navigation > .x-title-text-navigation:after {
-    top: 30px;
-    right: -24px;
+.exec-kpi-icon {
+    background-image: url(icons/kpi.png);
+
+    .x-ie8 & {
+        background-image: url(icons/kpi-small.png);
+    }
 }
+
+.exec-quarterly-icon {
+    background-image: url(icons/quarterly.png);
+
+    .x-ie8 & {
+        background-image: url(icons/quarterly-small.png);
+    }
+}
+
+.exec-pl-icon {
+    background-image: url(icons/pl.png);
+
+    .x-ie8 & {
+        background-image: url(icons/pl-small.png);
+    }
+}
+
+.exec-news-icon {
+    background-image: url(icons/news.png);
+
+    .x-ie8 & {
+        background-image: url(icons/news-small.png);
+    }
+}
+
+.exec-menu-navigation {
+
+    // MENU DISCLOSURE
+
+    .x-menu {
+        border: none;
+    }
+
+    .x-css-shadow {
+        -webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+        -moz-box-shadow:    0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+        box-shadow:         0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+    }
+
+    .x-tool-img {
+        background-color: transparent !important;
+        left: 44px;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: 30px;
+    }
+
+    .x-tool-gear {
+        background-image: url(icons/menu-disclosure.png) !important;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+        @include opacity(0.5);
+    }
+
+    &.x-ie8 .x-tool-gear {
+        background-image: url(icons/menu-disclosure-small.png) !important;
+    }
+
+    .x-tool {
+        background-color: $exec-dark-background;
+    }
+
+    .x-tool:hover {
+        .x-tool-gear {
+            @include opacity(1);
+        }
+        background-color: darken($exec-dark-background, 10%) !important;
+    }
+
+    // MENU
+
+    .x-menu-body {
+        background-color: $exec-dark-background;
+        span {
+            color: white;
+            font-weight: $exec-font-semibold;
+            @include opacity(0.5);
+        }
+        a {
+            line-height: 50px;
+        }
+    }
+
+    .x-menu-item-icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        top: 0;
+        left: 10px;
+        @include opacity(0.5);
+        background-size: 70%;
+    }
+
+    .x-menu-item-text {
+        margin-left: 65px;
+        margin-right: 15px;
+    }
+
+    .x-menu-item-active {
+        background-color: darken($exec-dark-background, 10%) !important;
+        span {
+            @include opacity(1);
+        }
+        .x-menu-item-icon {
+            @include opacity(1);
+        }
+    }
+}
+

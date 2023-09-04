@@ -1,29 +1,33 @@
-/**
- * The Application class just links up the main controller and our simulated data.
- */
 Ext.define('{appName}.Application', {
-    extend: 'Ext.app.Application',
+	extend: 'Ext.app.Application',
+	name: '{appName}',
+	requires: ['{appName}.*'],
+	defaultToken: 'kpi/clicks',
 
-    controllers: [
-        'Root@{appName}.controller'
-    ],
+	launch: function () {
+		Ext.ariaWarn = Ext.emptyFn
+		Ext.getBody().removeCls('launching')
+		var elem = document.getElementById("splash")
+		elem.parentNode.removeChild(elem)
 
-    removeSplash: function () {
-        Ext.getBody().removeCls('launching')
-        var elem = document.getElementById("splash")
-        elem.parentNode.removeChild(elem)
-    },
+		var whichView = 'app-main'
+//		var loggedIn = localStorage.getItem("LoggedIn");
+//		if(loggedIn != 'true') { whichView = 'loginview' }
+		if (Ext.isClassic == true) {
+			Ext.create({xtype: whichView, plugins: 'viewport'})
+		}
+		else {
+			Ext.Viewport.add([{xtype: whichView}])
+		}
+	},
 
-    onBeforeLaunch: function() {
-
-        this.removeSplash();
-        // All smoke-and-mirrors with data happens in SimData. This is a fake server that
-        // runs in-browser and intercepts the various Ajax requests a real app would make
-        // to a real server.
-    
-        var myApp = {appName};
-        myApp.SimData.init();
-
-        this.callParent();
-    }
+	onAppUpdate: function () {
+		Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
+			function (choice) {
+				if (choice === 'yes') {
+					window.location.reload();
+				}
+			}
+		);
+	}
 });

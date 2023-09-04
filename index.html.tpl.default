@@ -3,10 +3,9 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
-<tpl if="fwIs60 == true">	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<tpl else>	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
-</tpl>	<title>{name}</title>
-<tpl if="universal == true">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+	<title>executedashboard</title>
+
   <script type="text/javascript">
     var Ext = Ext || {};
     Ext.beforeLoad = function (tags) {
@@ -16,9 +15,9 @@
       Ext.manifest ='generatedFiles/' + profile;
     };
   </script>
-</tpl>
+
   <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-  <script id="microloader" data-app="{uniqueId}" type="text/javascript" src="generatedFiles/bootstrap.js"></script>
+  <script id="microloader" data-app="15fe1699-e9a6-41ed-a8eb-22acacb60974" type="text/javascript" src="generatedFiles/bootstrap.js"></script>
 </head>
   <body class="launching">
     <div id="splash" style="margin-top:20%;font-family:Arial;font-size:64px;text-align:center;color:#404040;">

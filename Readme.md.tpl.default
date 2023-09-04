@@ -1,1 +1,5 @@
-# {appName} application
+# executedashboard application
+
+Before running the application, need to install necessary node_modules. In this template Ext-charts are missing so 
+
+Run "npm install@sencha/ext-charts".

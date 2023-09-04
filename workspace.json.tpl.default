@@ -2,15 +2,15 @@
   "apps": [],
   "frameworks": {
     "ext": {
-      "path": "{sdkval}",
-      "version": "{frameworkVersion}"
+      "path": "node_modules/@sencha/ext",
+      "version": "7.6.0"
     }
   },
   "build": {
-    "dir": "$\u007Bworkspace.dir}/build"
+    "dir": "${workspace.dir}/build"
   },
   "packages": {
-    "dir": "$\u007Bworkspace.dir}/packages/local,{packages},$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name},$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-treegrid,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-base,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-ios,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-material,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-aria,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-neutral,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-classic,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-gray,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-crisp,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-crisp-touch,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-neptune,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-neptune-touch,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-triton,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-graphite,$\u007Bworkspace.dir}/node_modules/@sencha/ext-$\u007Btoolkit.name}-theme-material,$\u007Bworkspace.dir}/node_modules/@sencha/ext-calendar,$\u007Bworkspace.dir}/node_modules/@sencha/ext-charts,$\u007Bworkspace.dir}/node_modules/@sencha/ext-d3,$\u007Bworkspace.dir}/node_modules/@sencha/ext-exporter,$\u007Bworkspace.dir}/node_modules/@sencha/ext-pivot,$\u007Bworkspace.dir}/node_modules/@sencha/ext-pivot-d3,$\u007Bworkspace.dir}/node_modules/@sencha/ext-froala-editor,$\u007Bworkspace.dir}/node_modules/@sencha/ext-ux,$\u007Bworkspace.dir}/node_modules/@sencha/ext-font-ios",
-    "extract": "$\u007Bworkspace.dir}/packages/remote"
+    "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name},${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-treegrid,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-base,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-ios,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-material,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-aria,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neutral,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-classic,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-gray,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-crisp,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-crisp-touch,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neptune,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neptune-touch,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-triton,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-graphite,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-material,${workspace.dir}/node_modules/@sencha/ext-calendar,${workspace.dir}/node_modules/@sencha/ext-charts,${workspace.dir}/node_modules/@sencha/ext-d3,${workspace.dir}/node_modules/@sencha/ext-exporter,${workspace.dir}/node_modules/@sencha/ext-pivot,${workspace.dir}/node_modules/@sencha/ext-pivot-d3,${workspace.dir}/node_modules/@sencha/ext-ux,${workspace.dir}/node_modules/@sencha/ext-font-ios",
+    "extract": "${workspace.dir}/packages/remote"
   }
 }

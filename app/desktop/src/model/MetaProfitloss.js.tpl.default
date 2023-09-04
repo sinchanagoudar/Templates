@@ -1,0 +1,9 @@
+Ext.define('{appName}.model.MetaProfitloss', {
+    extend: '{appName}.model.Base',
+
+    fields: [
+        'display',
+        'quarter',
+        'region'
+    ]
+});

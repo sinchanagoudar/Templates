@@ -1,5 +1,8 @@
-/*
- *  This file can be used to set variables and supply global styling.  View specific 
- *  styling should be located the view's corresponding scss file.
- */
-$enable-font-awesome: dynamic(true);
+@include extjs-button-toolbar-small-ui(
+  $ui: 'toolbutton',
+  $font-size: 24px,
+  $padding: 5px 10px 5px 10px,
+	$background-color: transparent,
+	$glyph-color: white,
+  $border-color: transparent
+);

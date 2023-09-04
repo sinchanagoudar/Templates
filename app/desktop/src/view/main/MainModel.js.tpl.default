@@ -1,12 +1,12 @@
+/**
+ * This class is the view model for the Main view of the application.
+ */
 Ext.define('{appName}.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.main'
 
-    /**
-     * @property {{appName}.model.Organization} currentOrg
-     */
+    alias: 'viewmodel.main',
 
-    /**
-     * @property {{appName}.model.User} currentUser
-     */
+    data: {
+        name: '{appName}'
+    }
 });
