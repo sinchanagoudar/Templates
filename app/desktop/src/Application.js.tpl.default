@@ -8,10 +8,19 @@ Ext.define('{appName}.Application', {
         'Root@{appName}.controller'
     ],
 
+    removeSplash: function () {
+        Ext.getBody().removeCls('launching')
+        var elem = document.getElementById("splash")
+        elem.parentNode.removeChild(elem)
+    },
+
     onBeforeLaunch: function() {
+
+        this.removeSplash();
         // All smoke-and-mirrors with data happens in SimData. This is a fake server that
         // runs in-browser and intercepts the various Ajax requests a real app would make
         // to a real server.
+    
         var myApp = {appName};
         myApp.SimData.init();
 
