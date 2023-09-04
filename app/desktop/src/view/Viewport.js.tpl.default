@@ -6,6 +6,8 @@ Ext.define('{appName}.view.Viewport', {
 
     layout: 'border',
 
+    xtype:'mainview',
+
     items: [
         {
             xtype: 'tasksToolbar',
