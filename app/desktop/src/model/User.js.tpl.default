@@ -1,0 +1,14 @@
+/**
+ * This view is used to present the details of a single {appName}.
+ */
+Ext.define('{appName}.model.User', {
+    extend: '{appName}.model.Base',
+
+    fields: [
+        'name',
+        { name: 'organizationId', reference: 'Organization' },
+        { name: 'projectId', reference: 'Project' }
+    ],
+
+    manyToMany: 'Group'
+});

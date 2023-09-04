@@ -1,0 +1,9 @@
+/**
+ * This entity represents an organization which is a container for projects, users and
+ * groups.
+ */
+Ext.define('{appName}.model.Organization', {
+    extend: '{appName}.model.Base',
+
+    fields: [ 'name' ]
+});

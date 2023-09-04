@@ -1,0 +1,12 @@
+Ext.define('{appName}.view.main.MainModel', {
+    extend: 'Ext.app.ViewModel',
+    alias: 'viewmodel.main'
+
+    /**
+     * @property {{appName}.model.Organization} currentOrg
+     */
+
+    /**
+     * @property {{appName}.model.User} currentUser
+     */
+});

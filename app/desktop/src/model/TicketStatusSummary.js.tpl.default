@@ -1,0 +1,4 @@
+Ext.define('{appName}.model.TicketStatusSummary', {
+    extend: 'Ext.data.Model',
+    fields: ['status', 'total']
+});
