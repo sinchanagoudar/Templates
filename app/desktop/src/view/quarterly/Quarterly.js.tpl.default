@@ -54,7 +54,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         }],
 
         animation: false,
-        bind: '{stocks}',
+        bind: '{ stocks}',
 
         legend: { // null, false, undefined - doesn't work here. ??
             hidden: true
@@ -83,7 +83,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                     height: 40,
                     text: 'AAPL',
                     bind: {
-                        text: '{stockMeta.symbol}'
+                        text: '{ stockMeta.symbol }'
                     },
                     textAlign: 'right',
 
@@ -106,7 +106,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                     textAlign: 'right',
                     width: 105,
                     bind: {
-                        value: '{stockMeta.label}'
+                        value: '{ stockMeta.label }'
                     }
                 }]
             },{
@@ -114,20 +114,20 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                 width: 20
             }, {
                 fieldLabel: 'CHANGE',
-                bind: '{stockMeta.change}<span class="ql-percentage">({stockMeta.changePercentage}%)</span>',
+                bind: '{ stockMeta.change}<span class="ql-percentage">({stockMeta.changePercentage}%)</span>',
                 flex: 1
             },{
                 fieldLabel: 'PRICE',
-                bind: '{stockMeta.price}',
+                bind: '{ stockMeta.price}',
                 flex: 1
             },{
                 fieldLabel: 'MAX/MIN',
-                bind: '{stockMeta.maxMin}',
+                bind: '{ stockMeta.maxMin}',
                 flex: 1
             },{
 
                 fieldLabel: 'VOLUME',
-                bind: '{stockMeta.volume}',
+                bind: '{ stockMeta.volume}',
                 flex: 1
             }]
         },
@@ -191,7 +191,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         xtype: 'dataview',
         cls: 'quarterly-dataview',
 
-        bind: '{statements}',
+        bind: '{ statements}',
 
         itemSelector: 'div.thumb-wrap',
 
