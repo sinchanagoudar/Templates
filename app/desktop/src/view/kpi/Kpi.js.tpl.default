@@ -83,7 +83,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             }
         }],
         cls: 'kpi-main-chart',
-        bind: '{kpiMain}',
+        bind: '{ kpiMain }',
         minHeight: 290,
         animation: false,
 

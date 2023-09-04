@@ -21,7 +21,7 @@ Ext.define('{appName}.view.companynews.News', {
 
     hideHeaders: true,
 
-    bind: "{news" + "}",
+    bind: "{ news" + "}",
 
     tbar: [{
         text: 'All Posts',
