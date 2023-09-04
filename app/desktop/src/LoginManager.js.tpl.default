@@ -10,7 +10,7 @@ Ext.define('{appName}.LoginManager', {
         model: null,
 
         /**
-         * @ cfg {Ext.data.Session} session
+         * @ cfg { Ext.data.Session} session
          */
         session: null
     },
