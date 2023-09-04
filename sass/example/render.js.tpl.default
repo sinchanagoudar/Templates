@@ -169,7 +169,6 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
             if (tpl) {
                 for (token in tpl) {
                     replacements.push({
-                        //re: new RegExp('\{ ' + token + '\}', 'g'),
                         value: tpl[token]
                     });
                 }
