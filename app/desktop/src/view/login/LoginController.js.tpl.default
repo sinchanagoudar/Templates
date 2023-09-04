@@ -24,7 +24,7 @@ Ext.define('{appName}.view.login.LoginController', {
             Ext.getBody().mask(this.loginText);
 
             if (!this.loginManager) {
-                this.loginManager = new Ticket.LoginManager({
+                this.loginManager = new {appName}.LoginManager({
                     session: this.getView().getSession(),
                     model: 'User'
                 });

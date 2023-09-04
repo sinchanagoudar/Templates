@@ -12,7 +12,7 @@ Ext.define('{appName}.model.Base', {
     schema: {
         namespace: '{appName}.model',
         proxy: {
-            url: '{ prefix}/{ entityName:uncapitalize}',
+            url: '\prefix}/\entityName:uncapitalize}',
             pageParam: '',
             startParam: '',
             limitParam: ''

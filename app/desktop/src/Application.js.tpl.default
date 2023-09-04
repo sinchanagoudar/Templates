@@ -12,7 +12,7 @@ Ext.define('{appName}.Application', {
         // All smoke-and-mirrors with data happens in SimData. This is a fake server that
         // runs in-browser and intercepts the various Ajax requests a real app would make
         // to a real server.
-        var myApp= {appName};
+        var myApp = {appName};
         myApp.SimData.init();
 
         this.callParent();
