@@ -17,15 +17,15 @@
       "theme": "theme-triton",
       "sass": {
         "generated": {
-          "var": "${build.id}/sass/save.scss",
-          "src": "${build.id}/sass/save"
+          "var": "${ build.id}/sass/save.scss",
+          "src": "${ build.id}/sass/save"
         }
       }
     }
   },
 
-  "classpath": ["app/shared/src","app/${build.id}/src"],
-  "overrides": ["app/shared/overrides","app/${build.id}/overrides"],
+  "classpath": ["app/shared/src","app/${ build.id}/src"],
+  "overrides": ["app/shared/overrides","app/${ build.id}/overrides"],
 
   "sass": {
     "namespace": "executedashboard",
@@ -34,29 +34,29 @@
     ],
     "var": [
       "app/shared/sass/var.scss",
-      "app/${build.id}/sass/var.scss"
+      "app/${ build.id}/sass/var.scss"
     ],
     "src": [
       "app/shared/src/sass/src.scss",
-      "app/${build.id}/sass/src.scss"
+      "app/${ build.id}/sass/src.scss"
     ]
   },
 
   "resources": [
     { "path": "resources", "output": "shared" }
 
-    ,{ "path": "resources/${build.id}" }
+    ,{ "path": "resources/${ build.id}" }
 
   ],
 
   "output": {
-    "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+    "base": "${ workspace.build.dir}/${ build.environment}/${ app.name}",
     "page": "index.html",
-    "manifest": "generatedFiles/${build.id}.json",
-    "js": "generatedFiles/${build.id}/app.js",
+    "manifest": "generatedFiles/${ build.id}.json",
+    "js": "generatedFiles/${ build.id}/app.js",
     "appCache": {"enable": false},
     "resources": {
-      "path": "${build.id}/resources",
+      "path": "${ build.id}/resources",
       "shared": "resources"
     }
   },
@@ -74,7 +74,7 @@
 
   "css": [
     {
-      "path": "${build.out.css.path}",
+      "path": "${ build.out.css.path}",
       "bundle": true,
       "exclude": ["fashion"]
     }
@@ -86,7 +86,7 @@
   "production": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "${app.webpack.bundle}", "compress": false }
+      {"path": "${ app.webpack.bundle}", "compress": false }
     ],
     "output": {
       "appCache": {
@@ -95,7 +95,7 @@
       }
     },
     "loader": {
-      "cache": "${build.timestamp}"
+      "cache": "${ build.timestamp}"
     },
     "cache": {
       "enable": true
@@ -107,7 +107,7 @@
   "testing": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "${app.webpack.bundle}", "compress": false }
+      {"path": "${ app.webpack.bundle}", "compress": false }
     ]
   },
   "development": {
@@ -120,15 +120,15 @@
     }
   },
   "bootstrap": {
-    "base": "${app.dir}",
-"manifest": "generatedFiles/${build.id}.json",
+    "base": "${ app.dir}",
+"manifest": "generatedFiles/${ build.id}.json",
     "microloader": "generatedFiles/bootstrap.js",
     "css": "generatedFiles/bootstrap.css"
   },
 
   "cache": {
     "enable": false,
-    "deltas": "${build.id}/deltas"
+    "deltas": "${ build.id}/deltas"
   },
 
   "appCache": {
@@ -138,7 +138,7 @@
   },
 
 
-  "archivePath": "archive/${build.id}",
+  "archivePath": "archive/${ build.id}",
 
   "ignore": ["(^|/)CVS(/?$|/.*?$)"],
   "id": "f66c0bee-bc00-4032-85c3-d30e4ae20a4c"
