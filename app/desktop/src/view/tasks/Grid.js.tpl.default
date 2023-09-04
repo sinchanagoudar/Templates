@@ -90,7 +90,7 @@ Ext.define('{appName}.view.tasks.Grid', {
             cellEditingPlugin = Ext.create('Ext.grid.plugin.CellEditing'),
             groupingFeature = Ext.create('Ext.grid.feature.Grouping', {
                 groupHeaderTpl: [
-                    '{groupValue:this.renderDueDate}',
+                    '{ groupValue:this.renderDueDate}',
                     {
                         renderDueDate: me.renderDueDate
                     }

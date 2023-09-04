@@ -497,7 +497,7 @@ Ext.define('{appName}.controller.Lists', {
      * Handles the lists store's write event.
      * Syncronizes the other read only list stores with the newly saved data
      * @ param { {appName}.store.Lists} listsStore
-     * @ param {Ext.data.Operation} operation
+     * @ param { Ext.data.Operation} operation
      */
     syncListsStores: function(listsStore, operation) {
         var stores = [
