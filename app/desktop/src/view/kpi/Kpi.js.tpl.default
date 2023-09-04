@@ -46,7 +46,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             '<div class="kpi-meta">',
                 '<tpl for=".">',
                     '<span>',
-                        '<div>{statistic}</div> {description}',
+                        '<div>\{\statistic}</div>\{\description}',
                     '</span>',
                 '</tpl>',
             '</div>'
