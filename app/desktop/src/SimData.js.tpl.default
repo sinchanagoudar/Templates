@@ -113,7 +113,7 @@ Ext.define('{appName}.SimData', {
 
         while (length--) {
             if (ret) {
-                ret += '\n\n';
+                ret += '';
             }
 
             ret += this.paragraph();
