@@ -15,14 +15,14 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
     /**
      * The array of all component manifests. These objects have the following set of
      * properties recognized by the slicer:
-     * @private
+     * @ private
      */
     _manifest: [],
 
     /**
      * The collection of shortcuts for a given alias (e.g., 'widget.panel'). This is an
      * object keyed by alias whose values are arrays of shortcut definitions.
-     * @private
+     * @ private
      */
     _shortcuts: {},
 
@@ -57,35 +57,35 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
      *              //...
      *          });
      *
-     * @param manifest {Object} An object with type of component, slicing information and
+     * @ param manifest {Object} An object with type of component, slicing information and
      * component configuration. If this parameter is an array, each element is treated as
      * a manifest entry. Otherwise, each argument passed is treated as a manifest entry.
      *
-     * @param manifest.xtype {String} The xtype ('grid') or alias ('widget.grid'). This
+     * @ param manifest.xtype {String} The xtype ('grid') or alias ('widget.grid'). This
      * is used to specify the type of component to create as well as a potential key to
      * any `shortcuts` defined for the xtype.
      *
-     * @param manifest.config {Object} The component configuration object. The properties
+     * @ param manifest.config {Object} The component configuration object. The properties
      * of this depend on the `xtype` of the component.
      *
-     * @param [manifest.delegate] {String} The DOM query to use to select the element to
+     * @ param [manifest.delegate] {String} The DOM query to use to select the element to
      * slice. The default is to slice the primary element of the component.
      *
-     * @param [manifest.parentCls] An optional CSS class to add to the parent of the
+     * @ param [manifest.parentCls] An optional CSS class to add to the parent of the
      * component.
      *
-     * @param [manifest.setup] {Function} An optional function to be called to initialize
+     * @ param [manifest.setup] {Function} An optional function to be called to initialize
      * the component.
-     * @param manifest.setup.component {Ext.Component} The component instance
-     * @param manifest.setup.container {Element} The component's container.
+     * @ param manifest.setup.component {Ext.Component} The component instance
+     * @ param manifest.setup.container {Element} The component's container.
      *
-     * @param [manifest.folder] {String} The folder in to which to produce image slices.
+     * @ param [manifest.folder] {String} The folder in to which to produce image slices.
      * Only applies to Ext JS 4.1 (removed in 4.2).
      *
-     * @param [manifest.filename] {String} The base filename for slices.
+     * @ param [manifest.filename] {String} The base filename for slices.
      * Only applies to Ext JS 4.1 (removed in 4.2).
      *
-     * @param [manifest.reverse] {Boolean} True to position the slices for linear gradient
+     * @ param [manifest.reverse] {Boolean} True to position the slices for linear gradient
      * background at then opposite "end" (right or bottom) and apply the stretch to the
      * area before it (left or top). Only applies to Ext JS 4.1 (removed in 4.2).
      */
@@ -164,7 +164,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * This method ensures that a given string has the specified prefix (e.g., "widget.").
-     * @private
+     * @ private
      */
     addPrefix: function(prefix, s) {
         if (!s || (s.length > prefix.length && s.substring(0, prefix.length) === prefix)) {
@@ -177,7 +177,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
     /**
      * This method returns the given string with "widget." added to the front if that is
      * not already present.
-     * @private
+     * @ private
      */
     addWidget: function(str) {
         return Ext.theme.addPrefix('widget.', str);
@@ -186,7 +186,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
     /**
      * This method accepts an manifest entry and a shortcut entry and returns the merged
      * version.
-     * @private
+     * @ private
      */
     applyShortcut: function(manifestEntry, shortcut) {
         var ui = manifestEntry.ui,
@@ -223,8 +223,8 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
      *
      *      console.log('obj.foo: ' + obj.foo); // logs "Hello-World"
      *
-     * @return {Object} The `dest` object or a new object (if `dest` was null).
-     * @private
+     * @ return {Object} The `dest` object or a new object (if `dest` was null).
+     * @ private
      */
     copyProps: function(dest, src, tpl) {
         var out = dest || {},
@@ -259,7 +259,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * Renders a component given its manifest and shortcut entries.
-     * @private
+     * @ private
      */
     renderWidget: function(manifestEntry, shortcut) {
         var entry = Ext.theme.applyShortcut(manifestEntry, shortcut),
@@ -335,7 +335,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * Renders all of the components that have been added to the manifest.
-     * @private
+     * @ private
      */
     render: function() {
         var manifest = Ext.theme._manifest,
@@ -362,7 +362,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * Renders all components (see `render`) and notifies the Slicer that things are ready.
-     * @private
+     * @ private
      */
     run: function() {
         var extjsVer = Ext.versions.extjs,
@@ -434,7 +434,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * Sets the `data-slicer` attribute to the JSON-encoded value of the provided data.
-     * @private
+     * @ private
      */
     setData: function(el, data) {
         var json;
@@ -450,7 +450,7 @@ Ext.theme = Ext.apply(Ext.theme || {}, {
 
     /**
      * This used to be `loadExtStylesheet`.
-     * @private
+     * @ private
      */
     loadCss: function(src, callback) {
         var xhr = new XMLHttpRequest();

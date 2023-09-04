@@ -6,32 +6,32 @@ $app-header-text-color: #fff;
 $app-header-text-shadow-color: null;
 $app-header-use-gradient: true;
 
-@if $theme-name == 'theme-neptune' or $theme-name == 'theme-neptune-touch' {
+@ if $theme-name == 'theme-neptune' or $theme-name == 'theme-neptune-touch' {
   $app-header-background-color: #81af34;
   $app-header-text-shadow-color: #4e691f;
 }
 
-@if $theme-name == 'theme-classic' or $theme-name == 'theme-gray' {
+@ if $theme-name == 'theme-classic' or $theme-name == 'theme-gray' {
   $app-header-background-color: darken($base-color, 55%);
 }
 
-@if $theme-name == 'theme-crisp' {
+@ if $theme-name == 'theme-crisp' {
   $app-header-background-color: #2a3f5d;
   $app-header-use-gradient: false;
 }
 
 #app-header {
-    @if $app-header-use-gradient {
-      @include background-image(
+    @ if $app-header-use-gradient {
+      @ include background-image(
             linear-gradient(top, lighten($app-header-background-color, 5),
                                  darken($app-header-background-color, 5)));
-    } @else {
+    } @ else {
       background-color: $app-header-background-color;
     }
 
     border-bottom: 1px solid darken($app-header-background-color, 15);
 
-    @if $theme-name == 'theme-neptune' {
+    @ if $theme-name == 'theme-neptune' {
       .#{$prefix}nlg & {
           background-image: url(images/header-bg.png);
       }
@@ -46,7 +46,7 @@ $app-header-use-gradient: true;
     font-size: 18px;
     font-weight: bold;
 
-    @if $app-header-text-shadow-color != null {
+    @ if $app-header-text-shadow-color != null {
         text-shadow: 0 1px 0 $app-header-text-shadow-color;
     }
 }

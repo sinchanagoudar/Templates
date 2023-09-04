@@ -4,13 +4,13 @@
 Ext.define('{appName}.LoginManager', {
     config: {
         /**
-         * @cfg {Class} model
+         * @ cfg {Class} model
          * The model class from which to create the "user" record from the login.
          */
         model: null,
 
         /**
-         * @cfg {Ext.data.Session} session
+         * @ cfg {Ext.data.Session} session
          */
         session: null
     },

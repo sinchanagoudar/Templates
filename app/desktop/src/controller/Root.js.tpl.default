@@ -37,10 +37,10 @@ Ext.define('{appName}.controller.Root', {
     /**
      * Called when the login controller fires the "login" event.
      *
-     * @param loginController
-     * @param user
-     * @param organization
-     * @param loginManager
+     * @ param loginController
+     * @ param user
+     * @ param organization
+     * @ param loginManager
      */
     onLogin: function(loginController, user, organization, loginManager) {
         this.login.destroy();
