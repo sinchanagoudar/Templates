@@ -22,7 +22,7 @@ Ext.define('{appName}.view.authentication.LockScreen', {
         },
         items: [{
             xtype: 'component',
-            html: 'It\u0027s been awhile.  Please enter your password to resume',
+            html: 'It\'s been awhile.  Please enter your password to resume',
             margin: '0 0 20 0'
         }, {
             xtype: 'passwordfield',

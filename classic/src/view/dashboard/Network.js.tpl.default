@@ -189,7 +189,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                                     xtype: 'component',
                                     flex: 1,
                                     cls: 'graph-analysis-right-inner-container',
-                                    html: 'Today\u0027s Sales'
+                                    html: 'Today\'s Sales'
                                 },
                                 {
                                     xtype: 'component',

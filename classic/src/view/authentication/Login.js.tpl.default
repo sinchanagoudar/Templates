@@ -10,7 +10,7 @@ Ext.define('{appName}.view.authentication.Login', {
         'Ext.button.Button'
     ],
 
-    title: 'Let\u0027s Log In',
+    title: 'Let\'s Log In',
     defaultFocus: 'authdialog', // Focus the Auth Form to force field focus as well
 
     items: [
