@@ -7,9 +7,6 @@ Ext.define('{appName}.view.tasks.Grid', {
     extend: 'Ext.grid.Panel',
     xtype: 'taskGrid',
     requires: [
-        '{appName}.ux.DragDrop',
-        '{appName}.ux.StatusColumn',
-        '{appName}.ux.ReminderColumn',
         'Ext.grid.plugin.CellEditing',
         'Ext.grid.column.Action',
         'Ext.grid.column.Date',
