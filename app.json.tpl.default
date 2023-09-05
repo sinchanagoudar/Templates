@@ -23,7 +23,7 @@
      */
     "classpath": [
         "app",
-        "${toolkit.name}/src"
+        "$\u007Btoolkit.name}/src"
     ],
 
     /**
@@ -38,7 +38,7 @@
      */
     "overrides": [
         "overrides",
-        "${toolkit.name}/overrides"
+        "$\u007Btoolkit.name}/overrides"
     ],
 
     /**
@@ -73,7 +73,7 @@
          * File used to save sass variables edited via Sencha Inspector. This file
          * will automatically be applied to the end of the scss build.
          */
-        // "save": "sass/${build.id}.json"
+        // "save": "sass/$\u007Bbuild.id}.json"
 
         /**
          * Comma-separated list of files or folders containing extra Sass. These
@@ -96,7 +96,7 @@
          */
         "etc": [
             "sass/etc/all.scss",
-            "${toolkit.name}/sass/etc/all.scss"
+            "$\u007Btoolkit.name}/sass/etc/all.scss"
         ],
 
         /**
@@ -119,8 +119,8 @@
         "var": [
             "sass/var/all.scss",
             "sass/var",
-            "${toolkit.name}/sass/var/all.scss",
-            "${toolkit.name}/sass/var"
+            "$\u007Btoolkit.name}/sass/var/all.scss",
+            "$\u007Btoolkit.name}/sass/var"
         ],
 
         /**
@@ -141,7 +141,7 @@
          */
         "src": [
             "sass/src",
-            "${toolkit.name}/sass/src"
+            "$\u007Btoolkit.name}/sass/src"
         ]
     },
 
@@ -198,7 +198,7 @@
         "js": [
 //            // Remove this entry to individually load sources from the framework.
 //            {
-//                "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+//                "path": "$\u007Bframework.dir}/build/ext-all-rtl-debug.js"
 //            }
         ]
     },
@@ -210,7 +210,7 @@
         "js": [
 //            // Remove this entry to individually load sources from the framework.
 //            {
-//                "path": "${framework.dir}/build/ext-modern-all-debug.js"
+//                "path": "$\u007Bframework.dir}/build/ext-modern-all-debug.js"
 //            }
         ]
     },
@@ -243,7 +243,7 @@
     "css": [{
         // This entry uses an ant variable that is the calculated value of the generated
         // output css file for the app, defined in .sencha/app/defaults.properties
-        "path": "${build.out.css.path}",
+        "path": "$\u007Bbuild.out.css.path}",
         "bundle": true,
         "exclude": ["fashion"]
     }],
@@ -281,7 +281,7 @@
             
         },
         "loader": {
-            "cache": "${build.timestamp}"
+            "cache": "$\u007Bbuild.timestamp}"
         },
         "cache": {
             "enable": false
@@ -319,13 +319,13 @@
      * Controls the output structure of development-mode (bootstrap) artifacts. May
      * be specified by a string:
      *
-     *      "bootstrap": "${app.dir}"
+     *      "bootstrap": "$\u007Bapp.dir}"
      *
      * This will adjust the base path for all bootstrap objects, or expanded into object
      * form:
      *
      *      "bootstrap": {
-     *          "base": "${app.dir},
+     *          "base": "$\u007Bapp.dir},
      *          "manifest": "bootstrap.json",
      *          "microloader": "bootstrap.js",
      *          "css": "bootstrap.css"
@@ -343,8 +343,8 @@
      *
      */
     "bootstrap": {
-        "base": "${app.dir}",
-        "manifest": "${build.id}.json",
+        "base": "$\u007Bapp.dir}",
+        "manifest": "$\u007Bbuild.id}.json",
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
@@ -353,17 +353,17 @@
      * Controls the output directory for build resources.  May be set with
      * either a string:
      *
-     *      "${workspace.build.dir}/${build.environment}/${app.name}"
+     *      "$\u007Bworkspace.build.dir}/$\u007Bbuild.environment}/$\u007Bapp.name}"
      *
      * or an object containing values for various types of build artifacts:
      *
      *      {
-     *          "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+     *          "base": "$\u007Bworkspace.build.dir}/$\u007Bbuild.environment}/$\u007Bapp.name}",
      *          "page": {
      *              "path": "../index.html",
      *              "enable": false
      *          },
-     *          "css": "${app.output.resources}/${app.name}-all.css",
+     *          "css": "$\u007Bapp.output.resources}/$\u007Bapp.name}-all.css",
      *          "js": "app.js",
      *          "microloader": {
      *              "path": "microloader.js",
@@ -373,11 +373,11 @@
      *          "manifest": {
      *              "path": "app.json",
      *              "embed": false,
-     *              "enable": "${app.output.microloader.enable}"
+     *              "enable": "$\u007Bapp.output.microloader.enable}"
      *          },
      *          "resources": "resources",
      *          "slicer": {
-     *              "path": "${app.output.resources}/images",
+     *              "path": "$\u007Bapp.output.resources}/images",
      *              "enable": false
      *          },
      *          // Setting the "enable" property of this object to a Truthy value will cause a Application Cache
@@ -390,9 +390,9 @@
      *
      */
     "output": {
-        "base": "build/examples/{appName}-dashboard/${build.id}",
+        "base": "build/examples/{appName}-dashboard/$\u007Bbuild.id}",
         "page": "../index.html",
-        "manifest": "../${build.id}.json",
+        "manifest": "../$\u007Bbuild.id}.json",
         "appCache": {
             "enable": false
         }
@@ -450,7 +450,7 @@
             "path": "resources"
         },
         {
-            "path": "${toolkit.name}/resources"
+            "path": "$\u007Btoolkit.name}/resources"
         }
     ],
 
@@ -502,7 +502,7 @@
      *
      *          // Either a zip file path or a folder to be zipped
      *          // this example shows how to publish the root folder for all build profiles
-     *          "file": "${app.output.base}/../",
+     *          "file": "$\u007Bapp.output.base}/../",
      *
      *          // These may be specified here, but are best specified in your user
      *          // ~/.sencha/cmd/sencha.cfg file
