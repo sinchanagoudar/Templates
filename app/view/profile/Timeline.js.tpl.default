@@ -17,28 +17,28 @@ Ext.define('{appName}.view.profile.Timeline', {
                 '<img src="resources/images/user-profile/\u007BuserId}.png" alt="Smiley face">' +
                 '<div>{date:this.elapsed} ago</div>' +
             '</div>' +
-            '<tpl if="notificationType == \'image_sharing\'">' +
+            '<tpl if="notificationType == \u0027image_sharing\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="shared-by"><a href="#">\u007Bname}</a> shared an image</div>' +
                         '<img src="resources/images/img2.jpg" class="shared-img" alt="Smiley face">' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == \'job_meeting\'">' +
+            '<tpl elseif="notificationType == \u0027job_meeting\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="job-meeting"><a href="#">Job Meeting</a></div>' +
                         '<div>\u007Bcontent}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == \'comment_reply\'">' +
+            '<tpl elseif="notificationType == \u0027comment_reply\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="shared-by"><a href="#">\u007Bname}</a> commented on The Article</div>' +
                         '<div class="article-comment"><span class="x-fa fa-quote-left"></span>{content}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == \'new_follower\'">' +
+            '<tpl elseif="notificationType == \u0027new_follower\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
@@ -47,14 +47,14 @@ Ext.define('{appName}.view.profile.Timeline', {
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == \'comment\'">' +
+            '<tpl elseif="notificationType == \u0027comment\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="shared-by"><a href="#">Lorem ipsum dolor sit amet</a></div>' +
                         '<div>\u007Bcontent}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == \'like\'">' +
+            '<tpl elseif="notificationType == \u0027like\u0027">' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
