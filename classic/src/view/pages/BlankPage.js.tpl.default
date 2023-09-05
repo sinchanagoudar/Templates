@@ -18,7 +18,7 @@ Ext.define('{appName}.view.pages.BlankPage', {
         {
             xtype: 'box',
             cls: 'blank-page-container',
-            html: '<div class=\'fa-outer-class\'><span class=\'x-fa fa-clock\'></span></div><h1>Coming Soon!</h1><span class=\'blank-page-text\'>Stay tuned for updates</span>'
+            html: '<div class=&#39;fa-outer-class&#39;><span class=&#39;x-fa fa-clock&#39;></span></div><h1>Coming Soon!</h1><span class=&#39;blank-page-text&#39;>Stay tuned for updates</span>'
         }
     ]
 });
