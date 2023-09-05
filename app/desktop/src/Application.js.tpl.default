@@ -10,7 +10,7 @@ Ext.define('{appName}.Application', {
 		var elem = document.getElementById("splash")
 		elem.parentNode.removeChild(elem)
 
-		var whichView = 'mainview'
+		var whichView = 'explorer'
 //		var loggedIn = localStorage.getItem("LoggedIn");
 //		if(loggedIn != 'true') { whichView = 'loginview' }
 		if (Ext.isClassic == true) {

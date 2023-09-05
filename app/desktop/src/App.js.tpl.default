@@ -26,6 +26,8 @@ Ext.define('{appName}.App', {
         '{appName}.Settings'
     ],
 
+    xtype:'explorer'
+
     init: function() {
         // custom logic before getXYZ methods get called...
 
