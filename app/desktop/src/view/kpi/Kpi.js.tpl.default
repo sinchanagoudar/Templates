@@ -46,7 +46,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             '<div class="kpi-meta">',
                 '<tpl for=".">',
                     '<span>',
-                        '<div>\u007Bstatistic}</div>\u007Bdescription}',
+                        '<div>{statistic}</div> {description}',
                     '</span>',
                 '</tpl>',
             '</div>'
@@ -83,7 +83,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             }
         }],
         cls: 'kpi-main-chart',
-        bind: '{ kpiMain }',
+        bind: '{kpiMain}',
         minHeight: 290,
         animation: false,
 

@@ -54,7 +54,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         }],
 
         animation: false,
-        bind: '{ stocks }',
+        bind: '\u007Bstocks }',
 
         legend: { // null, false, undefined - doesn't work here. ??
             hidden: true
