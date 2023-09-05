@@ -25,7 +25,7 @@ Ext.define('{appName}.view.phone.email.Email', {
         right: 10,
         handler: 'onPlusButtonTap',
         bind: {
-            hidden: '{composing}'
+            hidden: '\u007Bcomposing}'
         },
         listeners: {
             scope: 'controller',
@@ -37,8 +37,8 @@ Ext.define('{appName}.view.phone.email.Email', {
         reference: 'messages',
         flex: 1,
         bind: {
-            store: '{inbox}',
-            hidden: '{composing}'
+            store: '\u007Binbox}',
+            hidden: '\u007Bcomposing}'
         },
         listeners: {
             select: 'onSelectMessage'

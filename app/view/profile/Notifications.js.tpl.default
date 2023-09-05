@@ -7,7 +7,7 @@ Ext.define('{appName}.view.profile.Notifications', {
     scrollable: false,
 
     bind: {
-        store: '{userSharedItems}'
+        store: '\u007BuserSharedItems}'
     },
 
     itemSelector: 'div.timeline-item',

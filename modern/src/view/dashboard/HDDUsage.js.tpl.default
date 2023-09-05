@@ -30,7 +30,7 @@ Ext.define('{appName}.view.dashboard.HDDUsage', {
         xtype: 'cartesian',
         animation : Ext.os.is.Desktop,
         background: '#70bf73',
-        bind: '{hddusage}',
+        bind: '\u007Bhddusage}',
         colors: [
             '#a9d9ab'
         ],

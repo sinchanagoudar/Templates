@@ -30,7 +30,7 @@ Ext.define('{appName}.view.dashboard.Earnings', {
         xtype: 'cartesian',
         animation : Ext.os.is.Desktop,
         background: '#35baf6',
-        bind: '{earnings}',
+        bind: '\u007Bearnings}',
         colors: [
             '#483D8B',
             '#94ae0a',

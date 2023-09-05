@@ -20,7 +20,7 @@ Ext.define('{appName}.view.charts.Line', {
             '#6aa5db',
             '#94ae0a'
         ],
-        bind: '{lineData}',
+        bind: '\u007BlineData}',
         axes: [{
             type: 'category',
             fields: [

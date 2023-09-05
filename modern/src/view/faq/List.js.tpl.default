@@ -12,8 +12,8 @@ Ext.define('{appName}.view.faq.List', {
         shadow: true,
         viewModel: true,
         bind: {
-            title: '{record.name}',
-            store: '{record.questions}'
+            title: '\u007Brecord.name}',
+            store: '\u007Brecord.questions}'
         }
     }
 });

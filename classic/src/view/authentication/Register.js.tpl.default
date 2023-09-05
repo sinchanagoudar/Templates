@@ -45,7 +45,7 @@ Ext.define('{appName}.view.authentication.Register', {
                     allowBlank : false,
                     emptyText: 'Fullname',
                     name: 'fullName',
-                    bind: '{fullName}',
+                    bind: '\u007BfullName}',
                     triggers: {
                         glyphed: {
                             cls: 'trigger-glyph-noop auth-email-trigger'
@@ -59,7 +59,7 @@ Ext.define('{appName}.view.authentication.Register', {
                     hideLabel: true,
                     allowBlank : false,
                     name: 'userid',
-                    bind: '{userid}',
+                    bind: '\u007Buserid}',
                     emptyText: 'Username',
                     triggers: {
                         glyphed: {
@@ -76,7 +76,7 @@ Ext.define('{appName}.view.authentication.Register', {
                     name: 'email',
                     emptyText: 'user@example.com',
                     vtype: 'email',
-                    bind: '{email}',
+                    bind: '\u007Bemail}',
                     triggers: {
                         glyphed: {
                             cls: 'trigger-glyph-noop auth-envelope-trigger'
@@ -92,7 +92,7 @@ Ext.define('{appName}.view.authentication.Register', {
                     emptyText: 'Password',
                     name: 'password',
                     inputType: 'password',
-                    bind: '{password}',
+                    bind: '\u007Bpassword}',
                     triggers: {
                         glyphed: {
                             cls: 'trigger-glyph-noop auth-password-trigger'
@@ -105,7 +105,7 @@ Ext.define('{appName}.view.authentication.Register', {
                     name: 'agrees',
                     cls: 'form-panel-font-color rememberMeCheckbox',
                     height: 32,
-                    bind: '{agrees}',
+                    bind: '\u007Bagrees}',
                     allowBlank : false,
                     boxLabel: 'I agree with the Terms and Conditions',
 

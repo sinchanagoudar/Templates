@@ -16,7 +16,7 @@ Ext.define('{appName}.view.charts.Gauge', {
             '#6aa5db',
             '#aed581'
         ],
-        bind: '{gaugeData}',
+        bind: '\u007BgaugeData}',
         series: [{
             type: 'gauge',
             angleField: 'position',

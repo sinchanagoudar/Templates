@@ -35,7 +35,7 @@ Ext.define('{appName}.view.dashboard.Network', {
     items: [{
         xtype: 'chartnetwork',
         flex: 1,
-        bind: '{networkData}'
+        bind: '\u007BnetworkData}'
     }, {
         xtype: 'container',
         userCls: 'graph-analysis-left',
@@ -111,7 +111,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                     xtype: 'chartvisitors',
                     flex: 1,
                     userCls: 'graph-analysis-right-inner-container right-value',
-                    bind: '{visitors}'
+                    bind: '\u007Bvisitors}'
                 }]
             }, {
                 xtype: 'container',
@@ -127,7 +127,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                     xtype: 'chartbounces',
                     flex: 1,
                     userCls: 'graph-analysis-right-inner-container right-value',
-                    bind: '{bounces}'
+                    bind: '\u007Bbounces}'
                 }]
             }, {
                 xtype: 'container',

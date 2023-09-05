@@ -27,7 +27,7 @@ Ext.define('{appName}.view.dashboard.Services', {
             width: 132,
             insetPadding: '4 8 7 0',
             innerPadding: 2,
-            bind: '{servicePerformance}',
+            bind: '\u007BservicePerformance}',
             colors: [
                 '#6aa5dc',
                 '#fdbf00',
@@ -58,33 +58,33 @@ Ext.define('{appName}.view.dashboard.Services', {
             },
             items: [{
                 xtype: 'component',
-                bind: '<div class="left-aligned-div">Finance</div><div class="right-aligned-div">{finance:percent}</div>'
+                bind: '<div class="left-aligned-div">Finance</div><div class="right-aligned-div">\u007Bfinance:percent}</div>'
             }, {
                 xtype: 'progress',
                 ui: 'finance',
                 userCls: 'bottom-indent service-finance',
                 height: 4,
                 minHeight: 4,
-                bind: '{finance}'
+                bind: '\u007Bfinance}'
             }, {
                 xtype: 'component',
-                bind: '<div class="left-aligned-div">Research</div><div class="right-aligned-div">{research:percent}</div>'
+                bind: '<div class="left-aligned-div">Research</div><div class="right-aligned-div">\u007Bresearch:percent}</div>'
             }, {
                 xtype: 'progress',
                 ui: 'research',
                 userCls: 'bottom-indent service-research',
                 height: 4,
                 minHeight: 4,
-                bind: '{research}'
+                bind: '\u007Bresearch}'
             }, {
                 xtype: 'component',
-                bind: '<div class="left-aligned-div">Marketing</div><div class="right-aligned-div">{marketing:percent}</div>'
+                bind: '<div class="left-aligned-div">Marketing</div><div class="right-aligned-div">\u007Bmarketing:percent}</div>'
             }, {
                 xtype: 'progress',
                 ui: 'marketing',
                 userCls: 'service-marketing',
                 height: 4,
-                bind: '{marketing}'
+                bind: '\u007Bmarketing}'
             }]
         }]
     }, {
@@ -101,7 +101,7 @@ Ext.define('{appName}.view.dashboard.Services', {
             width: 132,
             insetPadding: '7 8 4 0',
             innerPadding: 2,
-            bind: '{servicePerformance}',
+            bind: '\u007BservicePerformance}',
             colors: [
                 '#6aa5dc',
                 '#fdbf00',

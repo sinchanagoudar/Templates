@@ -43,7 +43,7 @@ Ext.define('{appName}.view.dashboard.Network', {
             items: [
                 {
                     xtype: 'chartnetwork',
-                    bind: '{networkData}'
+                    bind: '\u007BnetworkData}'
                 }
             ]
         },
@@ -146,7 +146,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                                     flex: 1,
                                     cls: 'graph-analysis-right-inner-container right-value',
                                     bind: {
-                                        store: '{visitors}'
+                                        store: '\u007Bvisitors}'
                                     }
                                 }
                             ]
@@ -171,7 +171,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                                     flex: 1,
                                     cls: 'graph-analysis-right-inner-container right-value',
                                     bind: {
-                                        store: '{bounces}'
+                                        store: '\u007Bbounces}'
                                     }
                                 }
                             ]

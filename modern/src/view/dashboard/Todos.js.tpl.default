@@ -22,7 +22,7 @@ Ext.define('{appName}.view.dashboard.Todos', {
         flex: 1,
         userCls: 'dashboard-todo-list',
         hideHeaders: true,
-        bind: '{todos}',
+        bind: '\u007Btodos}',
         plugins: {
             multiselection: {
                 selectionColumn: {

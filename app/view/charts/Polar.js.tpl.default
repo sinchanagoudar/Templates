@@ -16,7 +16,7 @@ Ext.define('{appName}.view.charts.Polar', {
     items: [{
         xtype: 'polar',
         colors: ['#6aa5db'],
-        bind: '{radialData}',
+        bind: '\u007BradialData}',
         axes: [{
             type: 'numeric',
             fields: [

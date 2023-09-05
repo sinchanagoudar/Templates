@@ -40,7 +40,7 @@ Ext.define('{appName}.view.authentication.Login', {
                     xtype: 'textfield',
                     cls: 'auth-textbox',
                     name: 'userid',
-                    bind: '{userid}',
+                    bind: '\u007Buserid}',
                     height: 55,
                     hideLabel: true,
                     allowBlank : false,
@@ -59,7 +59,7 @@ Ext.define('{appName}.view.authentication.Login', {
                     emptyText: 'Password',
                     inputType: 'password',
                     name: 'password',
-                    bind: '{password}',
+                    bind: '\u007Bpassword}',
                     allowBlank : false,
                     triggers: {
                         glyphed: {
@@ -76,7 +76,7 @@ Ext.define('{appName}.view.authentication.Login', {
                             flex : 1,
                             cls: 'form-panel-font-color rememberMeCheckbox',
                             height: 30,
-                            bind: '{persist}',
+                            bind: '\u007Bpersist}',
                             boxLabel: 'Remember me'
                         },
                         {

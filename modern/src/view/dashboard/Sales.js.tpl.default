@@ -29,7 +29,7 @@ Ext.define('{appName}.view.dashboard.Sales', {
         xtype: 'cartesian',
         animation : Ext.os.is.Desktop,
         background: '#8561c5',
-        bind: '{quarterlyGrowth}',
+        bind: '\u007BquarterlyGrowth}',
         colors: [
             '#ffffff'
         ],

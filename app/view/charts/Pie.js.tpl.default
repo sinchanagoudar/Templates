@@ -19,7 +19,7 @@ Ext.define('{appName}.view.charts.Pie', {
             '#6aa5db',
             '#ee929c'
         ],
-        bind: '{pieData}',
+        bind: '\u007BpieData}',
         series: [{
             type: 'pie',
             label: {

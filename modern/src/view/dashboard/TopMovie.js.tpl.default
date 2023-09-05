@@ -29,7 +29,7 @@ Ext.define('{appName}.view.dashboard.TopMovie', {
         xtype: 'polar',
         animation : Ext.os.is.Desktop,
         background: '#33abaa',
-        bind: '{topMovies}',
+        bind: '\u007BtopMovies}',
         radius: 100,
         colors: [
             '#115fa6',

@@ -10,18 +10,18 @@ Ext.define('{appName}.view.search.Results', {
         xtype: 'allresults',
         title: 'All',
         bind: {
-            store: '{results}'
+            store: '\u007Bresults}'
         }
     }, {
         xtype: 'searchusers',
         title: 'Users',
         bind: {
-            store: '{users}'
+            store: '\u007Busers}'
         }
     }, {
         xtype: 'inbox',
         title: 'Messages',
         hideHeaders: true,
-        bind: '{inbox}'
+        bind: '\u007Binbox}'
     }]
 });
