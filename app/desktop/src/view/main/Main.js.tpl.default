@@ -1,5 +1,6 @@
 Ext.define('{appName}.view.main.Main', {
     extend: 'Ext.container.Viewport',
+    xtype:'mainview',
     requires: [
         '{appName}.model.*',
         '{appName}.view.dashboard.Dashboard',
