@@ -27,6 +27,7 @@ Ext.define('{appName}.view.main.Main', {
     },
 
     controller: 'main',
+    xtype: 'firstview',
 
     items: [{
         id: 'app-header',
