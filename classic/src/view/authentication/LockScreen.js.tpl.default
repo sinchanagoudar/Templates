@@ -50,7 +50,7 @@ Ext.define('{appName}.view.authentication.LockScreen', {
                         },
                         {
                             xtype: 'box',
-                            html: '<div class=\'user-name-text\'> Goff Smith </div><div class=\'user-post-text\'> Project manager </div>'
+                            html: '<div class=&#39;user-name-text&#39;> Goff Smith </div><div class=&#39;user-post-text&#39;> Project manager </div>'
                         }
                     ]
                 },
