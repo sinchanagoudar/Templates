@@ -1665,31 +1665,31 @@ Test.CodeHighLighter = function(config) {
 /**
  * Regular expressions.
  */
-Test.CodeHighLighter.prototype.regExps = {
-    strings: /"([^\\"\n]|\\.)*"|'([^\\'\n]|\\.)*'|"([^\\"\n]|\\\n)*"|'([^\\'\n]|\\\n)*'/gm,
-    comments: /\/\/.*$|\/\*[\s\S]*?\*\//gm,
-    operators: /([\+\-\*\/=\?!]{1,3}|[\-\+]{1,2})/g,
-    numbers: /\b([0-9]+)\b/g,
-    keywords: [/\b(break)\b/g, /\b(case)\b/g, /\b(catch)\b/g, /\b(continue)\b/g, /\b(default)\b/g,
-                /\b(delete)\b/g, /\b(do)\b/g, /\b(else)\b/g, /\b(false)\b/g, /\b(for)\b/g, /\b(function)\b/g,
-                /\b(if)\b/g, /\b(in)\b/g, /\b(instanceof)\b/g, /\b(new)\b/g, /\b(null)\b/g,
-                /\b(return)\b/g, /\b(switch)\b/g, /\b(this)\b/g, /\b(throw)\b/g, /\b(true)\b/g,
-                /\b(try)\b/g, /\b(typeof)\b/g, /\b(var)\b/g, /\b(while)\b/g, /\b(with)\b/g],
-    commasInsideParenthesis: /\(([^\(\)\{\}])+\)/g,
-    arrayWithOneElement: /\[\n([^,\]]*)\n\]/g,
-    commaBracket: /,\n\s*\{/g,
-    multipleWhiteSpaces: /(\s+)/g,
-    semiColon: /;/g,
-    comma: /,/g,
-    openedBrackets: /([\{\[])/g,
-    closedBrackets: /([\}\]])/g,
-    emptyObject: /\{\n\s*\n\}/g,
-    openedBracketsWithNewLine: /[\{\[]$/g,
-    closedBracketsWithNewLine: /^\s*[\}\]]/g,
-    unwantedNewLines: /\n([\n,;\)])/g,
-    newLine: /\n/g,
-    firstSpaces: /^(\s)+/
-};
+//Test.CodeHighLighter.prototype.regExps = {
+//     strings: /"([^\\"\n]|\\.)*"|'([^\\'\n]|\\.)*'|"([^\\"\n]|\\\n)*"|'([^\\'\n]|\\\n)*'/gm,
+//     comments: /\/\/.*$|\/\*[\s\S]*?\*\//gm,
+//     operators: /([\+\-\*\/=\?!]{1,3}|[\-\+]{1,2})/g,
+//     numbers: /\b([0-9]+)\b/g,
+//     keywords: [/\b(break)\b/g, /\b(case)\b/g, /\b(catch)\b/g, /\b(continue)\b/g, /\b(default)\b/g,
+//                 /\b(delete)\b/g, /\b(do)\b/g, /\b(else)\b/g, /\b(false)\b/g, /\b(for)\b/g, /\b(function)\b/g,
+//                 /\b(if)\b/g, /\b(in)\b/g, /\b(instanceof)\b/g, /\b(new)\b/g, /\b(null)\b/g,
+//                 /\b(return)\b/g, /\b(switch)\b/g, /\b(this)\b/g, /\b(throw)\b/g, /\b(true)\b/g,
+//                 /\b(try)\b/g, /\b(typeof)\b/g, /\b(var)\b/g, /\b(while)\b/g, /\b(with)\b/g],
+//     commasInsideParenthesis: /\(([^\(\)\{\}])+\)/g,
+//     arrayWithOneElement: /\[\n([^,\]]*)\n\]/g,
+//     commaBracket: /,\n\s*\{/g,
+//     multipleWhiteSpaces: /(\s+)/g,
+//     semiColon: /;/g,
+//     comma: /,/g,
+//     openedBrackets: /([\{\[])/g,
+//     closedBrackets: /([\}\]])/g,
+//     emptyObject: /\{\n\s*\n\}/g,
+//     openedBracketsWithNewLine: /[\{\[]$/g,
+//     closedBracketsWithNewLine: /^\s*[\}\]]/g,
+//     unwantedNewLines: /\n([\n,;\)])/g,
+//     newLine: /\n/g,
+//     firstSpaces: /^(\s)+/
+// };
 
 /**
  * Populates an array of matched objects.
