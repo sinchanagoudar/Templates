@@ -44,7 +44,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     ui: 'light',
                     cls: 'shadow pages-faq-container',
                     iconCls: 'x-fa fa-lightbulb',
-                    html: '<p>We have created the following list of tips for our users. We hope that they will help you get the most of this website.</p> \n<ul class=\'faq-tips-list\'><li class=\'pointone\'>Point One</li><li class=\'pointtwo\'>Point Two</li><li class=\'pointthree\'>Point Three</li>\n<li class=\'pointfour\'>Point Four</li></ul>',
+                    html: '<p>We have created the following list of tips for our users. We hope that they will help you get the most of this website.</p> \n<ul class=\u0027faq-tips-list\u0027><li class=\u0027pointone\u0027>Point One</li><li class=\u0027pointtwo\u0027>Point Two</li><li class=\u0027pointthree\u0027>Point Three</li>\n<li class=\u0027pointfour\u0027>Point Four</li></ul>',
                     bodyPadding: 15
                 },
                 {
@@ -53,7 +53,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     ui: 'light',
                     cls: 'shadow pages-faq-container',
                     iconCls: 'x-fa fa-question',
-                    title: 'Can\'t find the answer?',
+                    title: 'Can\u0027t find the answer?',
                     layout: {
                         type: 'vbox',
                         align: 'stretch'
@@ -92,7 +92,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     height: 340,
                     ui: 'light',
                     defaults: {
-                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                     },
                     items: [
                         {
@@ -122,7 +122,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     bodyPadding: 10,
                     ui: 'light',
                     defaults: {
-                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                     },
                     items: [
                         {
@@ -152,7 +152,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     bodyPadding: 10,
                     ui: 'light',
                     defaults: {
-                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+                        html: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                     },
                     items: [
                         {

@@ -27,6 +27,6 @@ Ext.define('{appName}.view.profile.ShareUpdate', {
 
     items: [{
         xtype: 'textareafield',
-        placeholder: 'What\'s on your mind?'
+        placeholder: 'What\u0027s on your mind?'
     }]
 });
