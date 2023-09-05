@@ -4,7 +4,7 @@ Ext.define('{appName}.data.UserSharedItems', {
     data: [
         {
             "id": 306,
-            "parent_id": 306,
+            "parentid": 306,
             "name": "Homer Jackson",
             "source": "id",
             "date": "8/16/2009",
@@ -14,7 +14,7 @@ Ext.define('{appName}.data.UserSharedItems', {
         },
         {
             "id": 750,
-            "parent_id": 331,
+            "parentid": 331,
             "name": "Dora Bailey",
             "source": "et",
             "date": "7/16/2007",
@@ -24,7 +24,7 @@ Ext.define('{appName}.data.UserSharedItems', {
         },
         {
             "id": 948,
-            "parent_id": 898,
+            "parentid": 898,
             "name": "Mae Edwards",
             "source": "et",
             "date": "7/24/2003",
@@ -34,7 +34,7 @@ Ext.define('{appName}.data.UserSharedItems', {
         },
         {
             "id": 162,
-            "parent_id": 525,
+            "parentid": 525,
             "name": "Allen Morris",
             "source": "nobis",
             "date": "6/16/2008",
@@ -44,7 +44,7 @@ Ext.define('{appName}.data.UserSharedItems', {
         },
         {
             "id": 252,
-            "parent_id": 252,
+            "parentid": 252,
             "name": "Ben Wright",
             "source": "quod",
             "date": "9/24/2003",
@@ -54,7 +54,7 @@ Ext.define('{appName}.data.UserSharedItems', {
         },
         {
             "id": 840,
-            "parent_id": 840,
+            "parentid": 840,
             "name": "Jim Sanchez",
             "source": "cumque",
             "date": "8/17/2007",
