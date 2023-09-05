@@ -13,44 +13,20 @@ Ext.define('{appName}.view.login.LoginController', {
         }
     },
 
-    onLoginClick: function() {
-        this.doLogin();
-    },
-
-    doLogin: function() {
+   onLoginClick: function() {
         var form = this.lookupReference('form');
-
-        if (form.isValid()) {
+        
+        if (!form.isValid()) {
             Ext.getBody().mask(this.loginText);
+        }else {
+            var loginwindow =  this.getView();
+            loginwindow.close();
 
-            if (!this.loginManager) {
-                this.loginManager = new {appName}.LoginManager({
-                    session: this.getView().getSession(),
-                    model: 'User'
-                });
-            }
-
-            this.loginManager.login({
-                data: form.getValues(),
-                scope: this,
-                success: 'onLoginSuccess',
-                failure: 'onLoginFailure'
-            });
-        }
-    },
-
-    onLoginFailure: function() {
-        // Do something
-        Ext.getBody().unmask();
-    },
-
-    onLoginSuccess: function(user) {
-        var org;
-
-        Ext.getBody().unmask();
-
-        org = this.lookupReference('organization').getSelectedRecord();
-
-        this.fireViewEvent('login', this.getView(), user, org, this.loginManager);
+            const myComponent = this.getView(); 
+            const newXType = 'mainview';
+            const newView = Ext.create({
+            xtype: newXType
+        });
     }
+},
 });
