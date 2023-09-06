@@ -50,7 +50,7 @@ Ext.define('{appName}.view.authentication.LockScreen', {
                         },
                         {
                             xtype: 'box',
-                            html: '<div class=\&#39;user-name-text\&#39;> Goff Smith </div><div class=\&#39;user-post-text\&#39;> Project manager </div>'
+                            html: '<div class=&#39;user-name-text&#39;> Goff Smith </div><div class=&#39;user-post-text&#39;> Project manager </div>'
                         }
                     ]
                 },
@@ -73,7 +73,7 @@ Ext.define('{appName}.view.authentication.LockScreen', {
                             labelAlign: 'top',
                             cls: 'lock-screen-password-textbox',
                             labelSeparator: '',
-                            fieldLabel: 'It\\u0027s been a while. please enter your password to resume',
+                            fieldLabel: 'It\u0027s been a while. please enter your password to resume',
                             emptyText: 'Password',
                             inputType: 'password',
                             allowBlank: false,

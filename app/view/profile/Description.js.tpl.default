@@ -32,7 +32,7 @@ Ext.define('{appName}.view.profile.Description', {
         {
             xtype: 'component',
             userCls: 'box x-fa fa-globe',
-            html: '<a href="#"\\u0027>http://www.sencha-dash.com/</a>',
+            html: '<a href="#"\u0027>http://www.sencha-dash.com/</a>',
             padding: '0 0 12 0'
         },
         {
