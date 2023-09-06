@@ -25,10 +25,10 @@ Ext.define('{appName}.view.faq.Items', {
         itemTpl: '<div class="faq-item">' +
                 '<div class="faq-title">' +
                     '<div class="faq-expander x-fa"></div>' +
-                    '<div class="faq-question">{question}</div>' +
+                    '<div class="faq-question">\u007Bquestion}</div>' +
                 '</div>' +
                 '<div class="faq-body">' +
-                    '<div>{answer}</div>' +
+                    '<div>\u007Banswer}</div>' +
                 '</div>' +
             '</div>'
     }],

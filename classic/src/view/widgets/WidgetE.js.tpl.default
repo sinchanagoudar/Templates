@@ -14,7 +14,7 @@ Ext.define('{appName}.view.widgets.WidgetE', {
         icon: ''
     },
 
-    tpl: '<div><h2>{amount}</h2><div>{type}</div><span class="x-fa fa-{icon}"></span></div>',
+    tpl: '<div><h2>\u007Bamount}</h2><div>\u007Btype}</div><span class="x-fa fa-\u007Bicon}"></span></div>',
 
     initComponent: function(){
         var me = this;

@@ -80,7 +80,7 @@ Ext.define('{appName}.view.tablet.email.Inbox', {
         cell: {
             align: 'center',
             bind: {
-                bodyCls: 'x-fa {record.has_attachments:pick("", "fa-paperclip")}'
+                bodyCls: 'x-fa \u007Brecord.has_attachments:pick("", "fa-paperclip")}'
             }
         }
     }, {
