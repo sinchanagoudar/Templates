@@ -9,8 +9,8 @@ Ext.define('{appName}.view.search.All', {
             '<div class="list-cls">{title}</div>'+
             '<div><a href="#">{url}</a></div>'+
             '<div>{content}</div>'+
-            '<tpl for="attachments"> '+
+            '<\u0074pl for="attachments"> '+
                 '<img class="search-result-attachment" src="{url}" alt="{title}">' +
-            '</tpl>'+
+            '</\u0074pl>'+
         '</div>'
 });

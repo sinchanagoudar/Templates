@@ -110,10 +110,10 @@ Ext.define('{appName}.view.email.Details', {
             cls:'attachment-container',
             data: null,
             tpl: [
-                '<tpl for=".">',
+                '<\u0074pl for=".">',
                     '<img class="single-mail-attachment" src="resources/images/{.}" ',
                           'alt="profile image">',
-                '</tpl>'
+                '</\u0074pl>'
             ]
         },
         {
