@@ -1,0 +1,23 @@
+Ext.define('{appName}.view.main.PatientView', {
+    extend: 'Ext.view.View',
+    xtype: 'patientview',
+    cls: 'patient-view',
+    controller: 'mainvscreencontroller',
+    store: {
+        type: 'patient'
+    },
+    tpl: '<tpl for=".">' +
+    '<div class="patient-source x-unselectable"><table><tbody>' +
+        '<tr><td class="patient-label">Name</td><td class="patient-name">{name}</td></tr>' +
+        '<tr><td class="patient-label">Address</td><td class="patient-name">{address}</td></tr>' +
+        '<tr><td class="patient-label">Telephone</td><td class="patient-name">{telephone}</td></tr>' +
+    '</tbody></table></div>' +
+    '</tpl>',
+    itemSelector: 'div.patient-source',
+    overItemCls: 'patient-over',
+    selectedItemClass: 'patient-selected',
+    singleSelect: true,
+    listeners: {
+        render: 'initializePatientDragZone' // Reference to the initialization function
+    }
+});

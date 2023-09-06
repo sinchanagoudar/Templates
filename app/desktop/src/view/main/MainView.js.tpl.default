@@ -1,0 +1,74 @@
+Ext.define('{appName}.view.main.MainView', {
+  extend: 'Ext.Container',
+  xtype: 'mainview',
+  controller: 'mainviewcontroller',
+  viewModel: {
+    type: 'mainviewmodel'
+  },
+  layout: 'center',
+  items: [{
+    xtype: 'panel',
+    title: 'User Form',
+    height: 400,
+    width: 500,
+    layout: 'column',
+    border:1,
+    items: [
+        {
+            xtype: 'fieldset',
+            label: 'Fieldset',
+            columnWidth: 1,
+            width:500,
+            height:300,
+            items: [
+                {
+                    xtype: 'textfield',
+                    fieldLabel: 'Name',
+                    width:450
+                },
+                {
+                    xtype: 'textfield',
+                    fieldLabel: 'Email',
+                    width:450
+                },
+                {
+                    xtype: 'numberfield',
+                    fieldLabel: 'Phone',
+                    width:450
+                },
+                {
+                    xtype: 'textareafield',
+                    fieldLabel: 'Address',
+                    width:450
+                }
+            ],
+            style: 'background:lightblue',
+            scrollable: true,
+            style: 'background:lightblue'
+        },
+        {
+            xtype: 'container',
+            height: 30,
+            width: '100%',
+            layout: 'hbox',
+            margin:'0 0 0 13',
+            items: [
+                {
+                    xtype: 'button',
+                    text: 'Submit',
+                    dock: 'right',
+                    margin: '0 13 0 0'
+                },
+                {
+                    xtype: 'button',
+                    text: 'Cancel',
+                    margin: '0 0 0 13'
+                }
+            ]
+        }
+    ],
+    centered: true,
+    padding: '5px',
+    layout: 'vbox'
+}]
+});

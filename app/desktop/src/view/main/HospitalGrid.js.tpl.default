@@ -1,0 +1,50 @@
+Ext.define('{appName}.view.main.HospitalGrid', {
+    extend: 'Ext.grid.Panel',
+    title: 'Hospitals',
+    xtype: 'hospitalgrid',
+    region: 'center',
+    margin: '0 5 5 0',
+    store: {
+        type: 'hospital'
+    },
+    controller: 'mainvscreencontroller',
+    sortableColumns: false,
+    columns: [{
+        dataIndex: 'name',
+        header: 'Name',
+        width: 200
+    }, {
+        dataIndex: 'address',
+        header: 'Address',
+        width: 300
+    }, {
+        dataIndex: 'telephone',
+        header: 'Telephone',
+        width: 100
+    }],
+    
+    features: [{
+        ftype: 'rowbody',
+        getAdditionalData: function(data) {
+            var patients = data.patients,
+                html;
+
+            if (patients) {
+                html = patients.join(', ');
+            }
+            else {
+                html = 'Drop patients here';
+            }
+
+            return {
+                rowBody: html,
+                rowBodyCls: 'hospital-target'
+            };
+        }
+    }],
+    viewConfig: {
+        listeners: {
+            render: 'initializeHospitalDropZone' // Reference to the initialization function
+        }
+    }
+});

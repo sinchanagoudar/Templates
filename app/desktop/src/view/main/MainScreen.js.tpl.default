@@ -1,0 +1,30 @@
+Ext.define('{appName}.view.main.MainScreen', {
+    extend: 'Ext.Viewport',
+    xtype: 'mainscreen',
+    requires: [
+      '{appName}.view.main.PatientView',
+      '{appName}.view.main.HospitalGrid'
+  ],
+  controller: 'mainvscreencontroller',
+    layout: 'border',
+    items: [{
+      cls: 'app-header',
+      region: 'north',
+      height: 45,
+      html: '<h1>Patient Hospital Assignment</h1>',
+      margin: '5 5 5 5'
+  }, {
+      title: 'Patients',
+      xtype:'panel',
+      region: 'west',
+      width: 300,
+      margin: '0 5 5 5',
+      items: [{
+          xtype: 'patientview' // Reference to the Patient View component
+      }]
+  }, {
+      xtype: 'hospitalgrid' // Reference to the Hospital Grid component
+  
+}
+]
+  });
