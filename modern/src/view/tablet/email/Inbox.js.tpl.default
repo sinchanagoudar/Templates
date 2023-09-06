@@ -10,7 +10,7 @@ Ext.define('{appName}.view.tablet.email.Inbox', {
     itemConfig: {
         viewModel: true,
         bind: {
-            userCls: 'inbox-{record.read:pick("unread","read")}'
+            userCls: 'inbox-\u007Brecord.read:pick("unread","read")}'
         }
     },
 
