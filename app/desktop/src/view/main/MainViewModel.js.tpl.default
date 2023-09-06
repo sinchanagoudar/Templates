@@ -1,4 +1,4 @@
-Ext.define('Calendar.view.main.MainViewModel', {
+Ext.define('{appName}.view.main.MainViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.app-main',
 

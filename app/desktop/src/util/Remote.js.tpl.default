@@ -1,4 +1,4 @@
-Ext.define('Calendar.util.Remote', {
+Ext.define('{appName}.util.Remote', {
     singleton: true,
 
     requires: [

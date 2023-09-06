@@ -1,4 +1,4 @@
-Ext.define('Calendar.store.Google', {
+Ext.define('{appName}.store.Google', {
     extend: 'Ext.calendar.store.Calendars',
     alias: 'store.calendar-google',
 

@@ -1,4 +1,4 @@
-Ext.define('Calendar.view.profile.SideViewModel', {
+Ext.define('{appName}.view.profile.SideViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.app-side',
 

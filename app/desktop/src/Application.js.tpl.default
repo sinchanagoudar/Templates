@@ -3,10 +3,10 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('Calendar.Application', {
+Ext.define('{appName}.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'Calendar',
+    name: '{appName}',
 
     stores: [
         // TODO: add global / shared stores here

@@ -1,12 +1,12 @@
-Ext.define('Calendar.view.main.MainController', {
+Ext.define('{appName}.view.main.MainController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.app-main',
 
     requires: [
-        'Calendar.store.Google',
-        'Calendar.store.Remote',
-        'Calendar.util.Google',
-        'Calendar.util.Remote'
+        '{appName}.store.Google',
+        '{appName}.store.Remote',
+        '{appName}.util.Google',
+        '{appName}.util.Remote'
     ],
 
     listen: {
@@ -28,7 +28,7 @@ Ext.define('Calendar.view.main.MainController', {
     onSignIn: function() {
         var me = this;
 
-        Calendar.util.Google.signIn()
+        {appName}.util.Google.signIn()
             .then(function() {
                 me.loadAuth('google');
             });
@@ -37,7 +37,7 @@ Ext.define('Calendar.view.main.MainController', {
     onSignOut: function() {
         var me = this;
 
-        Calendar.util.Google.signOut()
+        {appName}.util.Google.signOut()
             .then(function() {
                 me.loadAuth('guest');
             });
@@ -51,7 +51,7 @@ Ext.define('Calendar.view.main.MainController', {
             // http://stackoverflow.com/a/12909563
             switch (me.settings.getItem('auth')) {
                 case 'google':
-                    Calendar.util.Google.checkAuth()
+                    {appName}.util.Google.checkAuth()
                     .then(function(signedIn) {
                         me.loadAuth(signedIn ? 'google' : 'guest');
                     });
@@ -93,7 +93,7 @@ Ext.define('Calendar.view.main.MainController', {
         },
 
         getGoogleUser: function() {
-            return Calendar.util.Google.getProfile()
+            return {appName}.util.Google.getProfile()
                 .then(function(profile) {
                     var details = profile.names[0] || {},
                         photo = profile.photos[0] || {};
