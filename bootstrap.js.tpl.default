@@ -1,16 +1,10 @@
 var Ext = Ext || {};
 Ext.manifest = Ext.manifest || "classic.json";
 // @tag core
-// @define Ext.Boot
 
 var Ext = Ext || {};
 
-//<editor-fold desc="Boot">
-/**
- * @class Ext.Boot
- * @singleton
- * @private
- */
+
 Ext.Boot = Ext.Boot || (function (emptyFn) {
 
     var doc = document,
@@ -662,11 +656,6 @@ Ext.Boot = Ext.Boot || (function (emptyFn) {
                 return name ? Boot.config[name] : Boot.config;
             },
 
-            /**
-             * Set the configuration.
-             * @param {Object} config The config object to override the default values.
-             * @return {Ext.Boot} this
-             */
             setConfig: function (name, value) {
                 if (typeof name === 'string') {
                     Boot.config[name] = value;
