@@ -1,20 +1,18 @@
 {
-  "name": "executedashboard",
-  "namespace": "executedashboard",
+  "name": "{name}",
+  "namespace": "{name}",
   "version": "1.0.0.0",
-  "bypass_lp" : true,
-  "framework": "ext",
-  "template": "folder",
+  "framework": "{frameworkKey}",
+  "template": "{template}",
   "indexHtmlPath": "index.html",
   "requires": [
-    "font-awesome",
-    "charts"
+    "font-awesome"
   ],
-
+<tpl if="universal == true">
   "builds": {
     "desktop": {
       "toolkit": "classic",
-      "theme": "theme-triton",
+      "theme": "{classicTheme}",
       "sass": {
         "generated": {
           "var": "$\u007Bbuild.id}/sass/save.scss",
@@ -23,14 +21,14 @@
       }
     }
   },
-
-  "classpath": ["app/shared/src","app/$\u007Bbuild.id}/src"],
-  "overrides": ["app/shared/overrides","app/$\u007Bbuild.id}/overrides"],
-
+</tpl>
+  "classpath": ["<tpl if="universal == true">app/shared/</tpl>src"<tpl if="universal == true">,"app/$\u007Bbuild.id}/src"</tpl>],
+  "overrides": ["<tpl if="universal == true">app/shared/</tpl>overrides"<tpl if="universal == true">,"app/$\u007Bbuild.id}/overrides"</tpl>],
+<tpl if="universal == true">
   "sass": {
-    "namespace": "executedashboard",
+    "namespace": "{name}",
     "etc": [
-      "app/sass/etc/all.scss"
+      "sass/etc/all.scss"
     ],
     "var": [
       "app/shared/sass/var.scss",
@@ -41,16 +39,16 @@
       "app/$\u007Bbuild.id}/sass/src.scss"
     ]
   },
-
+</tpl>
   "resources": [
     { "path": "resources", "output": "shared" }
-
+<tpl if="universal == true">
     ,{ "path": "resources/$\u007Bbuild.id}" }
-
+</tpl>
   ],
-
+<tpl if="universal == true">
   "output": {
-    "base": "$\u007Bworkspace.build.dir}/$\u007Bbuild.environment}/$\u007Bapp.name}",
+    "base": "$\u007Bworkspace.build.dir}/$\u007Bbuild.environment}/$\u007bapp.name}",
     "page": "index.html",
     "manifest": "generatedFiles/$\u007Bbuild.id}.json",
     "js": "generatedFiles/$\u007Bbuild.id}/app.js",
@@ -60,21 +58,31 @@
       "shared": "resources"
     }
   },
-  
+  <tpl else>
+  "output": {
+    "base": "$\u007bworkspace.build.dir}/$\u007bbuild.environment}/$\u007bapp.name}",
+    "appCache": {
+      "enable": false
+    }
+  },
+</tpl>
   "fashion": {
-"missingParameters": "error",
+<tpl if="frameworkIsV65 == true">"missingParameters": "error",</tpl>
     "inliner": {"enable": false}
   },
 
-  "js": [
+  "js": [<tpl if="universal == false">
+    {
+      "path": "$\u007Bframework.dir}/build/ext-<tpl if="toolkit == 'modern'">modern-all<tpl else>all-rtl</tpl>-debug.js"
+    }</tpl>
   ],
-
+<tpl if="universal == true">
   "classic": {"js": []},
   "modern": {"js": []},
-
+</tpl>
   "css": [
     {
-      "path": "$\u007Bbuild.out.css.path}",
+      "path": "$\u007bbuild.out.css.path}",
       "bundle": true,
       "exclude": ["fashion"]
     }
@@ -86,7 +94,7 @@
   "production": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "$\u007Bapp.webpack.bundle}", "compress": false }
+      {"path": "$\u007bapp.webpack.bundle}", "compress": false }
     ],
     "output": {
       "appCache": {
@@ -107,7 +115,7 @@
   "testing": {
     "js": [
       {"path": "app.js", "bundle": true},
-      {"path": "$\u007Bapp.webpack.bundle}", "compress": false }
+      {"path": "$\u007bapp.webpack.bundle}", "compress": false }
     ]
   },
   "development": {
@@ -120,26 +128,52 @@
     }
   },
   "bootstrap": {
-    "base": "$\u007Bapp.dir}",
-"manifest": "generatedFiles/$\u007Bbuild.id}.json",
+    "base": "$\u007bapp.dir}",
+<tpl if="universal == true">"manifest": "generatedFiles/$\u007bbuild.id}.json",</tpl>
     "microloader": "generatedFiles/bootstrap.js",
     "css": "generatedFiles/bootstrap.css"
   },
-
+<tpl if="universal == true">
   "cache": {
     "enable": false,
     "deltas": "$\u007Bbuild.id}/deltas"
   },
-
+<tpl else>
+  "cache": {
+    "enable": false,
+    "deltas": true
+  },
+</tpl>
   "appCache": {
     "cache": ["index.html"],
     "network": ["*"],
     "fallback": []
   },
-
-
+<tpl if="universal == false"><tpl if="toolkit == 'classic'">
+  "slicer": {
+    "js": [
+      {
+        "path": "sass/example/custom.js",
+        "isWidgetManifest": true
+      }
+    ],
+    "output": {
+      "appCache": {
+        "enable": false
+      }
+    },
+    "cache": {
+      "enable": false
+    }
+  },
+<tpl else>
+  "slicer": null,
+</tpl></tpl>
+<tpl if="universal == true">
   "archivePath": "archive/$\u007Bbuild.id}",
-
+<tpl else>
+  "archivePath": "archive",
+</tpl>
   "ignore": ["(^|/)CVS(/?$|/.*?$)"],
-  "id": "f66c0bee-bc00-4032-85c3-d30e4ae20a4c"
+  "id": "{uniqueId}"
 }
