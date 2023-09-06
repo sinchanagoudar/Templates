@@ -18,7 +18,7 @@ Ext.define('{appName}.Application', {
     var elem = document.getElementById("splash")
     elem.parentNode.removeChild(elem)
 
-    var whichView = 'mainview'
+    var whichView = 'app-main'
     if (Ext.isClassic == true) {
         Ext.create({xtype: whichView, plugins: 'viewport'})
     }
