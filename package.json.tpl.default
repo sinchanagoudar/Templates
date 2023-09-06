@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@sencha/ext-charts": "^7.7.0",
-    "@sencha/ext-font-awesome": "^7.7.0",
-    "@sencha/ext-ux": "^7.7.0"
-  }
-}
