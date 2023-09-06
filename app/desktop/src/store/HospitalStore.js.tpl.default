@@ -9,7 +9,7 @@ Ext.define('{appName}.store.HospitalStore', {
         telephone: '020 7188 7188'
     }, {
         code: 'BBBBB',
-        name: 'Queen\'s Medical Centre',
+        name: 'Queen Medical Centre',
         address: 'Derby Road, NG7 2UH',
         telephone: '0115 924 9924'
     }, {

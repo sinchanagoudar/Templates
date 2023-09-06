@@ -26,7 +26,7 @@ Ext.define('{appName}.store.PatientStore', {
         insuranceCode: '55555',
         name: 'Fred Douglass',
         address: 'Talbot County, Maryland',
-        telephone: 'N/A'
+        telephone: 'N A'
     }],
     proxy: {
         type: 'memory',
