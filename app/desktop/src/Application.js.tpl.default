@@ -29,7 +29,7 @@ Ext.define('{appName}.Application', {
         var s = Ext.String.format.apply(String, Array.prototype.slice.call(arguments, 1));
 
         Ext.toast(s, title);
-    }
+    },
 
 	launch: function () {
 		Ext.ariaWarn = Ext.emptyFn
