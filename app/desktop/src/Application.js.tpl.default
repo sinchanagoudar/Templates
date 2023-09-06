@@ -12,8 +12,19 @@ Ext.define('{appName}.Application', {
         // TODO: add global / shared stores here
     ],
 
-    launch: function() {
-        // TODO - Launch the application
+   launch: function () {
+    Ext.ariaWarn = Ext.emptyFn
+    Ext.getBody().removeCls('launching')
+    var elem = document.getElementById("splash")
+    elem.parentNode.removeChild(elem)
+
+    var whichView = 'mainview'
+    if (Ext.isClassic == true) {
+        Ext.create({xtype: whichView, plugins: 'viewport'})
+    }
+    else {
+        Ext.Viewport.add([{xtype: whichView}])
+    }
     },
 
     onAppUpdate: function() {

@@ -1,8 +1,6 @@
 Ext.define('{appName}.util.Google', {
     singleton: true,
 
-    mixins: ['Ext.google.ux.Client'],
-
     googleApis: { 'people': { version: 'v1' } },
 
     checkAuth: function() {
