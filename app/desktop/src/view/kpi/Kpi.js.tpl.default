@@ -46,7 +46,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             '<div class="kpi-meta">',
                 '<\u0074pl for=".">',
                     '<span>',
-                        '<div>{statistic}</div> {description}',
+                        '<div>\u007Bstatistic}</div> \u007Bdescription}',
                     '</span>',
                 '</\u0074pl>',
             '</div>'
@@ -83,7 +83,7 @@ Ext.define('{appName}.view.kpi.Kpi', {
             }
         }],
         cls: 'kpi-main-chart',
-        bind: '{kpiMain}',
+        bind: '\u007BkpiMain}',
         minHeight: 290,
         animation: false,
 
@@ -272,10 +272,10 @@ Ext.define('{appName}.view.kpi.Kpi', {
             tpl: [
                 '<div class="statistic-header">Current Campaigns</div>',
                 '<\u0074pl for=".">',
-                    '<div class="statistic-tag {status}">{status}</div>',
-                    '<div class="statistic-description">{description}</div>',
+                    '<div class="statistic-tag \u007Bstatus}">\u007Bstatus}</div>',
+                    '<div class="statistic-description">\u007Bdescription}</div>',
                     '<div class="sparkline">',
-                        '<div class="sparkline-inner sparkline-inner-{status}" style="width: {[values.ratio * 100]}%;"></div>',
+                        '<div class="sparkline-inner sparkline-inner-\u007Bstatus}" style="width: \u007B[values.ratio * 100]}%;"></div>',
                     '</div>',
                 '</\u0074pl>'
             ],

@@ -54,7 +54,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         }],
 
         animation: false,
-        bind: '\u007Bstocks }',
+        bind: '\u007Bstocks}',
 
         legend: { // null, false, undefined - doesn't work here. ??
             hidden: true
@@ -83,7 +83,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                     height: 40,
                     text: 'AAPL',
                     bind: {
-                        text: '{ stockMeta.symbol }'
+                        text: '\u007BstockMeta.symbol}'
                     },
                     textAlign: 'right',
 
@@ -106,7 +106,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                     textAlign: 'right',
                     width: 105,
                     bind: {
-                        value: '{ stockMeta.label }'
+                        value: '\u007BstockMeta.label}'
                     }
                 }]
             },{
@@ -114,20 +114,20 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                 width: 20
             }, {
                 fieldLabel: 'CHANGE',
-                bind: '{ stockMeta.change }<span class="ql-percentage">({ stockMeta.changePercentage }%)</span>',
+                bind: '\u007BstockMeta.change}<span class="ql-percentage">({ stockMeta.changePercentage }%)</span>',
                 flex: 1
             },{
                 fieldLabel: 'PRICE',
-                bind: '{ stockMeta.price }',
+                bind: '\u007BstockMeta.price}',
                 flex: 1
             },{
                 fieldLabel: 'MAX/MIN',
-                bind: '{ stockMeta.maxMin }',
+                bind: '\u007BstockMeta.maxMin}',
                 flex: 1
             },{
 
                 fieldLabel: 'VOLUME',
-                bind: '{ stockMeta.volume }',
+                bind: '\u007BstockMeta.volume}',
                 flex: 1
             }]
         },
@@ -191,7 +191,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         xtype: 'dataview',
         cls: 'quarterly-dataview',
 
-        bind: '{ statements }',
+        bind: '\u007Bstatements}',
 
         itemSelector: 'div.thumb-wrap',
 
@@ -199,15 +199,15 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
             '<\u0074pl for=".">',
                 // Break every four quarters
                 '<\u0074pl if="xindex % 4 === 1">',
-                    '<div class="statement-type">{type}</div>',
+                    '<div class="statement-type">\u007Btype}</div>',
                 '</\u0074pl>',
 
                 '<div class="thumb-wrap">',
-                    '<a class="thumb" href="{url}" target="_blank">',
+                    '<a class="thumb" href="\u007Burl}" target="_blank">',
                         '<div class="thumb-icon"></div>',
                         '<div class="thumb-title-container">',
-                            '<div class="thumb-title">{title}</div>',
-                            '<div class="thumb-title-small">Uploaded: {uploaded}</div>',
+                            '<div class="thumb-title">\u007Btitle}</div>',
+                            '<div class="thumb-title-small">Uploaded: \u007Buploaded}</div>',
                         '</div>',
                         '<div class="thumb-download"></div>',
                     '</a>',
