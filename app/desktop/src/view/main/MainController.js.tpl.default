@@ -34,7 +34,7 @@ Ext.define('{appName}.view.main.MainController', {
         this.callParent();
     },
 
-    beforeNavigate: function (id, action) {debugger;
+    beforeNavigate: function (id, action) {
         var view = this.getView();
         var tab = view.getComponent(id);
 
@@ -45,7 +45,7 @@ Ext.define('{appName}.view.main.MainController', {
         }
     },
 
-    beforeNavigateDeep: function (id, state, action) {debugger;
+    beforeNavigateDeep: function (id, state, action) {
         var view = this.getView();
         var tab = view.getComponent(id);
         var valid;
@@ -71,7 +71,7 @@ Ext.define('{appName}.view.main.MainController', {
         return route;
     },
 
-    onBadRoute: function () {debugger;
+    onBadRoute: function () {
         var app = Ext.getApplication();
         this.redirectTo(app.getDefaultToken());
     },
@@ -96,7 +96,7 @@ Ext.define('{appName}.view.main.MainController', {
         tab.setActiveState(state);
     },
 
-    onTabChange: function (mainView, newTab) {debugger
+    onTabChange: function (mainView, newTab) {
         var route = this.getTabRoute(newTab);
         this.redirectTo(route);
     },
@@ -116,7 +116,7 @@ Ext.define('{appName}.view.main.MainController', {
         menu.showAt(e.getXY());
     },
 
-    onUnmatchedRoute: function(token) {debugger;
+    onUnmatchedRoute: function(token) {
         if (token) {
             this.onBadRoute();
         }
