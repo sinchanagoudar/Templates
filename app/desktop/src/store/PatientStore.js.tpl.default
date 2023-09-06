@@ -4,27 +4,27 @@ Ext.define('{appName}.store.PatientStore', {
     alias:'store.patient',
     data:  [{
         insuranceCode: '11111',
-        name: 'Fred Bloggs',
+        patient: 'Fred Bloggs',
         address: 'Main Street',
         telephone: '555 1234 123'
     }, {
         insuranceCode: '22222',
-        name: 'Fred Bansod',
+        patient: 'Fred Bansod',
         address: 'Van Ness',
         telephone: '666 666 666'
     }, {
         insuranceCode: '33333',
-        name: 'Fred Mercury',
+        patient: 'Fred Mercury',
         address: 'Over The Rainbow',
         telephone: '555 321 0987'
     }, {
         insuranceCode: '44444',
-        name: 'Fred Forsyth',
+        patient: 'Fred Forsyth',
         address: 'Blimp Street',
         telephone: '555 111 2222'
     }, {
         insuranceCode: '55555',
-        name: 'Fred Douglass',
+        patient: 'Fred Douglass',
         address: 'Talbot County, Maryland',
         telephone: 'N A'
     }],
