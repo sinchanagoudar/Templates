@@ -44,11 +44,11 @@ Ext.define('{appName}.view.kpi.Kpi', {
 
         tpl: [
             '<div class="kpi-meta">',
-                '<tpl for=".">',
+                '<\u0074pl for=".">',
                     '<span>',
                         '<div>{statistic}</div> {description}',
                     '</span>',
-                '</tpl>',
+                '</\u0074pl>',
             '</div>'
         ],
 
@@ -271,13 +271,13 @@ Ext.define('{appName}.view.kpi.Kpi', {
             title: 'STATISTICS',
             tpl: [
                 '<div class="statistic-header">Current Campaigns</div>',
-                '<tpl for=".">',
+                '<\u0074pl for=".">',
                     '<div class="statistic-tag {status}">{status}</div>',
                     '<div class="statistic-description">{description}</div>',
                     '<div class="sparkline">',
                         '<div class="sparkline-inner sparkline-inner-{status}" style="width: {[values.ratio * 100]}%;"></div>',
                     '</div>',
-                '</tpl>'
+                '</\u0074pl>'
             ],
             data: [{
                 status: 'active',

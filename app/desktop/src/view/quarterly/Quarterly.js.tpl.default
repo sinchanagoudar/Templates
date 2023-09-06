@@ -196,11 +196,11 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
         itemSelector: 'div.thumb-wrap',
 
         tpl: [
-            '<tpl for=".">',
+            '<\u0074pl for=".">',
                 // Break every four quarters
-                '<tpl if="xindex % 4 === 1">',
+                '<\u0074pl if="xindex % 4 === 1">',
                     '<div class="statement-type">{type}</div>',
-                '</tpl>',
+                '</\u0074pl>',
 
                 '<div class="thumb-wrap">',
                     '<a class="thumb" href="{url}" target="_blank">',
@@ -212,7 +212,7 @@ Ext.define('{appName}.view.quarterly.Quarterly', {
                         '<div class="thumb-download"></div>',
                     '</a>',
                 '</div>',
-            '</tpl>'
+            '</\u0074pl>'
         ]
     }],
 
