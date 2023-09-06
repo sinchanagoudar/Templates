@@ -21,7 +21,7 @@ Ext.define('{appName}.view.main.Main', {
             }
         },
         bind: {
-            store: '{calendars}'
+            store: '{ calendars}'
         },
         sideBarHeader: {
             xtype: 'app-profile-side'
