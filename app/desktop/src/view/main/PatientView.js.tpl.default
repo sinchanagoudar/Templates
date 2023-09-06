@@ -8,9 +8,9 @@ Ext.define('{appName}.view.main.PatientView', {
     },
     itemTpl:
     '<div class="patient-source x-unselectable"><table><tbody>' +
-        '<tr><td class="patient-label">Name</td><td class="patient-name">\patient}</td></tr>' +
-        '<tr><td class="patient-label">Address</td><td class="patient-name">\address}</td></tr>' +
-        '<tr><td class="patient-label">Telephone</td><td class="patient-name">\telephone}</td></tr>' +
+        '<tr><td class="patient-label">Name</td><td class="patient-name">\u007Bpatient}</td></tr>' +
+        '<tr><td class="patient-label">Address</td><td class="patient-name">\u007Baddress}</td></tr>' +
+        '<tr><td class="patient-label">Telephone</td><td class="patient-name">\u007Btelephone}</td></tr>' +
     '</tbody></table></div>',
     itemSelector: 'div.patient-source',
     overItemCls: 'patient-over',
