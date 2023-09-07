@@ -8,6 +8,210 @@ Ext.define('{appName}.store.Stocks', {
 
     model: '{appName}.model.Company',
 
+    data: [{
+        "name": "3m Co",
+        "Price": 71.72,
+        "Trend": 0.02,
+        "Change": 0.03,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Alcoa Inc",
+        "Price": 29.01,
+        "Trend": 0.42,
+        "Change": 1.47,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Altria Group Inc",
+        "Price": 83.81,
+        "Trend": 0.28,
+        "Change": 0.34,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "American Express Company",
+        "Price": 52.55,
+        "Trend": 0.01,
+        "Change": 0.02,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "American International Group, Inc.",
+        "Price": 64.13,
+        "Trend": 0.31,
+        "Change": 0.49,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "AT&T Inc.",
+        "Price": 31.61,
+        "Trend": -0.48,
+        "Change": -1.54,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Boeing Co.",
+        "Price": 75.43,
+        "Trend": 0.53,
+        "Change": 0.71,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Caterpillar Inc.",
+        "Price": 67.27,
+        "Trend": 0.92,
+        "Change": 1.39,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Citigroup, Inc.",
+        "Price": 49.37,
+        "Trend": 0.02,
+        "Change": 0.04,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "E.I. du Pont de Nemours and Company",
+        "Price": 40.48,
+        "Trend": 0.51,
+        "Change": 1.28,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Exxon Mobil Corp",
+        "Price": 68.1,
+        "Trend": -0.43,
+        "Change": -0.64,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "General Electric Company",
+        "Price": 34.14,
+        "Trend": -0.08,
+        "Change": -0.23,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "General Motors Corporation",
+        "Price": 30.27,
+        "Trend": 1.09,
+        "Change": 3.74,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Hewlett-Packard Co.",
+        "Price": 36.53,
+        "Trend": -0.03,
+        "Change": -0.08,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Honeywell Intl Inc",
+        "Price": 38.77,
+        "Trend": 0.05,
+        "Change": 0.13,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Intel Corporation",
+        "Price": 19.88,
+        "Trend": 0.31,
+        "Change": 1.58,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "International Business Machines",
+        "Price": 81.41,
+        "Trend": 0.44,
+        "Change": 0.54,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Johnson & Johnson",
+        "Price": 64.72,
+        "Trend": 0.06,
+        "Change": 0.09,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "JP Morgan & Chase & Co",
+        "Price": 45.73,
+        "Trend": 0.07,
+        "Change": 0.15,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "McDonald's Corporation",
+        "Price": 36.76,
+        "Trend": 0.86,
+        "Change": 2.40,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Merck & Co., Inc.",
+        "Price": 40.96,
+        "Trend": 0.41,
+        "Change": 1.01,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Microsoft Corporation",
+        "Price": 25.84,
+        "Trend": 0.14,
+        "Change": 0.54,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Pfizer Inc",
+        "Price": 27.96,
+        "Trend": 0.4,
+        "Change": 1.45,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "The Coca-Cola Company",
+        "Price": 45.07,
+        "Trend": 0.26,
+        "Change": 0.58,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "The Home Depot, Inc.",
+        "Price": 34.64,
+        "Trend": 0.35,
+        "Change": 1.02,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "The Procter & Gamble Company",
+        "Price": 61.91,
+        "Trend": 0.01,
+        "Change": 0.02,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "United Technologies Corporation",
+        "Price": 63.26,
+        "Trend": 0.55,
+        "Change": 0.88,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Verizon Communications",
+        "Price": 35.57,
+        "Trend": 0.39,
+        "Change": 1.11,
+        "pctChange": "9/1 12:00am"
+    },
+    {
+        "name": "Wal-Mart Stores, Inc.",
+        "Price": 45.45,
+        "Trend": 0.73,
+        "Change": 1.63,
+        "pctChange": "9/1 12:00am"
+    }],
+
     onDestroy: function() {
         Ext.uninterval(this.timer);
 
@@ -19,6 +223,12 @@ Ext.define('{appName}.store.Stocks', {
             count;
 
         me.callParent(arguments);
+
+        me.timer = Ext.interval(function() {
+            var rec = me.getAt(Ext.Number.randomInt(0, count));
+
+            rec.addPriceTick();
+        }, 100);
 
     }
 });
