@@ -219,16 +219,8 @@ Ext.define('{appName}.store.Stocks', {
     },
 
     onProxyLoad: function() {
-        var me = this,
-            count;
+        var me = this;
 
         me.callParent(arguments);
-
-        me.timer = Ext.interval(function() {
-            var rec = me.getAt(Ext.Number.randomInt(0, count));
-
-            rec.addPriceTick();
-        }, 100);
-
     }
 });
