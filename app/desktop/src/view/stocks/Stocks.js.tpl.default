@@ -11,8 +11,7 @@ Ext.define('{appName}.view.stocks.Stocks', {
     height: 300,
 
     store: {
-        type: 'stocks',
-        autoLoad: true
+        type: 'stocks'
     },
 
     stripeRows: true,
