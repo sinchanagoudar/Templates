@@ -11,7 +11,7 @@ Ext.define('{appName}.view.profile.Timeline', {
     itemSelector: '.timeline-item',
 
     itemTpl: [
-        '<div class="timeline-itemu\u007BserId:this.cls(values,parent[xindex-2],xindex-1,xcount)}">' +
+        '<div class="timeline-item\u007BuserId:this.cls(values,parent[xindex-2],xindex-1,xcount)}">' +
             '\u007Bdate:this.epoch(values,parent[xindex-2],xindex-1,xcount)}' +
             '<div class="profile-pic-wrap">' +
                 '<img src="resources/images/user-profile/\u007BuserId}.png" alt="Smiley face">' +
