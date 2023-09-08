@@ -48,4 +48,48 @@
  $wizard-three-primary-background-color: dynamic(#9cc96b);
  $wizard-three-button-background-color: dynamic(#9cc96b);
  
- 
+ //desktop
+ $create-account-background-color: dynamic(#a1a1a2);
+$dialog-trigger-color: dynamic(#e5e5e5);
+
+$single-mail-border-color: dynamic(#eee);
+$single-mail-save-button-color: dynamic(#9da6a3);
+$single-mail-send-button-color: dynamic(#56B750);
+
+$default-menu-item-color: dynamic(#858585);
+$online-menu-item-color: dynamic(#86c747);
+$offline-menu-item-color: dynamic(#9e9f9f);
+$menu-item-focus-color: dynamic(#88bf4c);
+
+$active-heart-icon-color: dynamic(#facc6e);
+$inactive-heart-icon-color: dynamic(#b2b2b2);
+
+//phone
+
+$border-color: dynamic(#ddd);
+
+$panel-header-background-color: dynamic($base-color);
+
+// $mask-page-opacity: dynamic($mask-opacity);
+// $mask-page-background-color: dynamic($mask-background-color);
+
+//-----------------------------------------
+
+$main-nav-width: dynamic(260px);
+$main-nav-collapsed-width: dynamic(64px);
+$main-toolbar-height: dynamic(65px);
+$main-phone-toolbar-height: dynamic(56px);
+
+$circle-border-radius: dynamic(50%);
+$base-border-color: dynamic(#ddd);
+$lightest-color:dynamic(#fff);
+$font-weight-normal: dynamic(400);
+$font-weight-bold: dynamic(500);
+
+$accordion-header-background-color: dynamic($lightest-color);
+$accordion-header-color: dynamic(#333);
+
+$social-facebook-btn-background: dynamic(#167abc);
+$social-twitter-btn-background: dynamic(#03b4d5);
+$social-google-plus-btn-background: dynamic(#e44959);
+$social-envelope-btn-background: dynamic(#7754aa);
