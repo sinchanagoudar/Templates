@@ -69,15 +69,15 @@ $dialog-trigger-color: dynamic(#e5e5e5);
 
         &.password-trigger:before,
         &.auth-password-trigger:before {
-            content: "\f023";
+            content: "\u005Cf023";
         }
 
         &.auth-email-trigger:before {
-            content: "\f007";
+            content: "\u005Cf007";
         }
 
         &.auth-envelope-trigger:before {
-            content: "\f0e0";
+            content: "\u005Cf0e0";
         }
     }
 

@@ -42,7 +42,7 @@ $FAQ-tip-list-color-4: dynamic(#a97fe3);
         }
 
         &.x-collapsed .x-title-icon:before {
-            content: "\f0da" !important;
+            content: "\u005Cf0da" !important;
         }
     }
 }
@@ -63,7 +63,7 @@ $FAQ-tip-list-color-4: dynamic(#a97fe3);
 
             &:before {
                 font-family: 'Font Awesome 5 Free';
-                content: "\f111";
+                content: "\u005Cf111";
                 padding-right: 10px;
             }
 

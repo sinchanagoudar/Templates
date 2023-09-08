@@ -56,7 +56,7 @@ $menu-item-focus-color: dynamic(#88bf4c);
 
             .x-menu-item-link:after {
                 color: $online-menu-item-color;
-                content: "\f111";
+                content: "\u005Cf111";
                 @extend .menu-item-common;
             }
 
@@ -70,7 +70,7 @@ $menu-item-focus-color: dynamic(#88bf4c);
         &.offline-user {
             .x-menu-item-link:after {
                 color: $offline-menu-item-color;
-                content: "\f111";
+                content: "\u005Cf111";
                 @extend .menu-item-common;
             }
 
@@ -82,7 +82,7 @@ $menu-item-focus-color: dynamic(#88bf4c);
         .x-menu-item-link:after {
             @extend .menu-item-common;
             color: $default-menu-item-color;
-            content: "\f105";
+            content: "\u005Cf105";
         }
     }
 }
