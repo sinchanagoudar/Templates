@@ -4,7 +4,7 @@ Ext.define('{appName}.view.phone.email.Inbox', {
 
     itemTpl:
         '<div class="inbox-item">'+
-            '<div class="inbox-inner-row inbox-\u007Bread:pick\u0028\\u005C\u0027unread\\u005C\u0027,\\u005C\u0027read\\u005C\u0027\u0029}">'+
+            '<div class="inbox-inner-row inbox-\u007Bread:pick\u0028\\&#39;unread\\&#39;,\\&#39;read\\&#39;\u0029}">'+
                 '<div class="list-cls inbox-from">\u007Bfrom}</div>'+
                 '<div class="inbox-date">'+
                     '<\u0074pl if="has_attachments">'+
