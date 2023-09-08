@@ -7,7 +7,7 @@ Ext.define('{appName}.view.pages.Error404', {
         html: '404'
     },{
         cls: 'error-page-desc',
-        html: '<p>Seems you&#39;ve hit a wall!</p><p>Try going back to our ' +
+        html: '<p>Seems you\\u0027ve hit a wall!</p><p>Try going back to our ' +
             '<a href="#dashboard"> Home page </a></p>'
     }]
 });
