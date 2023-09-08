@@ -73,7 +73,7 @@ Ext.define('{appName}.view.authentication.LockScreen', {
                             labelAlign: 'top',
                             cls: 'lock-screen-password-textbox',
                             labelSeparator: '',
-                            fieldLabel: 'It\u0027s been a while. please enter your password to resume',
+                            fieldLabel: 'It\\u0027s been a while. please enter your password to resume',
                             emptyText: 'Password',
                             inputType: 'password',
                             allowBlank: false,

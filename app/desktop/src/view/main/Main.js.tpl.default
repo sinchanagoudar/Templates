@@ -81,7 +81,7 @@ Ext.define('{appName}.view.main.Main', {
                     ui: 'header',
                     href: '#faq',
                     hrefTarget: '_self',
-                    tooltip: 'Help / FAQ\u0027s'
+                    tooltip: 'Help / FAQ\\u0027s'
                 },
                 {
                     iconCls:'x-fa fa-th-large',
