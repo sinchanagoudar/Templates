@@ -10,7 +10,7 @@ Ext.define('{appName}.view.phone.email.Inbox', {
                     '<\u0074pl if="has_attachments">'+
                         '<span class="x-fa fa-paperclip inbox-attachment"></span>'+
                     '</\u0074pl>'+
-                    '{received_on:date("M d")}'+
+                    '\u007Breceived_on:date("M d")}'+
                 '</div>'+
             '</div>'+
             '<div class="inbox-inner-row">'+

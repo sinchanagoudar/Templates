@@ -19,5 +19,15 @@ Ext.define('{appName}.Application', {
 
     stores: [
         'NavigationTree'
-    ]
+    ],
+
+    removeSplash: function () {
+        Ext.getBody().removeCls('launching');
+        var elem = document.getElementById("splash");
+        elem.parentNode.removeChild(elem);
+	},
+
+	launch: function () {
+		this.removeSplash();
+	},
 });
