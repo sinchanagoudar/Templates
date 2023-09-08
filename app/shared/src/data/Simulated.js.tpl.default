@@ -6,7 +6,7 @@ Ext.define('{appName}.data.Simulated', {
 
     onClassExtended: function (cls, data) {
         var url = data.$className.toLowerCase().replace(/\./g, '/').
-                    replace(/^{appName}\/data/, '~api'),
+                    replace(/^{appName}\u005C/data/, '~api'),
             simlet = {
                 type: 'json',
                 data: data.data
