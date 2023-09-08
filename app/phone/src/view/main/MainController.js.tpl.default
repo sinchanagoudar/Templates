@@ -47,7 +47,7 @@ Ext.define('{appName}.view.main.MainController', {
         if (choice === 'yes') {
             var obj = Ext.Object.fromQueryString(location.search);
 
-            delete obj.modern;
+            delete obj.phone;
 
             obj.classic = '';
 

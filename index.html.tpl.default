@@ -11,8 +11,8 @@
     Ext.beforeLoad = function (tags) {
       var s = location.search;
       var profile;
-      if (s.match(/\bdesktop\b/)) { profile = 'desktop' }
-      else if (s.match(/\bphone\b/)) { profile = 'phone' }
+      if (s.match(/\u005Cbdesktop\u005Cb/)) { profile = 'desktop' }
+      else if (s.match(/\u005Cbphone\u005Cb/)) { profile = 'phone' }
       else { profile = tags.desktop ? 'desktop' : 'phone' }
       Ext.manifest ='generatedFiles/' + profile;
     };
