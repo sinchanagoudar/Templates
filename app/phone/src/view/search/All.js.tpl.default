@@ -1,0 +1,16 @@
+Ext.define('{appName}.view.search.All', {
+    extend: 'Ext.dataview.DataView',
+    xtype: 'allresults',
+
+    cls: 'search-all',
+    selectedCls: 'search-result-item-selected',
+
+    itemTpl: '<div class="search-result-item">' +
+            '<div class="list-cls">\u007Btitle}</div>'+
+            '<div><a href="#">\u007Burl}</a></div>'+
+            '<div>\u007Bcontent}</div>'+
+            '<\u0074pl for="attachments"> '+
+                '<img class="search-result-attachment" src="\u007Burl}" alt="\u007Btitle}">' +
+            '</\u0074pl>'+
+        '</div>'
+});
