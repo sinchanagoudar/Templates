@@ -7,7 +7,7 @@ $dashboard-item-spacing: dynamic(20px);
 .dashboard-item {
     margin: 0 $dashboard-item-spacing $dashboard-item-spacing 0;
     float: left;
-    width: calc(100% - #{$dashboard-item-spacing});
+    width: calc(100% - #\u007B$dashboard-item-spacing});
 
     &.last-in-row {
         margin-right: 0;
@@ -15,53 +15,53 @@ $dashboard-item-spacing: dynamic(20px);
 }
 
 .small-100 {
-    width: calc(100% - #{$dashboard-item-spacing});
+    width: calc(100% - #\u007B$dashboard-item-spacing});
 }
 
 .small-60 {
-    width: calc(60% - #{$dashboard-item-spacing});
+    width: calc(60% - #\u007B$dashboard-item-spacing});
 }
 
 .small-50 {
-    width: calc(50% - #{$dashboard-item-spacing});
+    width: calc(50% - #\u007B$dashboard-item-spacing});
 }
 
 .small-40 {
-    width: calc(40% - #{$dashboard-item-spacing});
+    width: calc(40% - #\u007B$dashboard-item-spacing});
 }
 
 .small-20 {
-    width: calc(20% - #{$dashboard-item-spacing});
+    width: calc(20% - #\u007B$dashboard-item-spacing});
 }
 
 @media (min-width: 1000px) {
     .big-100 {
-        width: calc(100% - #{$dashboard-item-spacing});
+        width: calc(100% - #\u007B$dashboard-item-spacing});
     }
 
     .big-60 {
-        width: calc(60% - #{$dashboard-item-spacing});
+        width: calc(60% - #\u007B$dashboard-item-spacing});
     }
 
     .big-50 {
-        width: calc(50% - #{$dashboard-item-spacing});
+        width: calc(50% - #\u007B$dashboard-item-spacing});
     }
 
     .big-40 {
-        width: calc(40% - #{$dashboard-item-spacing});
+        width: calc(40% - #\u007B$dashboard-item-spacing});
     }
 
     .big-33 {
-        width: calc(33.3% - #{$dashboard-item-spacing});
+        width: calc(33.3% - #\u007B$dashboard-item-spacing});
     }
 
     .big-20 {
-        width: calc(20% - #{$dashboard-item-spacing});
+        width: calc(20% - #\u007B$dashboard-item-spacing});
     }
 }
 
 // Custom Tool type: 'wrench'
-.#{$prefix}tool-type-wrench {
+.#\u007B$prefix}tool-type-wrench {
     @include font-icon($fa-var-wrench);
     background: none;
 }
