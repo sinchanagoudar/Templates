@@ -44,7 +44,7 @@ Ext.define('{appName}.view.pages.FAQ', {
                     ui: 'light',
                     cls: 'shadow pages-faq-container',
                     iconCls: 'x-fa fa-lightbulb',
-                    html: '<p>We have created the following list of tips for our users. We hope that they will help you get the most of this website.</p> \\u006E<ul class=&#39;faq-tips-list&#39;><li class=&#39;pointone&#39;>Point One</li><li class=&#39;pointtwo&#39;>Point Two</li><li class=&#39;pointthree&#39;>Point Three</li>\\u006E<li class=&#39;pointfour&#39;>Point Four</li></ul>',
+                    html: '<p>We have created the following list of tips for our users. We hope that they will help you get the most of this website.</p> \u005C\n<ul class=&#39;faq-tips-list&#39;><li class=&#39;pointone&#39;>Point One</li><li class=&#39;pointtwo&#39;>Point Two</li><li class=&#39;pointthree&#39;>Point Three</li>\u005C\n<li class=&#39;pointfour&#39;>Point Four</li></ul>',
                     bodyPadding: 15
                 },
                 {
