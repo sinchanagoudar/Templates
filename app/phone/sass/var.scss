@@ -1,0 +1,193 @@
+$border-color: dynamic(#ddd);
+
+$panel-header-background-color: dynamic($base-color);
+
+$mask-page-opacity: dynamic($mask-opacity);
+$mask-page-background-color: dynamic($mask-background-color);
+
+//-----------------------------------------
+
+$main-nav-width: dynamic(260px);
+$main-nav-collapsed-width: dynamic(64px);
+$main-toolbar-height: dynamic(65px);
+$main-phone-toolbar-height: dynamic(56px);
+
+$circle-border-radius: dynamic(50%);
+$base-border-color: dynamic(#ddd);
+$lightest-color:dynamic(#fff);
+$font-weight-normal: dynamic(400);
+$font-weight-bold: dynamic(500);
+
+$accordion-header-background-color: dynamic($lightest-color);
+$accordion-header-color: dynamic(#333);
+
+$social-facebook-btn-background: dynamic(#167abc);
+$social-twitter-btn-background: dynamic(#03b4d5);
+$social-google-plus-btn-background: dynamic(#e44959);
+$social-envelope-btn-background: dynamic(#7754aa);
+
+$treelist-nav-ui: (
+    padding: 0 10px,
+    background-color: $panel-navigation-background-color,
+    toolstrip-background-color: #32404e,
+    tool-float-indicator-color: $base-color,
+    tool-float-indicator-width: 5px,
+    tool-indicator-selected-color: $base-color,
+    tool-indicator-selected-width: 5px,
+    tool-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+    item-expanded-background-color: #2c3845,
+    item-line-height: $panel-navigation-item-line-height,
+    row-over-background-color: mix(white, $panel-navigation-background-color, 5%),
+    row-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+    item-icon-color: $panel-navigation-item-text-color,
+    item-expander-color: #fff,
+    item-text-color: #ADB3B8,
+    item-icon-over-color: #fff,
+    item-expander-over-color: #fff,
+    item-text-over-color: mix(white, $panel-navigation-item-text-color, 50%),
+    item-text-font-size: 14px,
+    item-icon-font-size: 18px,
+    item-icon-width: 44px,
+    item-expander-font-size: 16px,
+    item-expander-width: 24px,
+    row-indicator-width: 5px,
+    row-indicator-selected-color: $base-color,
+    row-indicator-selected-over-color: lighten($base-color, 7%),
+    row-indicator-over-color: transparent
+);
+
+$dashboard-item-spacing: dynamic(20px);
+
+@include progress-ui(
+    $ui: 'plain',
+
+    $min-height: 5px,
+    $min-height-big: 5px,
+    $border-width: 0,
+    $border-radius: 0
+);
+
+@include progress-ui(
+    $ui: 'finance',
+    $bar-background-color: $grid-item-ban-btn-color,
+    $min-height: 5px,
+    $min-height-big: 5px,
+    $border-width: 0,
+    $border-radius: 0
+);
+
+@include progress-ui(
+    $ui: 'research',
+    $bar-background-color: $legend-research,
+    $min-height: 5px,
+    $min-height-big: 5px,
+    $border-width: 0,
+    $border-radius: 0
+);
+
+@include progress-ui(
+    $ui: 'marketing',
+    $bar-background-color: $legend-marketing,
+    $min-height: 5px,
+    $min-height-big: 5px,
+    $border-width: 0,
+    $border-radius: 0
+);
+
+@include button-ui(
+    $ui: 'bright-blue',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: #03a9f5,
+    $border-width: 0
+);
+
+@include button-ui(
+    $ui: 'round',
+    $border-radius: 50%,
+    $border-radius-big: 50%
+);
+
+@include button-ui(
+    $ui: 'header',
+    $color: #999,
+    $icon-color: #999,
+    $background-color: transparent,
+    $border-width: 0
+);
+
+@include button-ui(
+    $ui: 'blue',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: #167abc,
+    $border-width: 0
+);
+
+@include button-ui(
+    $ui: 'facebook',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: $social-facebook-btn-background,
+    $border-color: darken($social-facebook-btn-background, 5%)
+);
+
+@include button-ui(
+    $ui: 'gray-button',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: #a7a7a7,
+    $border-width: 0
+);
+
+@include button-ui(
+    $ui: 'soft-blue',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: $color-soft-blue,
+    $border-color: darken($color-soft-blue, 5%)
+);
+
+@include button-ui(
+    $ui: 'soft-cyan',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: $color-soft-cyan,
+    $border-color: darken($color-soft-cyan, 5%)
+);
+
+@include button-ui(
+    $ui: 'soft-green',
+    $color: #fff,
+    $icon-color: #fff,
+    $pressed-color: #fff,
+    $background-color: $color-soft-green,
+    $border-color: darken($color-soft-green, 5%)
+);
+
+@include button-ui(
+    $ui: 'soft-purple',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: $color-soft-purple,
+    $border-color: darken($color-soft-purple, 5%)
+);
+
+@include button-ui(
+    $ui: 'soft-red',
+    $color: #fff,
+    $icon-color: #fff,
+    $background-color: $color-soft-red,
+    $border-color: darken($color-soft-red, 5%)
+);
+
+@include button-ui(
+    $ui: 'launch',
+    $background-color: #fff,
+    $border-width: 0,
+    $padding: 14px,
+    $padding-big: 14px
+);
+
+$bio-image-size: dynamic(66px);
+

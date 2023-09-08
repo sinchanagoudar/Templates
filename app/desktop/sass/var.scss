@@ -1,0 +1,112 @@
+$create-account-background-color: dynamic(#a1a1a2);
+$dialog-trigger-color: dynamic(#e5e5e5);
+
+$single-mail-border-color: dynamic(#eee);
+$single-mail-save-button-color: dynamic(#9da6a3);
+$single-mail-send-button-color: dynamic(#56B750);
+
+$default-menu-item-color: dynamic(#858585);
+$online-menu-item-color: dynamic(#86c747);
+$offline-menu-item-color: dynamic(#9e9f9f);
+$menu-item-focus-color: dynamic(#88bf4c);
+
+$active-heart-icon-color: dynamic(#facc6e);
+$inactive-heart-icon-color: dynamic(#b2b2b2);
+
+@include extjs-button-small-ui(
+    $ui: 'wizard-blue',
+    $color: $button-toolbar-color,
+    $color-pressed: $wizard-primary-background-color,
+    $background-color: transparent,
+    $opacity-disabled: 1,
+    $glyph-color: $button-toolbar-glyph-color,
+    $border-width: 0
+);
+
+@include extjs-button-small-ui(
+    $ui: 'wizard-soft-purple',
+    $color: $button-toolbar-color,
+    $color-pressed: #fff,
+    $background-color: transparent,
+    $background-color-pressed: $wizard-two-button-background-color,
+    $opacity-disabled: 1,
+    $glyph-color: $button-toolbar-glyph-color,
+    $border-width: 0
+);
+
+@include extjs-button-small-ui(
+    $ui: 'wizard-soft-green',
+    $color: #fff,
+    $color-pressed: $color,
+    $background-color: transparent,
+    $opacity-disabled: 1,
+    $glyph-color: #fff,
+    $border-width: 0
+);
+
+$circle-border-radius: dynamic(50%);
+$base-border-color: dynamic(#ddd);
+$lightest-color: dynamic(#fff);
+$font-weight: dynamic(400);
+$font-weight-bold: dynamic(500);
+
+$accordion-header-background-color: dynamic($lightest-color);
+$accordion-header-color: dynamic(#333);
+
+$social-facebook-btn-background: dynamic(#167abc);
+$social-twitter-btn-background: dynamic(#03b4d5);
+$social-google-plus-btn-background: dynamic(#e44959);
+$social-envelope-btn-background: dynamic(#7754aa);
+
+$treelist-nav-ui: (
+    padding: 0 10px,
+    background-color: $panel-navigation-background-color,
+    toolstrip-background-color: #32404e,
+    tool-float-indicator-color: $panel-header-background-color,
+    tool-float-indicator-width: 5px,
+    tool-indicator-selected-color: $panel-header-background-color,
+    tool-indicator-selected-width: 5px,
+    tool-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+    item-expanded-background-color: #2c3845,
+    item-line-height: $panel-navigation-item-line-height,
+    row-over-background-color: mix(white, $panel-navigation-background-color, 5%),
+    row-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+    item-icon-color: $panel-navigation-item-text-color,
+    item-expander-color: #fff,
+    item-text-color: #ADB3B8,
+    item-icon-over-color: #fff,
+    item-expander-over-color: #fff,
+    item-text-over-color: mix(white, $panel-navigation-item-text-color, 50%),
+    item-text-font-size: 14px,
+    item-icon-font-size: 18px,
+    item-icon-width: 44px,
+    item-expander-font-size: 16px,
+    item-expander-width: 24px,
+    row-indicator-width: 5px,
+    row-indicator-selected-color: $panel-header-background-color,
+    row-indicator-selected-over-color: lighten($panel-header-background-color, 7%),
+    row-indicator-over-color: transparent
+);
+
+$blank-page-background-color: dynamic(#ebebeb);
+$blank-page-color: dynamic(#cacaca);
+
+$FAQ-sub-header-color: dynamic(#333);
+
+$FAQ-tip-list-color-1: dynamic(#56b650);
+$FAQ-tip-list-color-2: dynamic(#ffc037);
+$FAQ-tip-list-color-3: dynamic(#e55149);
+$FAQ-tip-list-color-4: dynamic(#a97fe3);
+
+$widget-first-container-background: dynamic(#468fd3);
+$widget-second-container-background: dynamic(#8dc153);
+$widget-third-container-background: dynamic(#607d8b);
+$follow-button-color : dynamic(#82c748);
+$follower-toolbar-background: dynamic(#fafafa);
+
+$sale-container-color: dynamic(#458fd2);
+$message-container-color: dynamic(#4caf50);
+$code-container-color: dynamic(#9c27b0);
+$user-container-color: dynamic(#e91e63);
+$server-container-color: dynamic(#ffc107);
+$file-container-color: dynamic(#673ab7);
