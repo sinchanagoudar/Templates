@@ -74,7 +74,6 @@ $base-color: #39babf;
         .icon {
             @include border-radius(50%);
             background-color: $base-color;
-            margin-top: 20px;
             color: contrasted($base-light-color, -25%);
 
             &::before {
