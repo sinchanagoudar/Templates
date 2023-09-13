@@ -21,7 +21,7 @@ $base-color: #39babf;
             @include border-radius;
             border: 3px solid;
             font-weight: 600;
-            padding: 18px 26px 18px;
+            padding: 15px 16px 15px;
         }
 
         .x-big & {
@@ -32,8 +32,11 @@ $base-color: #39babf;
             }
         }
     }
+    .x-fa{
+        color: white;
+    }
 
-    .home-header .header-info {
+    .header-info {
         line-height: 1.65;
         padding: 0 16px;
 
@@ -52,7 +55,6 @@ $base-color: #39babf;
     .header-links {
         > .x-innerhtml {
             display: flex;
-            color: white;
         }
 
         .item {
@@ -67,8 +69,7 @@ $base-color: #39babf;
             display: block;
             margin: 0 auto 4px auto;
             height: 54px;
-            width: 54px;
-            color: aliceblue;
+            width: 54px
         }
 
         .icon {
@@ -78,6 +79,7 @@ $base-color: #39babf;
 
             &::before {
                 font-size: 28px;
+                color: white;
             }
         }
 
@@ -102,7 +104,7 @@ $base-color: #39babf;
         align-items: flex-end;
         display: flex;
         font-weight: normal;
-        padding: 16px;
+        padding-bottom: 16px;
         text-align: right;
 
         .date {
