@@ -51,6 +51,11 @@ $base-color: #39babf;
             top: 0;
         }
     }
+    .x-layout-box .x-pack-center {
+        justify-content: center;
+        background: white !important; 
+        padding: 13px;
+    }
 
     .header-links {
         > .x-innerhtml {

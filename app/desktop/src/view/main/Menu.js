@@ -18,10 +18,16 @@ Ext.define('App.view.main.Menu', {
             handler: 'onTriggerTap',
             iconCls: 'x-fa fa-bars',
             ui: 'large flat dark',
+            style:{ 
+                'margin-top':'20px'
+            },
             docked: 'top'
         },
         navigator: {
             xtype: 'dataview',
+            style:{
+                background:'#353535'
+            },
             scrollable: 'y',
             store: 'Menu',
             weight: 0,
@@ -32,7 +38,7 @@ Ext.define('App.view.main.Menu', {
             },
             itemTpl: [
                 '<span class="icon x-fa fa-{icon}"></span>',
-                '<span class="text">{text}</span>'
+                '<span class="text" style = "margin-top:40px">{text}</span>'
             ],
             listeners: {
                 childtap: 'onMenuChildTap'
@@ -42,17 +48,23 @@ Ext.define('App.view.main.Menu', {
             xtype: 'button',
             handler: 'onProfileTap',
             ui: 'large flat dark picture',
+            style:{
+                background:'#353535',
+            },
             iconCls: 'picture',
             textAlign: 'left',
             weight: 10,
             bind: {
                 icon: '{user.picture}',
-                text: '<div class="title">{user.firstname}</div>'+
-                    '<div class="value">{user.username}</div>'
+                text: '<div class="title">Norma Flores</div>'+
+                    '<div class="value">norma.flores</div>'
             }
         },
         logout: {
             xtype: 'button',
+            style:{
+                background:'#353535'
+            },
             handler: 'onLogoutTap',
             iconCls: 'x-fa fa-power-off',
             text: 'Log out',

@@ -42,7 +42,7 @@ Ext.define('App.view.viewport.ViewportController', {
     },
 
     showMain: function() {
-        this.showView('home');
+        this.showView('main');
     },
 
     // ROUTING

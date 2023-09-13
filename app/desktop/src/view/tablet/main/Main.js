@@ -19,5 +19,10 @@ Ext.define('App.view.tablet.main.Main', {
         reference: 'mainmenu',
         ui: 'dark micro',
         zIndex: 4
-    }
+    },
+    items : [
+        {
+            xtype : 'home'
+        }
+    ]
 });
