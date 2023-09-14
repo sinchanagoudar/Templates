@@ -20,31 +20,31 @@ Ext.define('App.view.history.BrowserModel', {
                 }
             }
         },
-        recipients: {
-            type: 'filters',
-            service: 'actions',
-            field: 'recipient_id',
-            label: [
-                'recipient.firstname',
-                'recipient.lastname'
-            ]
-        },
-        offices: {
-            type: 'filters',
-            service: 'actions',
-            field: 'recipient.office_id',
-            label: 'recipient.office.name'
-        },
-        organizations: {
-            type: 'filters',
-            service: 'actions',
-            field: 'recipient.organization_id',
-            label: 'recipient.organization.name'
-        },
-        types: {
-            type: 'filters',
-            service: 'actions',
-            field: 'type'
-        }
+        // recipients: {
+        //     type: 'filters',
+        //     service: 'actions',
+        //     field: 'recipient_id',
+        //     label: [
+        //         'recipient.firstname',
+        //         'recipient.lastname'
+        //     ]
+        // },
+        // offices: {
+        //     type: 'filters',
+        //     service: 'actions',
+        //     field: 'recipient.office_id',
+        //     label: 'recipient.office.name'
+        // },
+        // organizations: {
+        //     type: 'filters',
+        //     service: 'actions',
+        //     field: 'recipient.organization_id',
+        //     label: 'recipient.organization.name'
+        // },
+        // types: {
+        //     type: 'filters',
+        //     service: 'actions',
+        //     field: 'type'
+        // }
     }
 });

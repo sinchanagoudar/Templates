@@ -12,9 +12,9 @@ Ext.define('App.model.Action', {
         return Ext.String.format('person/{0}', this.getRecipient().get('username'));
     },
 
-    proxy: {
-        api: {
-            prefix: 'Server.actions'
-        }
-    }
+    // proxy: {
+    //     api: {
+    //         prefix: 'Server.actions'
+    //     }
+    // }
 });

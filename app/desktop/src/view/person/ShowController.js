@@ -14,17 +14,17 @@ Ext.define('App.view.person.ShowController', {
         history.removeAll();
         coworkers.removeAll();
 
-        if (record) {
-            history.filter('recipient_id', record.get('id'));
-            history.load();
+        // if (record) {
+        //     history.filter('recipient_id', record.get('id'));
+        //     history.load();
 
-            coworkers.filter([
-                { property: 'organization_id', value: record.get('organization_id') },
-                { property: 'id', value: record.get('id'), operator: '!=' }
-            ]);
+        //     coworkers.filter([
+        //         { property: 'organization_id', value: record.get('organization_id') },
+        //         { property: 'id', value: record.get('id'), operator: '!=' }
+        //     ]);
 
-            coworkers.load();
-        }
+        //     coworkers.load();
+        // }
 
         this.callParent(arguments);
     },

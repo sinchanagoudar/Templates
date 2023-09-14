@@ -15,7 +15,7 @@ Ext.define('App.view.tablet.person.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No employee was found to match your search',
-        bind: '{people}',
+        // bind: '{people}',
         ui: 'listing',
 
         selectable: {

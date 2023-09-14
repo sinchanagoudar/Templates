@@ -8,15 +8,15 @@ Ext.define('App.view.office.ShowController', {
             history = vm.getStore('history'),
             markers = vm.getStore('markers');
 
-        if (record) {
-            people.filter('office_id', record.get('id'));
-            history.filter('recipient.office_id', record.get('id'));
-            markers.loadRecords(record);
-        } else {
-            people.removeAll();
-            history.removeAll();
-            markers.removeAll();
-        }
+        // if (record) {
+        //     people.filter('office_id', record.get('id'));
+        //     history.filter('recipient.office_id', record.get('id'));
+        //     markers.loadRecords(record);
+        // } else {
+        //     people.removeAll();
+        //     history.removeAll();
+        //     markers.removeAll();
+        // }
 
         this.callParent(arguments);
     },

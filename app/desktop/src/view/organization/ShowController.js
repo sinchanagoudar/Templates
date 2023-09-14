@@ -7,13 +7,13 @@ Ext.define('App.view.organization.ShowController', {
             people = vm.getStore('people'),
             history = vm.getStore('history');
 
-        if (record) {
-            people.filter('organization_id', record.get('id'));
-            history.filter('recipient.organization_id', record.get('id'));
-        } else {
-            people.removeAll();
-            history.removeAll();
-        }
+        // if (record) {
+        //     people.filter('organization_id', record.get('id'));
+        //     history.filter('recipient.organization_id', record.get('id'));
+        // } else {
+        //     people.removeAll();
+        //     history.removeAll();
+        // }
 
         this.callParent(arguments);
     },

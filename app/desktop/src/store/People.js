@@ -3,7 +3,7 @@ Ext.define('App.store.People', {
     alias: 'store.people',
 
     model: 'App.model.Person',
-    remoteFilter: true,
-    remoteSort: true,
-    sorters: 'lastname'
+    // remoteFilter: true,
+    // remoteSort: true,
+    // sorters: 'lastname'
 });

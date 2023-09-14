@@ -46,11 +46,11 @@ Ext.define('App.view.widgets.BrowseController', {
             }
 
             dirty = true;
-            if (value == null) {
-                store.removeFilter(key, true);
-            } else {
-                store.filter(key, value, true);
-            }
+            // if (value == null) {
+            //     store.removeFilter(key, true);
+            // } else {
+            //     store.filter(key, value, true);
+            // }
         });
 
         if (dirty) {

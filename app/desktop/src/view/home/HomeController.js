@@ -80,8 +80,8 @@ Ext.define('App.view.home.HomeController', {
             break;
         }
 
-        store.clearFilter(true);
-        store.filter(filters, false, false);
+        // store.clearFilter(true);
+        // store.filter(filters, false, false);
         store.sort('date', direction);
     },
 
