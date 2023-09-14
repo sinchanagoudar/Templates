@@ -36,6 +36,11 @@ Ext.define('App.view.tablet.person.BrowseModel', {
                 lastname: 'Rbh',
                 title: 'developer',
                 headcount: 5,
+                email: 'abc@fhg.com',
+                phone: '8988898888',
+                created: '24-01-2000',
+                fieldtype: 'email',
+                fieldcolor: 'orange',
                 organization: {
                     name: 'abc',
                     managername: 'ksrh',
@@ -50,8 +55,11 @@ Ext.define('App.view.tablet.person.BrowseModel', {
                     country: 'India',
                     address: 'no 2 World Thrade Center'
                 },
-                email: 'abc@fhg.com',
-                phone: '8988898888'
+                recipient: {
+                    firstname: 'rname ',
+                    lastname: 'rlanme',
+                    title: 'rtitle'
+                }
             }]
         }
     }

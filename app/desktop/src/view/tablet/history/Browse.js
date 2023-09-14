@@ -10,10 +10,14 @@ Ext.define('App.view.tablet.history.Browse', {
         xtype: 'historybrowsetoolbar'
     },
 
+    viewModel: {
+        type: 'browse'
+    },
+
     items: [{
         xtype: 'grid',
         emptyText: 'No activity was found to match your search',
-        bind: '{history}',
+        bind: '{browser}',
         ui: 'listing',
 
         selectable: {
@@ -34,8 +38,8 @@ Ext.define('App.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<span class="action action-{type} {type:actionIconCls}"></span>',
-                '<div class="picture" style="background-image: url({recipient.picture})"></div>'
+                '<span class="action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
+                '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
             ]
         }, {
             text: 'Name / Title',
@@ -45,34 +49,34 @@ Ext.define('App.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<tpl for="recipient">',
-                    '<a class="item-title" href="#{url}">{fullname}</a>',
-                    '<div class="item-caption">{title}</div>',
+                '<tpl for=".">',
+                '<a class="item-title" href="#{url}">{recipient.firstname}{recipient.lastname}</a>',
+                '<div class="item-caption">{title}</div>',
                 '</tpl>'
             ]
         }, {
             text: 'Organization',
-            dataIndex: 'recipient.organization.name',
+            dataIndex: 'organization.name',
             flex: 1,
             cell: {
                 encodeHtml: false
             },
             tpl: [
-                '<tpl for="recipient.organization">',
-                    '<a class="item-title" href="#{url}">{name}</a>',
+                '<tpl for="organization">',
+                '<a class="item-title" href="#{url}">{name}</a>',
                 '</tpl>'
             ]
         }, {
             text: 'Office',
-            dataIndex: 'recipient.office.name',
+            dataIndex: 'office.name',
             flex: 1,
             cell: {
                 encodeHtml: false
             },
             tpl: [
-                '<tpl for="recipient.office">',
-                    '<a class="item-title" href="#{url}">{name}</a>',
-                    '<div class="item-caption">{city}, {country}</div>',
+                '<tpl for="office">',
+                '<a class="item-title" href="#{url}">{name}</a>',
+                '<div class="item-caption">{city}, {country}</div>',
                 '</tpl>'
             ]
         }, {
