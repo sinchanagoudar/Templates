@@ -2,17 +2,17 @@ Ext.define('App.view.person.WizardController', {
     extend: 'App.view.widgets.WizardController',
     alias: 'controller.personwizard',
 
-    control: {
-        '#': {
-            reset: 'refresh'
-        }
-    },
+    // control: {
+    //     '#': {
+    //         reset: 'refresh'
+    //     }
+    // },
 
-    refresh: function() {
-        var vm = this.getViewModel();
-        vm.getStore('offices').reload();
-        vm.getStore('organizations').reload();
-    },
+    // refresh: function() {
+    //     var vm = this.getViewModel();
+    //     vm.getStore('offices').reload();
+    //     vm.getStore('organizations').reload();
+    // },
 
     onNameFieldsBlur: function() {
         var me = this,

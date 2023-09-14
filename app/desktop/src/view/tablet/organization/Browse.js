@@ -7,6 +7,10 @@ Ext.define('App.view.tablet.organization.Browse', {
     ],
 
     controller: 'tablet-organizationbrowse',
+    viewModel: {
+        type: 'browse'
+    },
+
 
     tbar: {
         xtype: 'organizationbrowsetoolbar'
@@ -15,7 +19,7 @@ Ext.define('App.view.tablet.organization.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No organization was found to match your search',
-        bind: '{organizations}',
+        bind: '{browser}',
         ui: 'listing',
 
         selectable: {
@@ -43,14 +47,14 @@ Ext.define('App.view.tablet.organization.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<tpl for="manager">',
-                    '<div class="item-title">',
-                        '<a href="#{url}">{fullname}</a>',
-                    '</div>',
-                    '<div class="item-caption">',
-                        '<a href="#{office.url}">{office.name}</a>, ',
-                        '{office.city} ({office.country})',
-                    '</div>',
+                '<tpl for=".">',
+                '<div class="item-title">',
+                '<a href="#{url}">{manager.firstname}{manager.lastname}</a>',
+                '</div>',
+                '<div class="item-caption">',
+                '<a href="#{url}">{office.name}</a>, ',
+                '{office.city} ({office.country})',
+                '</div>',
                 '</tpl>'
             ]
         }, {
@@ -62,7 +66,7 @@ Ext.define('App.view.tablet.organization.Browse', {
             },
             tpl: [
                 '<a href="#people/organization/{id}">',
-                    '{headcount:plural("employee")}',
+                '{headcount:plural("employee")}',
                 '</a>'
             ]
         }],

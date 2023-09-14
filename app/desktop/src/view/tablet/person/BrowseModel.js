@@ -30,15 +30,20 @@ Ext.define('App.view.tablet.person.BrowseModel', {
             ],
 
             data: [{
+                name : 'customer Service',
                 username: 'abc',
                 firstname: 'Ayz',
                 lastname: 'Rbh',
                 title: 'developer',
+                headcount: 5,
                 organization: {
                     name: 'abc',
-                managername: 'ksrh',
+                    managername: 'ksrh',
                 },
-
+                manager: {
+                    firstname : 'mfname ',
+                    lastname : 'mlname',
+                },
                 office: {
                     name: 'ikm',
                     city: 'banglore',

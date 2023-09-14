@@ -21,7 +21,7 @@ Ext.define('App.view.widgets.BrowseToolbar', {
         },
         refresh: {
             iconCls: 'x-fa fa-refresh',
-            handler: 'onRefreshTap',
+            // handler: 'onRefreshTap',
             tooltip: 'Refresh',
             weight: 30
         },
