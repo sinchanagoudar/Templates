@@ -63,8 +63,8 @@ Ext.define('App.view.home.HomeEvents', {
             '</div>'
         ],
 
-        listeners: {
-            childtap: 'onEventChildTap'
-        }
+        // listeners: {
+        //     childtap: 'onEventChildTap'
+        // }
     }]
 });

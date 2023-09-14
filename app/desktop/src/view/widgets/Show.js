@@ -85,9 +85,9 @@ Ext.define('App.view.widgets.Show', {
                             xtype: 'historypanel',
                             bind: '{history}',
                             ui: 'block',
-                            listeners: {
-                                'childtap': 'onHistoryChildTap'
-                            }
+                            // listeners: {
+                            //     'childtap': 'onHistoryChildTap'
+                            // }
                         }
                     }
                 }

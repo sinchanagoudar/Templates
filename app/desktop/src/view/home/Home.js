@@ -61,9 +61,9 @@ Ext.define('App.view.home.Home', {
                         }
                     }
                 },
-                listeners: {
-                    childtap: 'onHistoryChildTap'
-                }
+                // listeners: {
+                //     childtap: 'onHistoryChildTap'
+                // }
             }]
         }
     ]

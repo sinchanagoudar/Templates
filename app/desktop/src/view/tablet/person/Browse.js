@@ -7,6 +7,10 @@ Ext.define('App.view.tablet.person.Browse', {
     ],
 
     controller: 'tablet-personbrowse',
+    viewModel: {
+        type: 'browse'
+    },
+
 
     tbar: {
         xtype: 'personbrowsetoolbar'
@@ -15,7 +19,7 @@ Ext.define('App.view.tablet.person.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No employee was found to match your search',
-        // bind: '{people}',
+        bind: '{browser}',
         ui: 'listing',
 
         selectable: {
@@ -44,7 +48,7 @@ Ext.define('App.view.tablet.person.Browse', {
             cell: {
                 encodeHtml: false
             },
-            tpl: '<div class="picture" style="background-image: url({picture})"></div>'
+            tpl: '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
         }, {
             text: 'Name / Title',
             dataIndex: 'lastname',
@@ -67,7 +71,7 @@ Ext.define('App.view.tablet.person.Browse', {
                 '<tpl for="organization">',
                     '<a class="item-title" href="#{url}">{name}</a>',
                     '<div class="item-caption">',
-                        'Managed by <a href="#{manager.url}">{manager.fullname}</a>',
+                        'Managed by <a href="#{url}">{managername}</a>',
                     '</div>',
                 '</tpl>'
             ]
@@ -98,8 +102,8 @@ Ext.define('App.view.tablet.person.Browse', {
             ]
         }],
 
-        listeners: {
-            childdoubletap: 'onChildActivate'
-        }
+        // listeners: {
+        //     childdoubletap: 'onChildActivate'
+        // }
     }]
 });
