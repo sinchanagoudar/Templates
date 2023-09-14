@@ -39,7 +39,7 @@ Ext.define('App.view.tablet.organization.Browse', {
                 encodeHtml: false
             },
             tpl: ['<tpl for=".">',
-                '<a class="item-title" href="#{url}">{office.name}</a>',
+                '<b><a class="item-title" href="#{url}">{office.name}</a></b>',
                 '</tpl>']
         }, {
             text: 'Manager',
@@ -51,7 +51,7 @@ Ext.define('App.view.tablet.organization.Browse', {
             tpl: [
                 '<tpl for=".">',
                 '<div class="item-title">',
-                '<a href="#{url}">{manager.firstname}{manager.lastname}</a>',
+                '<b><a href="#{url}">{manager.firstname}{manager.lastname}</a></b>',
                 '</div>',
                 '<div class="item-caption">',
                 '<a href="#{url}">{office.name}</a>, ',
@@ -67,9 +67,9 @@ Ext.define('App.view.tablet.organization.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<a href="#people/organization/{id}">',
+                '<b><a href="#people/organization/{id}">',
                 '{headcount:plural("employee")}',
-                '</a>'
+                '</a></b>'
             ]
         }],
 

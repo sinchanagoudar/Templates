@@ -38,7 +38,7 @@ Ext.define('App.view.tablet.office.Browse', {
                 encodeHtml: false
             },
             tpl: ['<tpl for=".">',
-                '<a class="item-title" href="#{url}">{office.name}</a>',
+                '<b><a class="item-title" href="#{url}">{office.name}</a></b>',
                 '</tpl>']
         }, {
             text: 'Address',
@@ -49,7 +49,7 @@ Ext.define('App.view.tablet.office.Browse', {
             },
             tpl: [
                 '<tpl for="office">',
-                '<div class="item-title">{city}, {country}</div>',
+                '<b><div class="item-title">{city}, {country}</div></b>',
                 '<div class="item-caption">{address}<div>',
                 '</tpl>'
             ]
@@ -61,9 +61,9 @@ Ext.define('App.view.tablet.office.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<a href="#people/office/{id}">',
+                '<b><a href="#people/office/{id}">',
                 '{headcount:plural("employee")}',
-                '</a>'
+                '</a></b>'
             ]
         }],
 

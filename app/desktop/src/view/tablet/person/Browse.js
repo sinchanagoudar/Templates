@@ -57,7 +57,7 @@ Ext.define('App.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<a class="item-title" href="#{url}">{fullname}</a>',
+                '<b><a class="item-title" href="#{url}">{fullname}</a></b>',
                 '<div class="item-caption">{title}</div>'
             ]
         }, {
@@ -69,7 +69,7 @@ Ext.define('App.view.tablet.person.Browse', {
             },
             tpl: [
                 '<tpl for="organization">',
-                    '<a class="item-title" href="#{url}">{name}</a>',
+                    '<b><a class="item-title" href="#{url}">{name}</a></b>',
                     '<div class="item-caption">',
                         'Managed by <a href="#{url}">{managername}</a>',
                     '</div>',
@@ -84,7 +84,7 @@ Ext.define('App.view.tablet.person.Browse', {
             },
             tpl: [
                 '<tpl for="office">',
-                    '<a class="item-title" href="#{url}">{name}</a>',
+                    '<b><a class="item-title" href="#{url}">{name}</a></b>',
                     '<div class="item-caption">{city}, {country}</div>',
                 '</tpl>'
             ]
@@ -97,13 +97,9 @@ Ext.define('App.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<div class="item-info"><span class="x-fa fa-envelope-o"></span> {email}</div>',
+                '<b><div class="item-info"><span class="x-fa fa-envelope"></span> {email}</div></b>',
                 '<div class="item-info"><span class="x-fa fa-phone"></span> {phone}</div>'
             ]
-        }],
-
-        // listeners: {
-        //     childdoubletap: 'onChildActivate'
-        // }
+        }]
     }]
 });

@@ -46,7 +46,6 @@ Ext.define('App.view.main.Menu', {
         },
         profile: {
             xtype: 'button',
-            handler: 'onProfileTap',
             ui: 'large flat dark picture',
             style:{
                 background:'#353535',

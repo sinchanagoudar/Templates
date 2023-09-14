@@ -24,6 +24,9 @@ Ext.define('App.view.phone.history.Browse', {
             autoPaging: true
         }, {
             type: 'listswiper',
+            style:{
+                padding:'10px'
+            },
             right: [{
                 iconCls: 'x-fa fa-trash',
                 commit: 'onDeleteAction',
@@ -35,7 +38,7 @@ Ext.define('App.view.phone.history.Browse', {
 
         itemTpl: [
             '<div class="history-visual">',
-                '<span class="action action-{type} {type:actionIconCls}"></span>',
+                '<span class="action action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
                 '<div class="picture" style="background-image: url({recipient.picture})"></div>',
             '</div>',
             '<div class="item-details">',

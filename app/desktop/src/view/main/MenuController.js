@@ -19,14 +19,6 @@ Ext.define('App.view.main.MenuController', {
         }
     },
 
-    onProfileTap: function() {
-        this.redirectTo(this.getViewModel().get('user'));
-        this.collapse();
-    },
-
     onLogoutTap: function() {
-        if (this.fireEvent('logout')) {
-            this.collapse();
-        }
     }
 });
