@@ -30,7 +30,7 @@ Ext.define('App.view.tablet.person.BrowseModel', {
             ],
 
             data: [{
-                name : 'customer Service',
+                organizationame: 'customer Service',
                 username: 'abc',
                 firstname: 'Ayz',
                 lastname: 'Rbh',
@@ -41,13 +41,14 @@ Ext.define('App.view.tablet.person.BrowseModel', {
                     managername: 'ksrh',
                 },
                 manager: {
-                    firstname : 'mfname ',
-                    lastname : 'mlname',
+                    firstname: 'mfname ',
+                    lastname: 'mlname',
                 },
                 office: {
                     name: 'ikm',
                     city: 'banglore',
-                    country: 'India'
+                    country: 'India',
+                    address: 'no 2 World Thrade Center'
                 },
                 email: 'abc@fhg.com',
                 phone: '8988898888'

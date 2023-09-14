@@ -33,12 +33,14 @@ Ext.define('App.view.tablet.organization.Browse', {
 
         columns: [{
             text: 'Name',
-            dataIndex: 'name',
+            dataIndex: 'office.name',
             flex: 2,
             cell: {
                 encodeHtml: false
             },
-            tpl: '<a class="item-title" href="#{url}">{name}</a>'
+            tpl: ['<tpl for=".">',
+                '<a class="item-title" href="#{url}">{office.name}</a>',
+                '</tpl>']
         }, {
             text: 'Manager',
             dataIndex: 'manager.lastname',
