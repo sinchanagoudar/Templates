@@ -18,7 +18,7 @@ Ext.define('{appName}.view.tablet.office.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No office was found to match your search',
-        bind: '{browser}',
+        bind: '\u007Bbrowser}',
         ui: 'listing',
 
         selectable: {
@@ -37,9 +37,9 @@ Ext.define('{appName}.view.tablet.office.Browse', {
             cell: {
                 encodeHtml: false
             },
-            // tpl: ['<tpl for=".">',
+            // tpl: ['<\u0074pl for=".">',
             //     '<b><a class="item-title" href="#{url}">{office.name}</a></b>',
-            //     '</tpl>']
+            //     '</\u0074pl>']
         }, {
             text: 'Address',
             dataIndex: 'country',
@@ -48,10 +48,10 @@ Ext.define('{appName}.view.tablet.office.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for="office">',
-            //     '<b><div class="item-title">{city}, {country}</div></b>',
-            //     '<div class="item-caption">{address}<div>',
-            //     '</tpl>'
+            //     '<\u0074pl for="office">',
+            //     '<b><div class="item-title">\u007Bcity}, \u007Bcountry}</div></b>',
+            //     '<div class="item-caption">\u007Baddress}<div>',
+            //     '</\u0074pl>'
             // ]
         }, {
             text: 'Headcount',
@@ -61,7 +61,7 @@ Ext.define('{appName}.view.tablet.office.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<b><a href="#people/office/{id}">',
+            //     '<b><a href="#people/office/\u007Bid}">',
             //     '{headcount:plural("employee")}',
             //     '</a></b>'
             // ]

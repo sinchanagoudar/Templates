@@ -23,6 +23,6 @@ Ext.define('{appName}.view.office.ShowDetails', {
     // ],
 
     // bind: {
-    //     record: '{record}'
+    //     record: '\u007Brecord}'
     // }
 });

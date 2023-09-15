@@ -27,7 +27,7 @@ Ext.define('{appName}.view.office.Show', {
             userCls: 'office-map',
             weight: -5,
             bind: {
-                markers: '{markers}'
+                markers: '\u007Bmarkers}'
             }
         },
 

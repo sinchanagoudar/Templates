@@ -15,7 +15,7 @@ Ext.define('{appName}.view.organization.Wizard', {
     },
 
     // bind: {
-    //     title: '{record.phantom? "Add" : "Edit"} Organization'
+    //     title: '\u007Brecord.phantom? "Add" : "Edit"} Organization'
     // },
 
     screens: [{
@@ -26,7 +26,7 @@ Ext.define('{appName}.view.organization.Wizard', {
             reference: 'name',
             label: 'Name',
             required: true,
-            // bind: '{record.name}'
+            // bind: '\u007Brecord.name}'
         }, {
             xtype: 'combobox',
             label: 'Manager',
@@ -36,8 +36,8 @@ Ext.define('{appName}.view.organization.Wizard', {
             forceSelection: true,
             required: true,
             // bind: {
-            //     value: '{record.manager_id}',
-            //     store: '{managers}'
+            //     value: '\u007Brecord.manager_id}',
+            //     store: '\u007Bmanagers}'
             // }
         }]
     }]

@@ -49,7 +49,7 @@ Ext.define('{appName}.view.home.HomeHeader', {
         //         '</tpl>'
         //     ],
         //     bind: {
-        //         record: '{user}'
+        //         record: '\u007Buser}'
         //     }
         // }, {
         //     xtype: 'component',
@@ -60,7 +60,7 @@ Ext.define('{appName}.view.home.HomeHeader', {
         //     ],
         //     bind: {
         //         data: {
-        //             time: '{time}'
+        //             time: '\u007Btime}'
         //         }
         //     }
         // }]

@@ -7,12 +7,12 @@ Ext.define('{appName}.view.person.ShowOffice', {
 
     // bind: {
     //     title:
-    //         '<a href="#{record.office.url}">'+
-    //             '{record.office.name}'+
+    //         '<a href="#\u007Brecord.office.url}">'+
+    //             '\u007Brecord.office.name}'+
     //         '</a>'+
     //         '<div class="caption">'+
-    //             '{record.office.city}, '+
-    //             '{record.office.country}'+
+    //             '\u007Brecord.office.city}, '+
+    //             '\u007Brecord.office.country}'+
     //         '</div>'
     // },
 
@@ -24,8 +24,8 @@ Ext.define('{appName}.view.person.ShowOffice', {
             ui: 'block',
             weigth: 10,
             // bind: {
-            //     text: '{record.office.headcount}',
-            //     tooltip: 'Show employees of the <b>{record.office.name}</b> office.'
+            //     text: '\u007Brecord.office.headcount}',
+            //     tooltip: 'Show employees of the <b>\u007Brecord.office.name}</b> office.'
             // }
         }],
     },
@@ -33,7 +33,7 @@ Ext.define('{appName}.view.person.ShowOffice', {
     items: [{
         xtype: 'mapview',
         // bind: {
-        //     markers: '{record.office}'
+        //     markers: '\u007Brecord.office}'
         // }
     }]
 });

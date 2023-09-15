@@ -15,7 +15,7 @@ Ext.define('{appName}.view.person.Wizard', {
     },
 
     // bind: {
-    //     title: '{record.phantom? "Add" : "Edit"} Employee'
+    //     title: '\u007Brecord.phantom? "Add" : "Edit"} Employee'
     // },
 
     cls: 'person-create',
@@ -28,7 +28,7 @@ Ext.define('{appName}.view.person.Wizard', {
             reference: 'firstname',
             label: 'First Name',
             required: true,
-            // bind: '{record.firstname}',
+            // bind: '\u007Brecord.firstname}',
             listeners: {
                 blur: 'onNameFieldsBlur'
             }
@@ -37,7 +37,7 @@ Ext.define('{appName}.view.person.Wizard', {
             reference: 'lastname',
             label: 'Last Name',
             required: true,
-            // bind: '{record.lastname}',
+            // bind: '\u007Brecord.lastname}',
             listeners: {
                 blur: 'onNameFieldsBlur'
             }
@@ -46,7 +46,7 @@ Ext.define('{appName}.view.person.Wizard', {
             reference: 'username',
             label: 'Username',
             required: true,
-            // bind: '{record.username}',
+            // bind: '\u007Brecord.username}',
             listeners: {
                 change: 'onUsernameChange'
             }
@@ -56,9 +56,9 @@ Ext.define('{appName}.view.person.Wizard', {
             label: 'Password',
             required: true,
             // bind: {
-            //     required: '{record.phantom}',
-            //     placeholder: '{record.phantom? "" : "Keep password unchanged"}',
-            //     value: '{record.password}'
+            //     required: '\u007Brecord.phantom}',
+            //     placeholder: '\u007Brecord.phantom? "" : "Keep password unchanged"}',
+            //     value: '\u007Brecord.password}'
             // }
         }, {
             xtype: 'passwordfield',
@@ -70,8 +70,8 @@ Ext.define('{appName}.view.person.Wizard', {
                 fn: 'doPasswordMatch'
             },
             // bind: {
-            //     required: '{record.phantom}',
-            //     disabled: '{!password.value}'
+            //     required: '\u007Brecord.phantom}',
+            //     disabled: '\u007B!password.value}'
             // }
         }]
     }, {
@@ -82,29 +82,29 @@ Ext.define('{appName}.view.person.Wizard', {
             reference: 'birthday',
             label: 'Birthday',
             required: true,
-            // bind: '{record.birthday}'
+            // bind: '\u007Brecord.birthday}'
         }, {
             xtype: 'emailfield',
             reference: 'email',
             label: 'Email',
             required: true,
-            // bind: '{record.email}'
+            // bind: '\u007Brecord.email}'
         }, {
             xtype: 'textfield',
             reference: 'phone',
             label: 'Phone',
             required: true,
-            // bind: '{record.phone}'
+            // bind: '\u007Brecord.phone}'
         }, {
             xtype: 'textfield',
             reference: 'skype',
             label: 'Skype',
-            // bind: '{record.skype}'
+            // bind: '\u007Brecord.skype}'
         }, {
             xtype: 'textfield',
             reference: 'linkedin',
             label: 'LinkedIn',
-            // bind: '{record.linkedin}'
+            // bind: '\u007Brecord.linkedin}'
         }]
     }, {
         title: 'Work',
@@ -114,18 +114,18 @@ Ext.define('{appName}.view.person.Wizard', {
             reference: 'title',
             label: 'Job Title',
             required: true,
-            // bind: '{record.title}'
+            // bind: '\u007Brecord.title}'
         }, {
             xtype: 'datepickerfield',
             reference: 'started',
             label: 'Entry date',
             required: true,
-            // bind: '{record.started}'
+            // bind: '\u007Brecord.started}'
         }, {
             xtype: 'datepickerfield',
             reference: 'ended',
             label: 'Exit date',
-            // bind: '{record.ended}'
+            // bind: '\u007Brecord.ended}'
         }, {
             xtype: 'combobox',
             label: 'Office',
@@ -135,8 +135,8 @@ Ext.define('{appName}.view.person.Wizard', {
             forceSelection: true,
             required: true,
             // bind: {
-            //     value: '{record.office_id}',
-            //     store: '{offices}'
+            //     value: '\u007Brecord.office_id}',
+            //     store: '\u007Boffices}'
             // }
         }, {
             xtype: 'combobox',
@@ -147,8 +147,8 @@ Ext.define('{appName}.view.person.Wizard', {
             forceSelection: true,
             required: true,
             // bind: {
-            //     value: '{record.organization_id}',
-            //     store: '{organizations}'
+            //     value: '\u007Brecord.organization_id}',
+            //     store: '\u007Borganizations}'
             // }
         }]
     }]

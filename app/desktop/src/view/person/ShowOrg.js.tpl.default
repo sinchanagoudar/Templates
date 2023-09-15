@@ -7,13 +7,13 @@ Ext.define('{appName}.view.person.ShowOrg', {
 
     // bind: {
     //     title:
-    //         '<a href="#{record.organization.url}">'+
-    //             '{record.organization.name}'+
+    //         '<a href="#\u007Brecord.organization.url}">'+
+    //             '\u007Brecord.organization.name}'+
     //         '</a>'+
     //         '<div class="caption">'+
     //             'Managed by '+
-    //             '<a href="#{record.organization.manager.url}">'+
-    //                 '{record.organization.manager.fullname}'+
+    //             '<a href="#\u007Brecord.organization.manager.url}">'+
+    //                 '\u007Brecord.organization.manager.fullname}'+
     //             '</a>'+
     //         '</div>'
     // },
@@ -26,8 +26,8 @@ Ext.define('{appName}.view.person.ShowOrg', {
             ui: 'block',
             weigth: 10,
             // bind: {
-            //     text: '{record.organization.headcount}',
-            //     tooltip: 'Show employees of the <b>{record.organization.name}</b> organization.'
+            //     text: '\u007Brecord.organization.headcount}',
+            //     tooltip: 'Show employees of the <b>\u007Brecord.organization.name}</b> organization.'
             // }
         }]
     },
@@ -37,10 +37,10 @@ Ext.define('{appName}.view.person.ShowOrg', {
         ui: 'thumbnails',
         minHeight: 80,
         inline: true,
-        // itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
+        // itemTpl: '<div class="thumbnail" style="background-image:url(\u007Bpicture})"></div>',
         // bind: {
-        //     emptyText: '{record.fullname} is the only employee in this organization',
-        //     store: '{coworkers}'
+        //     emptyText: '\u007Brecord.fullname} is the only employee in this organization',
+        //     store: '\u007Bcoworkers}'
         // },
         // listeners: {
         //     childtap: 'onPeopleChildTap'

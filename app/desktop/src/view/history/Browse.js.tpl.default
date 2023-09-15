@@ -23,6 +23,6 @@ Ext.define('{appName}.view.history.Browse', {
 
     cls: 'historybrowse',
     bind: {
-        store: '{history}'
+        store: '\u007Bhistory}'
     }
 });

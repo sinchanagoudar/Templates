@@ -11,8 +11,8 @@ Ext.define('{appName}.view.tablet.history.BrowseToolbar', {
             queryMode: 'local',
             weight: 10,
             // bind: {
-            //     selection: '{filters.recipient}',
-            //     store: '{recipients}'
+            //     selection: '\u007Bfilters.recipient}',
+            //     store: '\u007Brecipients}'
             // }
         },
         organizations: {
@@ -23,7 +23,7 @@ Ext.define('{appName}.view.tablet.history.BrowseToolbar', {
             queryMode: 'local',
             weight: 11,
             // bind: {
-            //     selection: '{filters.organization}',
+            //     selection: '\u007Bfilters.organization}',
             //     store: '{organizations}'
             // }
         },
@@ -35,8 +35,8 @@ Ext.define('{appName}.view.tablet.history.BrowseToolbar', {
             queryMode: 'local',
             weight: 12,
             // bind: {
-            //     selection: '{filters.office}',
-            //     store: '{offices}'
+            //     selection: '\u007Bfilters.office}',
+            //     store: '\u007Boffices}'
             // }
         },
         actions: {
@@ -47,8 +47,8 @@ Ext.define('{appName}.view.tablet.history.BrowseToolbar', {
             queryMode: 'local',
             weight: 13,
             // bind: {
-            //     selection: '{filters.type}',
-            //     store: '{types}'
+            //     selection: '\u007Bfilters.type}',
+            //     store: '\u007Btypes}'
             // }
         }
     }

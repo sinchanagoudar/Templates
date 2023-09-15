@@ -54,7 +54,7 @@ Ext.define('{appName}.view.main.Menu', {
             textAlign: 'left',
             weight: 10,
             // bind: {
-            //     icon: '{user.picture}',
+            //     icon: '\u007Buser.picture}',
             //     text: '<div class="title">Norma Flores</div>'+
             //         '<div class="value">norma.flores</div>'
             // }

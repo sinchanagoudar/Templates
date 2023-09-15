@@ -25,7 +25,7 @@ Ext.define('{appName}.view.phone.person.Browse', {
     items: [{
         xtype: 'list',
         reference: 'list',
-        bind: '{people}',
+        bind: '\u007Bpeople}',
         striped: true,
         grouped: true,
         ui: 'listing',
@@ -76,10 +76,10 @@ Ext.define('{appName}.view.phone.person.Browse', {
             }]
         },
         // itemTpl: [
-        //     '<div class="picture" style="background-image:url({picture})"></div>',
+        //     '<div class="picture" style="background-image:url(\u007Bpicture})"></div>',
         //     '<div class="item-details">',
-        //         '<div class="item-title">{fullname}</div> ',
-        //         '<div class="item-caption">{title}</div>',
+        //         '<div class="item-title">\u007Bfullname}</div> ',
+        //         '<div class="item-caption">\u007Btitle}</div>',
         //     '</div>'
         // ],
         // listeners: {

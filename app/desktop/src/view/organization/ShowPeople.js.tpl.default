@@ -14,20 +14,20 @@ Ext.define('{appName}.view.organization.ShowPeople', {
             ui: 'block',
             weigth: 10,
             // bind: {
-            //     text: '{record.headcount}',
-            //     tooltip: 'Show employees of the <b>{record.name}</b> organization.'
+            //     text: \u007Brecord.headcount}',
+            //     tooltip: 'Show employees of the <b>\u007Brecord.name}</b> organization.'
             // }
         }]
     },
 
     items: [{
         xtype: 'dataview',
-        bind: '{people}',
+        bind: '\u007Bpeople}',
         ui: 'thumbnails',
         minHeight: 80,
         inline: true,
         emptyText: 'This organization is empty',
-        // itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
+        // itemTpl: '<div class="thumbnail" style="background-image:url(\u007Bpicture})"></div>',
         // listeners: {
         //     childtap: 'onPeopleChildTap'
         // }

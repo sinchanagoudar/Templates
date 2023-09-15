@@ -17,7 +17,7 @@ Ext.define('{appName}.view.tablet.history.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No activity was found to match your search',
-        bind: '{browser}',
+        bind: '\u007Bbrowser}',
         ui: 'listing',
 
         selectable: {
@@ -38,7 +38,7 @@ Ext.define('{appName}.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<span class="action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
+            //     '<span class="action-\u007Bfieldtype} \u007Bfieldtype:actionIconCls}" style="background-color:\u007Bfieldcolor}"></span>',
             //     '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
             // ]
         }, {
@@ -50,8 +50,8 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             },
             // tpl: [
             //     '<tpl for=".">',
-            //     '<a class="item-title" href="#{url}">{recipient.firstname}{recipient.lastname}</a>',
-            //     '<div class="item-caption">{title}</div>',
+            //     '<a class="item-title" href="#\u007Burl}">\u007Brecipient.firstname}\u007Brecipient.lastname}</a>',
+            //     '<div class="item-caption">\u007Btitle}</div>',
             //     '</tpl>'
             // ]
         }, {
@@ -63,7 +63,7 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             },
             // tpl: [
             //     '<tpl for="organization">',
-            //     '<a class="item-title" href="#{url}">{name}</a>',
+            //     '<a class="item-title" href="#\u007Burl}">{name}</a>',
             //     '</tpl>'
             // ]
         }, {
@@ -75,8 +75,8 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             },
             // tpl: [
             //     '<tpl for="office">',
-            //     '<a class="item-title" href="#{url}">{name}</a>',
-            //     '<div class="item-caption">{city}, {country}</div>',
+            //     '<a class="item-title" href="#\u007Burl}">{name}</a>',
+            //     '<div class="item-caption">\u007Bcity}, {country}</div>',
             //     '</tpl>'
             // ]
         }, {

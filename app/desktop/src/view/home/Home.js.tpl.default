@@ -52,7 +52,7 @@ Ext.define('{appName}.view.home.Home', {
             userCls: 'blocks-column',
             items: [{
                 xtype: 'historypanel',
-                bind: '{history}',
+                bind: '\u007Bhistory}',
                 ui: 'block flat',
                 header: {
                     items: {

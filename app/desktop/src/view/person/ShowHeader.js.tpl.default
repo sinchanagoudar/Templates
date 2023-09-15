@@ -42,14 +42,14 @@ Ext.define('{appName}.view.person.ShowHeader', {
                 'picture'
             ],
             // bind: {
-            //     src: '{record.picture}'
+            //     src: '\u007Brecord.picture}'
             // }
         },
 
         // title: {
         //     tpl: [
-        //         '<div class="name">{firstname} <b>{lastname}</b></div>',
-        //         '<div class="desc">{title}</div>'
+        //         '<div class="name">\u007Bfirstname} <b>\u007Blastname}</b></div>',
+        //         '<div class="desc">\u007Btitle}</div>'
         //     ]
         // }
     }

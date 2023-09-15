@@ -7,7 +7,7 @@ Ext.define('{appName}.view.office.Wizard', {
     ],
 
     // bind: {
-    //     title: '{record.phantom? "Add" : "Edit"} Office'
+    //     title: '\u007Brecord.phantom? "Add" : "Edit"} Office'
     // },
 
     screens: [{
@@ -18,35 +18,35 @@ Ext.define('{appName}.view.office.Wizard', {
             reference: 'name',
             label: 'Name',
             required: true,
-            // bind: '{record.name}'
+            // bind: '\u007Brecord.name}'
         }, {
             xtype: 'textfield',
             reference: 'address',
             label: 'Address',
             required: true,
-            // bind: '{record.address}'
+            // bind: '\u007Brecord.address}'
         }, {
             xtype: 'textfield',
             reference: 'city',
             label: 'City',
             required: true,
-            // bind: '{record.city}'
+            // bind: '\u007Brecord.city}'
         }, {
             xtype: 'textfield',
             reference: 'postcode',
             label: 'ZIP/Postal',
-            // bind: '{record.postcode}'
+            // bind: '\u007Brecord.postcode}'
         }, {
             xtype: 'textfield',
             reference: 'country',
             label: 'Country',
             required: true,
-            // bind: '{record.country}'
+            // bind: '\u007Brecord.country}'
         }, {
             xtype: 'textfield',
             reference: 'region',
             label: 'Region',
-            // bind: '{record.region}'
+            // bind: '\u007Brecord.region}'
         }]
     }]
 });

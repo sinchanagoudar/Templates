@@ -14,6 +14,6 @@ Ext.define('{appName}.view.office.Browse', {
 
     cls: 'officebrowse',
     bind: {
-        store: '{offices}'
+        store: '\u007Boffices}'
     }
 });

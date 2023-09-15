@@ -17,6 +17,6 @@ Ext.define('{appName}.view.person.Browse', {
 
     cls: 'personbrowse',
     bind: {
-        store: '{people}'
+        store: '\u007Bpeople}'
     }
 });

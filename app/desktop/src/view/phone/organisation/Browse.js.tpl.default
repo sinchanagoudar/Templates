@@ -20,7 +20,7 @@ Ext.define('{appName}.view.phone.organization.Browse', {
 
     items: [{
         xtype: 'list',
-        bind: '{organizations}',
+        bind: '\u007Borganizations}',
         indexBar: true,
         striped: true,
         grouped: true,
@@ -45,10 +45,10 @@ Ext.define('{appName}.view.phone.organization.Browse', {
 
         // itemTpl: [
         //     '<div class="item-details">',
-        //         '<div class="item-title">{name}</div>',
-        //         '<div class="item-caption">{manager.fullname}</div>',
+        //         '<div class="item-title">\u007Bname}</div>',
+        //         '<div class="item-caption">\u007Bmanager.fullname}</div>',
         //     '</div>',
-        //     '<div class="item-stats">{headcount:plural("employee")}</div>'
+        //     '<div class="item-stats">\u007Bheadcount:plural("employee")}</div>'
         // ],
 
         // listeners: {

@@ -9,7 +9,7 @@ Ext.define('{appName}.view.phone.history.Browse', {
 
     items: [{
         xtype: 'list',
-        bind: '{history}',
+        bind: '\u007Bhistory}',
         emptyText: 'No activity was found',
         striped: true,
         grouped: true,
@@ -38,16 +38,16 @@ Ext.define('{appName}.view.phone.history.Browse', {
 
         // itemTpl: [
         //     '<div class="history-visual">',
-        //         '<span class="action action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
-        //         '<div class="picture" style="background-image: url({recipient.picture})"></div>',
+        //         '<span class="action action-\u007Bfieldtype} \u007Bfieldtype:actionIconCls}" style="background-color:\u007Bfieldcolor}"></span>',
+        //         '<div class="picture" style="background-image: url(\u007Brecipient.picture})"></div>',
         //     '</div>',
         //     '<div class="item-details">',
-        //         '<div class="item-title">{recipient.fullname}</div>',
-        //         '<div class="item-caption">{subject}</div>',
+        //         '<div class="item-title">\u007Brecipient.fullname}</div>',
+        //         '<div class="item-caption">\u007Bsubject}</div>',
         //     '</div>',
         //     '<div class="item-stats">',
-        //         '<div class="date">{created:date("Y/m/d")}</div>',
-        //         '<div class="time">{created:date("H:i")}</div>',
+        //         '<div class="date">\u007Bcreated:date("Y/m/d")}</div>',
+        //         '<div class="time">\u007Bcreated:date("H:i")}</div>',
         //     '</div>'
         // ]
     }]
