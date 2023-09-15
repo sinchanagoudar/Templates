@@ -1,0 +1,7 @@
+Ext.define('{appName}.overrides.LoadMask', {
+    override: 'Ext.LoadMask',
+
+    config: {
+        message: ''
+    }
+});

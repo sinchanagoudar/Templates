@@ -1,0 +1,68 @@
+Ext.define('{appName}.view.home.HomeHeader', {
+    extend: 'Ext.Container',
+    xtype: 'homeheader',
+
+    cls: 'home-header',
+    layout: 'vbox',
+
+    items: [{
+        xtype: 'component',
+        cls: 'header-message',
+        html: [
+            '<div class="text">'+
+                '<div class="greeting">Good Morning</div>'+
+                '<div class="person-name">Norma</div>'+
+            '</div>'
+        ]
+    }, {
+        xtype: 'container',
+        layout: 'hbox',
+        userCls: [
+            'page-constrained',
+            'header-info'
+        ],
+        items: [{
+            xtype: 'component',
+            cls: 'header-links',
+            flex: 1,
+            html: [
+                '<\u0074pl for="organization.manager">'+
+                    '<div class="item">'+
+                        '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'+
+                        '<div class="title">Manager</div>'+
+                        '<a class="link" href="#\u007Burl}">Norma Oslan</a>'+
+                    '</div>'+
+                '</\u0074pl>'+
+                '<\u0074pl for="organization">'+
+                    '<div class="item">'+
+                        '<span class="icon x-fa fa-sitemap"></span>'+
+                        '<div class="title">Organization</div>'+
+                        '<a class="link"  href="#\u007Burl}">Operational Head</a>'+
+                    '</div>'+
+                '</\u0074pl>'+
+                '<\u0074pl for="office">'+
+                    '<div class="item">'+
+                        '<span class="icon x-fa fa-globe"></span>'+
+                        '<div class="title">Office</div>'+
+                        '<a class="link" href="#\u007Burl}">Northfield</a>'+
+                    '</div>'+
+                '</\u0074pl>'
+            ],
+            bind: {
+                record: '\u007Buser}'
+            }
+        }, {
+            xtype: 'component',
+            cls: 'header-clock',
+            tpl: [
+                '<div class="date">\u007Btime:date("l, F d")}</div>',
+                '<div class="time"><span class="x-fa fa-clock-o"></span> \u007Btime:date("G:ia")}</div>'
+            ],
+            bind: {
+                data: {
+                    time: '\u007Btime}'
+                }
+            }
+        }]
+    }]
+});

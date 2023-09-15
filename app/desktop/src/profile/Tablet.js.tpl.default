@@ -1,0 +1,27 @@
+Ext.define('{appName}.profile.Tablet', {
+    extend: 'Ext.app.Profile',
+
+    views: {
+        historybrowse: '{appName}.view.tablet.history.Browse',
+        historybrowsetoolbar: '{appName}.view.tablet.history.BrowseToolbar',
+        main: '{appName}.view.tablet.main.Main',
+        officebrowse: '{appName}.view.tablet.office.Browse',
+        officebrowsetoolbar: '{appName}.view.tablet.office.BrowseToolbar',
+        organizationbrowse: '{appName}.view.tablet.organization.Browse',
+        organizationbrowsetoolbar: '{appName}.view.tablet.organization.BrowseToolbar',
+        personbrowse: '{appName}.view.tablet.person.Browse',
+        personbrowsetoolbar: '{appName}.view.tablet.person.BrowseToolbar'
+    },
+
+    isActive: function () {
+        return !Ext.platformTags.phone;
+    },
+
+    launch: function () {
+        // Add a class to the body el to identify the phone profile so we can
+        // override CSS styles easily. The framework adds x-phone so we could
+        // use it but this way the app controls a class that is always present
+        // when this profile isActive, regardless of the actual device type.
+        Ext.getBody().addCls('tablet-profile');
+    }
+});

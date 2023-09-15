@@ -1,0 +1,49 @@
+Ext.define('{appName}.view.person.ShowOrg', {
+    extend: 'Ext.Panel',
+    xtype: 'personshoworg',
+
+    cls: 'person-org',
+    iconCls: 'x-fa fa-sitemap',
+
+    bind: {
+        title:
+            '<a href="#\u007Brecord.organization.url}">'+
+                '\u007Brecord.organization.name}'+
+            '</a>'+
+            '<div class="caption">'+
+                'Managed by '+
+                '<a href="#\u007Brecord.organization.manager.url}">'+
+                    '\u007Brecord.organization.manager.fullname}'+
+                '</a>'+
+            '</div>'
+    },
+
+    header: {
+        items: [{
+            xtype: 'button',
+            handler: 'onOrganizationHeadcountTap',
+            iconCls: 'x-fa fa-users',
+            ui: 'block',
+            weigth: 10,
+            bind: {
+                text: '\u007Brecord.organization.headcount}',
+                tooltip: 'Show employees of the <b>\u007Brecord.organization.name}</b> organization.'
+            }
+        }]
+    },
+
+    items: [{
+        xtype: 'dataview',
+        ui: 'thumbnails',
+        minHeight: 80,
+        inline: true,
+        itemTpl: '<div class="thumbnail" style="background-image:url(\u007Bpicture})"></div>',
+        bind: {
+            emptyText: '\u007Brecord.fullname} is the only employee in this organization',
+            store: '\u007Bcoworkers}'
+        },
+        listeners: {
+            childtap: 'onPeopleChildTap'
+        }
+    }]
+});

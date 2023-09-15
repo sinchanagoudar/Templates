@@ -1,0 +1,105 @@
+Ext.define('{appName}.view.tablet.person.Browse', {
+    extend: '{appName}.view.person.Browse',
+    // xtype: 'personbrowse', -- set by profile
+
+    requires: [
+        'Ext.plugin.ListPaging'
+    ],
+
+    controller: 'tablet-personbrowse',
+    viewModel: {
+        type: 'browse'
+    },
+
+
+    tbar: {
+        xtype: 'personbrowsetoolbar'
+    },
+
+    items: [{
+        xtype: 'grid',
+        emptyText: 'No employee was found to match your search',
+        bind: '\u007Bbrowser}',
+        ui: 'listing',
+
+        selectable: {
+            disabled: true
+        },
+
+        plugins: [{
+            type: 'listpaging',
+            autoPaging: true
+        }],
+
+        columnMenu: {
+            items: {
+                groupByThis: false,
+                showInGroups: false
+            }
+        },
+
+        columns: [{
+            dataIndex: 'picture',
+            menuDisabled: true,
+            hideable: false,
+            sortable: false,
+            align: 'center',
+            width: 58,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
+        }, {
+            text: 'Name / Title',
+            dataIndex: 'lastname',
+            flex: 1,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<b><a class="item-title" href="#\u007Burl}">\u007Bfullname}</a></b>',
+                '<div class="item-caption">\u007Btitle}</div>'
+            ]
+        }, {
+            text: 'Organization',
+            dataIndex: 'organization.name',
+            flex: 1,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<\u0074pl for="organization">',
+                    '<b><a class="item-title" href="#\u007Burl}">{name}</a></b>',
+                    '<div class="item-caption">',
+                        'Managed by <a href="#\u007Burl}">\u007Bmanagername}</a>',
+                    '</div>',
+                '</\u0074pl>'
+            ]
+        }, {
+            text: 'Office',
+            dataIndex: 'office.name',
+            flex: 1,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<\u0074pl for="office">',
+                    '<b><a class="item-title" href="#\u007Burl}">\u007Bname}</a></b>',
+                    '<div class="item-caption">\u007Bcity}, \u007Bcountry}</div>',
+                '</\u0074pl>'
+            ]
+        }, {
+            sortable: false,
+            dataIndex: 'email',
+            text: 'Email/Phone',
+            flex: 1,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<b><div class="item-info"><span class="x-fa fa-envelope"></span> \u007Bemail}</div></b>',
+                '<div class="item-info"><span class="x-fa fa-phone"></span> \u007Bphone}</div>'
+            ]
+        }]
+    }]
+});
