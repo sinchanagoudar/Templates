@@ -54,15 +54,15 @@ Ext.define('{appName}.view.home.HomeHeader', {
         }, {
             xtype: 'component',
             cls: 'header-clock',
-            tpl: [
-                '<div class="date">{time:date("l, F d")}</div>',
-                '<div class="time"><span class="x-fa fa-clock-o"></span> {time:date("G:ia")}</div>'
-            ],
-            bind: {
-                data: {
-                    time: '{time}'
-                }
-            }
+             // tpl: [
+               //   '<div class="date">{time:date("l, F d")}</div>',
+               //   '<div class="time"><span class="x-fa fa-clock-o"></span> {time:date("G:ia")}</div>'
+             // ],
+             // bind: {
+               //   data: {
+                  //    time: '{time}'
+                //  }
+            //  }
         }]
     }]
 });

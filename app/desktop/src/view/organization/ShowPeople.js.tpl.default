@@ -15,7 +15,7 @@ Ext.define('{appName}.view.organization.ShowPeople', {
             weigth: 10,
             bind: {
                 //text: '{record.headcount}',
-                tooltip: 'Show employees of the <b>{record.name}</b> organization.'
+                //tooltip: 'Show employees of the <b>{record.name}</b> organization.'
             }
         }]
     },
@@ -27,7 +27,7 @@ Ext.define('{appName}.view.organization.ShowPeople', {
         minHeight: 80,
         inline: true,
         emptyText: 'This organization is empty',
-        itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
+         // itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
         listeners: {
             childtap: 'onPeopleChildTap'
         }

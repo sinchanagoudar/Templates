@@ -14,9 +14,9 @@ Ext.define('{appName}.view.organization.Wizard', {
         type: 'organizationwizard'
     },
 
-    bind: {
+     // bind: {
         //title: '{record.phantom? "Add" : "Edit"} Organization'
-    },
+     // },
 
     screens: [{
         title: 'General',

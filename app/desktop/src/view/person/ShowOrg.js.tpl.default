@@ -14,7 +14,7 @@ Ext.define('{appName}.view.person.ShowOrg', {
             weigth: 10,
             bind: {
                 //text: '{record.organization.headcount}',
-                tooltip: 'Show employees of the <b>{record.organization.name}</b> organization.'
+                //tooltip: 'Show employees of the <b>{record.organization.name}</b> organization.'
             }
         }]
     },

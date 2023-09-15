@@ -36,19 +36,19 @@ Ext.define('{appName}.view.phone.history.Browse', {
             }]
         }],
 
-        itemTpl: [
-            '<div class="history-visual">',
-                '<span class="action action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
-                '<div class="picture" style="background-image: url({recipient.picture})"></div>',
-            '</div>',
-            '<div class="item-details">',
-                '<div class="item-title">{recipient.fullname}</div>',
-                '<div class="item-caption">{subject}</div>',
-            '</div>',
+        //itemTpl: [
+         //   '<div class="history-visual">',
+          //      '<span class="action action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
+                 // '<div class="picture" style="background-image: url({recipient.picture})"></div>',
+             // '</div>',
+             // '<div class="item-details">',
+                 // '<div class="item-title">{recipient.fullname}</div>',
+                 // '<div class="item-caption">{subject}</div>',
+             // '</div>',
             //'<div class="item-stats">',
                 //'<div class="date">{created:date("Y/m/d")}</div>',
                 //'<div class="time">{created:date("H:i")}</div>',
             //'</div>'
-        ]
+         // ]
     }]
 });

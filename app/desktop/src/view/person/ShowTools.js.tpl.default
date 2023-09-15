@@ -62,10 +62,10 @@ Ext.define('{appName}.view.person.ShowTools', {
     }, {
         xtype: 'component',
         cls: 'location',
-        tpl: [
-            '<div class="city"><span class="x-fa fa-map-marker"></span> {office.city}</div>'
+       //tpl: [
+            //'<div class="city"><span class="x-fa fa-map-marker"></span> {office.city}</div>'
             //'<div class="time"><span class="x-fa fa-clock-o"></span> 11:00 pm</div>'
-        ],
+        //],
         bind: {
             record: '{record}'
         }

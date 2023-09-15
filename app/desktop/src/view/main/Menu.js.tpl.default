@@ -53,11 +53,11 @@ Ext.define('{appName}.view.main.Menu', {
             iconCls: 'picture',
             textAlign: 'left',
             weight: 10,
-            bind: {
+            //  bind: {
                 //icon: '{user.picture}',
-                text: '<div class="title">Norma Flores</div>'+
-                    '<div class="value">norma.flores</div>'
-            }
+                //text: '<div class="title">Norma Flores</div>'+
+                    //'<div class="value">norma.flores</div>'
+             // }
         },
         logout: {
             xtype: 'button',

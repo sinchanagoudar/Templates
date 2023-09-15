@@ -41,9 +41,9 @@ Ext.define('{appName}.view.person.ShowHeader', {
                 'header-picture',
                 'picture'
             ],
-            bind: {
+            //  bind: {
                 //src: '{record.picture}'
-            }
+             // }
         },
 
         title: {

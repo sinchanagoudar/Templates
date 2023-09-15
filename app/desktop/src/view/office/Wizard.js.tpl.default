@@ -6,9 +6,9 @@ Ext.define('{appName}.view.office.Wizard', {
         'officeedit'
     ],
 
-    bind: {
-        title: '{record.phantom? "Add" : "Edit"} Office'
-    },
+    //bind: {
+        //title: '{record.phantom? "Add" : "Edit"} Office'
+    //},
 
     screens: [{
         title: 'General',

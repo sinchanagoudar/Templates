@@ -14,9 +14,9 @@ Ext.define('{appName}.view.home.HomeController', {
         this.update();
     },
 
-    initViewModel: function(vm) {
-        vm.bind('{range}', this.onRangeChange, this);
-    },
+    //initViewModel: function(vm) {
+        //vm.bind('{range}', this.onRangeChange, this);
+    //},
 
     refresh: function() {
         var vm = this.getViewModel();

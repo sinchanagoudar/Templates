@@ -37,10 +37,10 @@ Ext.define('{appName}.view.tablet.history.Browse', {
                 cls: 'history-visual',
                 encodeHtml: false
             },
-            tpl: [
-                '<span class="action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
-                '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
-            ]
+           // tpl: [
+              //  '<span class="action-{fieldtype} {fieldtype:actionIconCls}" style="background-color:{fieldcolor}"></span>',
+               // '<div class="picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_ISts29g264fOEQBSIpLsI-TiG2WmonFHUZsUYmE2mIv660EaZjuA76ooyG9UqLgwH0&usqp=CAU)"></div>'
+           // ]
         }, {
             text: 'Name / Title',
             dataIndex: 'recipient.lastname',
@@ -48,12 +48,12 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             cell: {
                 encodeHtml: false
             },
-            tpl: [
-                '<tpl for=".">',
-                '<a class="item-title" href="#{url}">{recipient.firstname}{recipient.lastname}</a>',
-                '<div class="item-caption">{title}</div>',
-                '</tpl>'
-            ]
+           // tpl: [
+              //  '<tpl for=".">',
+               // '<a class="item-title" href="#{url}">{recipient.firstname}{recipient.lastname}</a>',
+                //'<div class="item-caption">{title}</div>',
+                //'</tpl>'
+            //]
         }, {
             text: 'Organization',
             dataIndex: 'organization.name',
@@ -61,11 +61,11 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             cell: {
                 encodeHtml: false
             },
-            tpl: [
-                '<tpl for="organization">',
-                '<a class="item-title" href="#{url}">{name}</a>',
-                '</tpl>'
-            ]
+             // tpl: [
+                //  '<tpl for="organization">',
+                 // '<a class="item-title" href="#{url}">{name}</a>',
+                 // '</tpl>'
+             // ]
         }, {
             text: 'Office',
             dataIndex: 'office.name',
@@ -73,16 +73,16 @@ Ext.define('{appName}.view.tablet.history.Browse', {
             cell: {
                 encodeHtml: false
             },
-            tpl: [
-                '<tpl for="office">',
-                '<a class="item-title" href="#{url}">{name}</a>',
-                '<div class="item-caption">{city}, {country}</div>',
-                '</tpl>'
+             // tpl: [
+                 // '<tpl for="office">',
+                 // '<a class="item-title" href="#{url}">{name}</a>',
+                 // '<div class="item-caption">{city}, {country}</div>',
+                 // '</tpl>'
             ]
         }, {
             xtype: 'datecolumn',
             dataIndex: 'created',
-            format: 'Y-m-d H:i',
+             // format: 'Y-m-d H:i',
             text: 'Date',
             flex: 1
         }]

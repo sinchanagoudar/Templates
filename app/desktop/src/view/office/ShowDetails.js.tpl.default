@@ -22,7 +22,7 @@ Ext.define('{appName}.view.office.ShowDetails', {
         '</div>'
     ],
 
-    bind: {
-        record: '{record}'
-    }
+     // bind: {
+       //   record: '{record}'
+    //  }
 });

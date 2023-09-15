@@ -13,10 +13,10 @@ Ext.define('{appName}.view.office.ShowPeople', {
             iconCls: 'x-fa fa-users',
             ui: 'block',
             weigth: 10,
-            bind: {
-                text: '{record.headcount}',
-                tooltip: 'Show employees of the <b>{record.name}</b> office.'
-            }
+            //bind: {
+                //text: '{record.headcount}',
+                //tooltip: 'Show employees of the <b>{record.name}</b> office.'
+            //}
         }]
     },
 

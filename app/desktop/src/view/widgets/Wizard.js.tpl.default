@@ -102,9 +102,9 @@ Ext.define('{appName}.view.widgets.Wizard', {
     height: 512,
     width: 512,
 
-    bind: {
-        iconCls: 'x-fa fa-{record.phantom? "plus" : "pencil"}'
-    },
+    //  bind: {
+        //  iconCls: 'x-fa fa-{record.phantom? "plus" : "pencil"}'
+     // },
 
     items: [{
         xtype: 'tabpanel',

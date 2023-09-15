@@ -48,7 +48,7 @@ Ext.define('{appName}.view.phone.office.Browse', {
                 '<div class="item-title">{name}</div>',
                 '<div class="item-caption">{city}, {country}</div>',
             '</div>',
-            '<div class="item-stats">{headcount:plural("employee")}</div>'
+            //'<div class="item-stats">{headcount:plural("employee")}</div>'
         ],
 
         listeners: {
