@@ -1,0 +1,9 @@
+$form-max-width: dynamic(768px);
+.wizard-screen {
+    align-items: center;
+
+    > .x-body-el {
+        max-width: $form-max-width;
+        width: 100%;
+    }
+}

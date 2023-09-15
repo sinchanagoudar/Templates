@@ -1,0 +1,14 @@
+Ext.define('{appName}.view.organization.WizardController', {
+    extend: '{appName}.view.widgets.WizardController',
+    alias: 'controller.organizationwizard',
+
+    // control: {
+    //     '#': {
+    //         reset: 'refresh'
+    //     }
+    // },
+
+    // refresh: function() {
+    //     this.getViewModel().getStore('managers').reload();
+    // }
+});

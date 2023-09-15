@@ -1,0 +1,9 @@
+Ext.define('{appName}.store.Offices', {
+    extend: 'Ext.data.Store',
+    alias: 'store.offices',
+
+    model: '{appName}.model.Office',
+    remoteFilter: true,
+    remoteSort: true,
+    sorters: 'name'
+});

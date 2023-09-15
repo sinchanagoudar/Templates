@@ -1,0 +1,17 @@
+.historybrowse {
+    .x-list {
+        .date,
+        .time {
+            text-align: right;
+        }
+
+        .time {
+            font-weight: bold;
+        }
+    }
+}
+
+.x-headercontainer {
+    border: 0 solid #aaa !important;
+    background-color: #ccc !important;
+}
