@@ -1,7 +1,7 @@
 chrome://inspect
 
 
-			itemTpl: [ `
+			<!-- itemTpl: [ `
 				<div class="testview" style="width: 100%;border: 0px solid green;">
 					<table style="width: 100%;border: 0px solid green;" >
 						<tr>
@@ -21,7 +21,7 @@ chrome://inspect
 					</table>
 				</div>
 				`
-			]
+			] -->
 
 
 

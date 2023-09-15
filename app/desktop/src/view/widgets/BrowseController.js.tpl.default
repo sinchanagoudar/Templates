@@ -59,32 +59,6 @@ Ext.define('{appName}.view.widgets.BrowseController', {
         }
     },
 
-    onRouteChange: function(view, route) {
-        var me = this,
-            vm = me.getViewModel(),
-            regex = /([^\/]+)\/([^\/]+)/g,
-            fields = me.getView().getFields() || {},
-            filters = {},
-            field, value;
-
-        Ext.Object.each(fields, function(key, value) {
-            filters[key] = value.defaultValue || null
-        });
-
-        while (match = regex.exec(route)) {
-            field = match[1];
-            value = match[2];
-            if (Ext.isDefined(filters[field])) {
-                filters[field] = field !== 'search'?
-                    Ext.create({appName}.model.Filter, { value: value }) :
-                    value;
-            }
-        }
-
-        vm.set('filters', filters);
-        me.updateFilters();
-    },
-
     onStoreChange: function() {
         this.updateFilters(true);
     },

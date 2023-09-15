@@ -2,24 +2,24 @@ Ext.define('{appName}.view.history.BrowserModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.historybrowse',
 
-    stores: {
-        history: {
-            type: 'actions',
-            grouper: {
-                groupFn: function(record) {
-                    var date = Ext.Date.clearTime(new Date(record.get('created'))),
-                        today = Ext.Date.clearTime(new Date());
+    //stores: {
+        //history: {
+           // type: 'actions',
+            //grouper: {
+                //groupFn: function(record) {
+                   // var date = Ext.Date.clearTime(new Date(record.get('created'))),
+                        //today = Ext.Date.clearTime(new Date());
 
-                    if (Ext.Date.isEqual(date, today)) {
-                        return 'Today';
-                    } else if (Ext.Date.isEqual(date, Ext.Date.subtract(today, Ext.Date.DAY, 1))) {
-                        return 'Yesterday'
-                    } else {
-                        return Ext.Date.format(date, 'D, F jS, Y');
-                    }
-                }
-            }
-        },
+                    //if (Ext.Date.isEqual(date, today)) {
+                        //return 'Today';
+                    //} else if (Ext.Date.isEqual(date, Ext.Date.subtract(today, Ext.Date.DAY, 1))) {
+                       // return 'Yesterday'
+                    //} else {
+                       // return Ext.Date.format(date, 'D, F jS, Y');
+                    //}
+                //}
+            //}
+        //},
         // recipients: {
         //     type: 'filters',
         //     service: 'actions',
@@ -46,5 +46,5 @@ Ext.define('{appName}.view.history.BrowserModel', {
         //     service: 'actions',
         //     field: 'type'
         // }
-    }
+    //}
 });
