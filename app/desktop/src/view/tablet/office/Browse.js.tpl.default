@@ -38,7 +38,7 @@ Ext.define('{appName}.view.tablet.office.Browse', {
                 encodeHtml: false
             },
             // tpl: ['<\u0074pl for=".">',
-            //     '<b><a class="item-title" href="#{url}">{office.name}</a></b>',
+            //     '<b><a class="item-title" href="#\u007Burl}">\u007Boffice.name}</a></b>',
             //     '</\u0074pl>']
         }, {
             text: 'Address',

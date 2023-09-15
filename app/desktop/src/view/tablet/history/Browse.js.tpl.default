@@ -49,10 +49,10 @@ Ext.define('{appName}.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for=".">',
+            //     '<\u0074pl for=".">',
             //     '<a class="item-title" href="#\u007Burl}">\u007Brecipient.firstname}\u007Brecipient.lastname}</a>',
             //     '<div class="item-caption">\u007Btitle}</div>',
-            //     '</tpl>'
+            //     '</\u0074pl>'
             // ]
         }, {
             text: 'Organization',
@@ -62,9 +62,9 @@ Ext.define('{appName}.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for="organization">',
-            //     '<a class="item-title" href="#\u007Burl}">{name}</a>',
-            //     '</tpl>'
+            //     '<\u0074pl for="organization">',
+            //     '<a class="item-title" href="#\u007Burl}">\u007Bname}</a>',
+            //     '</\u0074pl>'
             // ]
         }, {
             text: 'Office',
@@ -74,15 +74,15 @@ Ext.define('{appName}.view.tablet.history.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for="office">',
-            //     '<a class="item-title" href="#\u007Burl}">{name}</a>',
-            //     '<div class="item-caption">\u007Bcity}, {country}</div>',
-            //     '</tpl>'
+            //     '<\u0074pl for="office">',
+            //     '<a class="item-title" href="#\u007Burl}">\u007Bname}</a>',
+            //     '<div class="item-caption">\u007Bcity}, \u007Bcountry}</div>',
+            //     '</\u0074pl>'
             // ]
         }, {
             xtype: 'datecolumn',
             dataIndex: 'created',
-            // format: 'Y-m-d H:i',
+            format: 'Y-m-d H:i',
             text: 'Date',
             flex: 1
         }]
