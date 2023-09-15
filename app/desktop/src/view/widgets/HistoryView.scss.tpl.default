@@ -79,8 +79,8 @@ $historyitem-badge-size: dynamic(22px);
             font-weight: 600;
         }
 
-        //.date {
-         //   font-size: 13px;
-        //}
+        .date {
+            font-size: 13px;
+        }
     }
 }

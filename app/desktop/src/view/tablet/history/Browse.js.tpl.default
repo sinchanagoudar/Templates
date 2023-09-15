@@ -82,7 +82,7 @@ Ext.define('{appName}.view.tablet.history.Browse', {
         }, {
             xtype: 'datecolumn',
             dataIndex: 'created',
-            //format: 'Y-m-d H:i',
+            format: 'Y-m-d H:i',
             text: 'Date',
             flex: 1
         }]

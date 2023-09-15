@@ -1,4 +1,6 @@
-
+/**
+ * Exposes new template modifiers (e.g. '{birthday:dateDiff(date, "y")}', etc.)
+ */
 Ext.define('{appName}.overrides.util.Format', {
     override: 'Ext.util.Format',
 
@@ -29,6 +31,9 @@ Ext.define('{appName}.overrides.util.Format', {
         case 'y': name = 'year'; break;
         default:
         }
+
+        diff = Ext.Date.diff(v0, v1, unit);
+        return Ext.util.Format.plural(diff, name);
     },
 
     actionIconCls: function(type) {

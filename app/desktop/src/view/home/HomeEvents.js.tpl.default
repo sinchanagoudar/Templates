@@ -41,7 +41,7 @@ Ext.define('{appName}.view.home.HomeEvents', {
         itemTpl: [
             '<div style="background-color: #f5f5f5">',
             '<div class="event-header type-{type}">',
-                //'<div class="date">{date}</div>',
+                '<div class="date">{date}</div>',
                 '<div class="title">',
                     '<tpl switch="typecase">',
                     '<tpl case="birthday">Birthday',

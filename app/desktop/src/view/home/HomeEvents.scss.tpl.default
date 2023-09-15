@@ -35,13 +35,13 @@ $neutral-dark-color: #353535;
         font-size: 12px;
         padding: 6px 16px;
 
-        //.date, .title {
-           // display: inline-block;
-        //}
+        .date, .title {
+            display: inline-block;
+        }
 
-        //.date {
-            //font-weight: bold;
-        //}
+        .date {
+            font-weight: bold;
+        }
 
         .title {
             &:before {
