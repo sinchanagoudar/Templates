@@ -19,7 +19,7 @@ Ext.define('{appName}.view.tablet.person.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No employee was found to match your search',
-        bind: '{browser}',
+        bind: '\u007Bbrowser}',
         ui: 'listing',
 
         selectable: {

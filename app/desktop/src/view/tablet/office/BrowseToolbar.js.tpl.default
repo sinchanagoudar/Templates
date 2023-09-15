@@ -11,8 +11,8 @@ Ext.define('{appName}.view.tablet.office.BrowseToolbar', {
             queryMode: 'local',
             weight: 10,
             // bind: {
-            //     selection: '{filters.country}',
-            //     store: '{countries}'
+            //     selection: '\u0074filters.country}',
+            //     store: '\u0074countries}'
             // }
         },
         create: {

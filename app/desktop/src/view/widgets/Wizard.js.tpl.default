@@ -84,7 +84,7 @@ Ext.define('{appName}.view.widgets.Wizard', {
                         weight: 20,
                         ui: 'action',
                         // bind: {
-                        //     text: '{record.phantom? "Create" : "Save"}'
+                        //     text: '\u007Brecord.phantom? "Create" : "Save"}'
                         // }
                     },
 
@@ -106,7 +106,7 @@ Ext.define('{appName}.view.widgets.Wizard', {
     width: 512,
 
     // bind: {
-    //     iconCls: 'x-fa fa-{record.phantom? "plus" : "pencil"}'
+    //     iconCls: 'x-fa fa-\u007Brecord.phantom? "plus" : "pencil"}'
     // },
 
     items: [{

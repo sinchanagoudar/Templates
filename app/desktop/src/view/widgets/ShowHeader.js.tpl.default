@@ -16,7 +16,7 @@ Ext.define('{appName}.view.widgets.ShowHeader', {
             userCls: 'header-title',
             flex: 1,
             bind: {
-                record: '{record}'
+                record: '\u007Brecord}'
             }
         },
 

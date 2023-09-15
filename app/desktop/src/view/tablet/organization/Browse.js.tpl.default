@@ -19,7 +19,7 @@ Ext.define('{appName}.view.tablet.organization.Browse', {
     items: [{
         xtype: 'grid',
         emptyText: 'No organization was found to match your search',
-        bind: '{browser}',
+        bind: '\u007Bbrowser}',
         ui: 'listing',
 
         selectable: {
@@ -38,9 +38,9 @@ Ext.define('{appName}.view.tablet.organization.Browse', {
             cell: {
                 encodeHtml: false
             },
-            // tpl: ['<tpl for=".">',
-            //     '<b><a class="item-title" href="#{url}">{office.name}</a></b>',
-            //     '</tpl>']
+            // tpl: ['<\u0074pl for=".">',
+            //     '<b><a class="item-title" href="#\u007Burl}">\u007Boffice.name}</a></b>',
+            //     '</\u0074pl>']
         }, {
             text: 'Manager',
             dataIndex: 'manager.lastname',
@@ -49,15 +49,15 @@ Ext.define('{appName}.view.tablet.organization.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for=".">',
+            //     '<\u0074pl for=".">',
             //     '<div class="item-title">',
-            //     '<b><a href="#{url}">{manager.firstname}{manager.lastname}</a></b>',
+            //     '<b><a href="#\u007Burl}">\u007Bmanager.firstname}\u007Bmanager.lastname}</a></b>',
             //     '</div>',
             //     '<div class="item-caption">',
-            //     '<a href="#{url}">{office.name}</a>, ',
-            //     '{office.city} ({office.country})',
+            //     '<a href="#\u007Burl}">\u007Boffice.name}</a>, ',
+            //     '\u007Boffice.city} (\u007Boffice.country})',
             //     '</div>',
-            //     '</tpl>'
+            //     '</\u0074pl>'
             // ]
         }, {
             text: 'Headcount',
@@ -67,8 +67,8 @@ Ext.define('{appName}.view.tablet.organization.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<b><a href="#people/organization/{id}">',
-            //     '{headcount:plural("employee")}',
+            //     '<b><a href="#people/organization/\u007Bid}">',
+            //     '\u007Bheadcount:plural("employee")}',
             //     '</a></b>'
             // ]
         }],
