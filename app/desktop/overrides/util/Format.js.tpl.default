@@ -1,6 +1,3 @@
-/**
- * Exposes new template modifiers (e.g. '{birthday:dateDiff(date, "y")}', etc.)
- */
 Ext.define('{appName}.overrides.util.Format', {
     override: 'Ext.util.Format',
 
