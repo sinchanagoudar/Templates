@@ -1,0 +1,10 @@
+Ext.define('{appName}.model.Event', {
+    extend: '{appName}.model.Base',
+
+    fields: [
+        { name: 'date', type: 'date' },
+        { name: 'type', type: 'string' },
+        { name: 'person_id', reference: 'Person' },
+    ],
+
+});

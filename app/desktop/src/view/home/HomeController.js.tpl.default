@@ -1,0 +1,51 @@
+Ext.define('{appName}.view.home.HomeController', {
+    extend: 'Ext.app.ViewController',
+    alias: 'controller.home',
+
+    control: {
+        '#': {
+            routechange: 'onRouteChange',
+            reset: 'refresh'
+        }
+    },
+
+    init: function() {
+        this.callParent(arguments);
+        this.update();
+    },
+
+    initViewModel: function(vm) {
+        vm.bind('{range}', this.onRangeChange, this);
+    },
+
+    refresh: function() {
+        var vm = this.getViewModel();
+        vm.getStore('history').load();
+        vm.getStore('events').load();
+    },
+
+    onRouteChange: function(view, route) {
+        var matches = (route || '').match(/(recent|upcoming|past)/g);
+        if (matches) {
+            this.getViewModel().set('range', matches[0]);
+        }
+    },
+
+    onEventChildTap: function(view, location) {
+        var record = location.record;
+        if (record) {
+            this.redirectTo(record.getPerson());
+        }
+    },
+
+    onHistoryChildTap: function(view, location) {
+        var record = location.record;
+        if (record) {
+            this.redirectTo(record.getRecipient());
+        }
+    },
+
+    onHistoryAllTap: function() {
+        this.redirectTo('history');
+    }
+});

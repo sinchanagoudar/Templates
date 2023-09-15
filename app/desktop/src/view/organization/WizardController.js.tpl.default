@@ -1,0 +1,4 @@
+Ext.define('{appName}.view.organization.WizardController', {
+    extend: '{appName}.view.widgets.WizardController',
+    alias: 'controller.organizationwizard',
+});

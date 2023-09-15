@@ -1,0 +1,4 @@
+Ext.define('{appName}.view.organization.BrowseController', {
+    extend: '{appName}.view.widgets.BrowseController',
+    alias: 'controller.organizationbrowse',
+});

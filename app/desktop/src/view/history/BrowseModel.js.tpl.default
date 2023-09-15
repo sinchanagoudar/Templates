@@ -1,0 +1,13 @@
+Ext.define('{appName}.view.history.BrowserModel', {
+    extend: 'Ext.app.ViewModel',
+    alias: 'viewmodel.historybrowse',
+
+    stores: {
+        history: {
+            type: 'actions',
+            grouper: {
+               
+            }
+        },
+    }
+});

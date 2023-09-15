@@ -1,0 +1,6 @@
+Ext.define('{appName}.store.Filters', {
+    extend: 'Ext.data.Store',
+    alias: 'store.filters',
+
+  
+});
