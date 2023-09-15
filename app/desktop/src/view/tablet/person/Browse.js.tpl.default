@@ -57,8 +57,8 @@ Ext.define('{appName}.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<b><a class="item-title" href="#{url}">{fullname}</a></b>',
-            //     '<div class="item-caption">{title}</div>'
+            //     '<b><a class="item-title" href="#{url}">\u007Bfullname}</a></b>',
+            //     '<div class="item-caption">\u007Btitle}</div>'
             // ]
         }, {
             text: 'Organization',
@@ -68,12 +68,12 @@ Ext.define('{appName}.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for="organization">',
-            //         '<b><a class="item-title" href="#{url}">{name}</a></b>',
+            //     '<\u0074pl for="organization">',
+            //         '<b><a class="item-title" href="#\u007Burl}">\u007Bname}</a></b>',
             //         '<div class="item-caption">',
-            //             'Managed by <a href="#{url}">{managername}</a>',
+            //             'Managed by <a href="#\u007Burl}">\u007Bmanagername}</a>',
             //         '</div>',
-            //     '</tpl>'
+            //     '</\u0074pl>'
             // ]
         }, {
             text: 'Office',
@@ -83,10 +83,10 @@ Ext.define('{appName}.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<tpl for="office">',
-            //         '<b><a class="item-title" href="#{url}">{name}</a></b>',
-            //         '<div class="item-caption">{city}, {country}</div>',
-            //     '</tpl>'
+            //     '<\u0074pl for="office">',
+            //         '<b><a class="item-title" href="#\u007Burl}">\u007Bname}</a></b>',
+            //         '<div class="item-caption">\u007Bcity}, \u007Bcountry}</div>',
+            //     '</\u0074pl>'
             // ]
         }, {
             sortable: false,
@@ -97,8 +97,8 @@ Ext.define('{appName}.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             // tpl: [
-            //     '<b><div class="item-info"><span class="x-fa fa-envelope"></span> {email}</div></b>',
-            //     '<div class="item-info"><span class="x-fa fa-phone"></span> {phone}</div>'
+            //     '<b><div class="item-info"><span class="x-fa fa-envelope"></span> \u007Bemail}</div></b>',
+            //     '<div class="item-info"><span class="x-fa fa-phone"></span> \u007Bphone}</div>'
             // ]
         }]
     }]
