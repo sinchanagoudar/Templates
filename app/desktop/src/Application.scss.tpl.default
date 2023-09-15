@@ -128,13 +128,13 @@ $toast-padding-big: 10px;
 @mixin action-ui($ui, $background-color, $color) {
     $ui-suffix: ui-suffix($ui);
 
-    .action#{$ui-suffix} {
+    .action#\u007B$ui-suffix} {
         background-color: $background-color;
         color: $color;
     }
 
     @include button-ui(
-        $ui: action#{$ui-suffix},
+        $ui: action#\u007B$ui-suffix},
         $background-color: $background-color,
         $color: $color,
         $border-radius: 50%,
