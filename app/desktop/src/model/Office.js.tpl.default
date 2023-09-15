@@ -8,11 +8,7 @@ Ext.define('{appName}.model.Office', {
         { name: 'region', type: 'string' },
         { name: 'city', type: 'string' },
         { name: 'country', type: 'string' },
-        { name: 'headcount', type: 'int', persist: false },
-        { name: 'location', type: 'auto', defaultValue: {
-            "latitude": 37.4256448,
-            "longitude": -122.1703694
-        }}
+        { name: 'headcount', type: 'int', persist: false }
     ],
 
     // proxy: {
