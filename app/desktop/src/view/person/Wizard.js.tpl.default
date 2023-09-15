@@ -102,18 +102,20 @@ Ext.define('{appName}.view.person.Wizard', {
             label: 'Job Title',
             required: true,
             //bind: '{record.title}'
-        }, {
-            xtype: 'datepickerfield',
-            reference: 'started',
-            label: 'Entry date',
-            required: true,
+        }, 
+        //{
+         //   xtype: 'datepickerfield',
+           // reference: 'started',
+          //  label: 'Entry date',
+          //  required: true,
             //bind: '{record.started}'
-        }, {
-            xtype: 'datepickerfield',
-            reference: 'ended',
-            label: 'Exit date',
+        //}, {
+          //  xtype: 'datepickerfield',
+           // reference: 'ended',
+            //label: 'Exit date',
             //bind: '{record.ended}'
-        }, {
+        //}, 
+        {
             xtype: 'combobox',
             label: 'Office',
             displayField: 'label',

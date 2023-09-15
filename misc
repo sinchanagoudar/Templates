@@ -14,8 +14,8 @@ chrome://inspect
 								<div style="line-height: 20px;" class="xitem-caption">\u007Bdoctor}</div>
 							</td>
 							<td width="25%" >
-								<div style="font-size: 12px;" class="apptdate">\u007Bcreated:date("Y/m/d")}</div>
-								<div style="font-size: 12px;"class="appttime">\u007Bcreated:date("H:i")}</div>
+								<div style="font-size: 12px;" class="apptdate"></div>
+								<div style="font-size: 12px;"class="appttime"></div>
 							</td>
 						</tr>
 					</table>

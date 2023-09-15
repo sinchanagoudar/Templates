@@ -112,10 +112,6 @@ $base-color: #39babf;
         padding-bottom: 16px;
         text-align: right;
 
-        .date {
-            color: $base-color;
-        }
-
         .time {
             background-color: $base-color;
             color: white;
