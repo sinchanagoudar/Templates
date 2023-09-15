@@ -4,15 +4,6 @@ Ext.define('{appName}.view.widgets.MapView', {
 
     cls: 'mapview',
 
-    markerTemplate: {
-        title: '{name}',
-        animation: 'DROP',
-        position: {
-            lat: '{location.latitude}',
-            lng: '{location.longitude}'
-        }
-    },
-
     // https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     mapOptions: {
         disableDoubleClickZoom: true,
