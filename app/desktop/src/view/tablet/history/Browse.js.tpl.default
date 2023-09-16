@@ -82,7 +82,11 @@ Ext.define('{appName}.view.tablet.history.Browse', {
         }, {
             xtype: 'datecolumn',
             dataIndex: 'created',
+<<<<<<< HEAD
              // format: 'Y-m-d H:i',
+=======
+            format: 'Y-m-d H:i',
+>>>>>>> parent of a0b7e78 (date changes)
             text: 'Date',
             flex: 1
         }]
