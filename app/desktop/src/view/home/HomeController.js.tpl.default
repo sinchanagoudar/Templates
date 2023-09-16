@@ -2,13 +2,6 @@ Ext.define('{appName}.view.home.HomeController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.home',
 
-    control: {
-        '#': {
-            routechange: 'onRouteChange',
-            reset: 'refresh'
-        }
-    },
-
     init: function() {
         this.callParent(arguments);
         this.update();
@@ -83,13 +76,6 @@ Ext.define('{appName}.view.home.HomeController', {
         // store.clearFilter(true);
         // store.filter(filters, false, false);
         store.sort('date', direction);
-    },
-
-    onRouteChange: function(view, route) {
-        var matches = (route || '').match(/(recent|upcoming|past)/g);
-        if (matches) {
-            this.getViewModel().set('range', matches[0]);
-        }
     },
 
     onEventChildTap: function(view, location) {

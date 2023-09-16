@@ -2,13 +2,6 @@ Ext.define('{appName}.view.widgets.BrowseController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.browse',
 
-    control: {
-        '#': {
-            routechange: 'onRouteChange',
-            storechange: 'onStoreChange'
-        }
-    },
-
     initViewModel: function(vm) {
         vm.bind(
             { bindTo: '\u007Bfilters}', deep: true },
