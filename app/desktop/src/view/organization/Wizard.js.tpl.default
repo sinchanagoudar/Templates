@@ -1,0 +1,44 @@
+Ext.define('{appName}.view.organization.Wizard', {
+    extend: '{appName}.view.widgets.Wizard',
+    xtype: [
+        'organizationwizard',
+        'organizationcreate',
+        'organizationedit'
+    ],
+
+    controller: {
+        type: 'organizationwizard'
+    },
+
+    viewModel: {
+        type: 'organizationwizard'
+    },
+
+    bind: {
+        title: '\u007Brecord.phantom? "Add" : "Edit"} Organization'
+    },
+
+    screens: [{
+        title: 'General',
+        iconCls: 'x-fa fa-info',
+        items: [{
+            xtype: 'textfield',
+            reference: 'name',
+            label: 'Name',
+            required: true,
+            bind: '\u007Brecord.name}'
+        }, {
+            xtype: 'combobox',
+            label: 'Manager',
+            displayField: 'label',
+            valueField: 'value',
+            queryMode: 'local',
+            forceSelection: true,
+            required: true,
+            bind: {
+                value: '\u007Brecord.manager_id}',
+                store: '\u007Bmanagers}'
+            }
+        }]
+    }]
+});

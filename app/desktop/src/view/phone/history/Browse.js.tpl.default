@@ -1,0 +1,54 @@
+Ext.define('{appName}.view.phone.history.Browse', {
+    extend: '{appName}.view.history.Browse',
+    // xtype: 'historybrowse', -- set by profile
+
+    requires: [
+        'Ext.dataview.listswiper.ListSwiper',
+        'Ext.dataview.plugin.ListPaging'
+    ],
+
+    items: [{
+        xtype: 'list',
+        bind: '\u007Bhistory}',
+        emptyText: 'No activity was found',
+        striped: true,
+        grouped: true,
+        ui: 'listing',
+
+        selectable: {
+            disabled: true
+        },
+
+        plugins: [{
+            type: 'listpaging',
+            autoPaging: true
+        }, {
+            type: 'listswiper',
+            style:{
+                padding:'10px'
+            },
+            right: [{
+                iconCls: 'x-fa fa-trash',
+                commit: 'onDeleteAction',
+                undoable: true,
+                text: 'Delete',
+                ui: 'remove'
+            }]
+        }],
+
+        itemTpl: [
+            '<div class="history-visual">',
+                '<span class="action action-\u007Bfieldtype} \u007Bfieldtype:actionIconCls}" style="background-color:\u007Bfieldcolor}"></span>',
+                '<div class="picture" style="background-image: url(\u007Brecipient.picture})"></div>',
+            '</div>',
+            '<div class="item-details">',
+                '<div class="item-title">\u007Brecipient.fullname}</div>',
+                '<div class="item-caption">\u007Bsubject}</div>',
+            '</div>',
+            '<div class="item-stats">',
+                '<div class="date">\u007Bcreated:date("Y/m/d")}</div>',
+                '<div class="time">vcreated:date("H:i")}</div>',
+            '</div>'
+        ]
+    }]
+});

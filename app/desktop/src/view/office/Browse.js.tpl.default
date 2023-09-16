@@ -1,0 +1,19 @@
+Ext.define('{appName}.view.office.Browse', {
+    extend: '{appName}.view.widgets.Browse',
+
+    fields: {
+        country: {
+            property: 'country'
+        }
+    },
+
+    controller: 'officebrowse',
+    viewModel: {
+        type: 'officebrowse'
+    },
+
+    cls: 'officebrowse',
+    bind: {
+        store: '\u007Boffices}'
+    }
+});

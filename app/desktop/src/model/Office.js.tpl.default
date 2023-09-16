@@ -1,0 +1,19 @@
+Ext.define('{appName}.model.Office', {
+    extend: '{appName}.model.Base',
+
+    fields: [
+        { name: 'name', type: 'string' },
+        { name: 'address', type: 'string' },
+        { name: 'postcode', type: 'string' },
+        { name: 'region', type: 'string' },
+        { name: 'city', type: 'string' },
+        { name: 'country', type: 'string' },
+        { name: 'headcount', type: 'int', persist: false }
+    ],
+
+    // proxy: {
+    //     api: {
+    //         prefix: 'Server.offices'
+    //     }
+    // }
+});

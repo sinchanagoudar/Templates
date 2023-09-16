@@ -1,0 +1,13 @@
+Ext.define('{appName}.store.Actions', {
+    extend: 'Ext.data.Store',
+    alias: 'store.actions',
+
+    model: '{appName}.model.Action',
+    remoteFilter: true,
+    remoteSort: true,
+
+    sorters: {
+        property: 'created',
+        direction: 'DESC'
+    }
+});

@@ -1,0 +1,28 @@
+Ext.define('{appName}.view.office.ShowDetails', {
+    extend: 'Ext.Panel',
+    xtype: 'officeshowdetails',
+
+    cls: 'office-details',
+    title: 'Details',
+
+    tpl: [
+        '<div class="block-section">',
+            '<div class="item">',
+                '<div class="label">Address</div>',
+                '<div class="value">',
+                    '<div>\u007Baddress}</div>',
+                    '<\u0074pl if="region || postcode">',
+                        '<div>\u007Bcity}, \u007Bregion} \u007Bpostcode}</div>',
+                        '<div><b>\u007Bcountry}</b></div>',
+                    '<\u0074pl else>',
+                        '<div>\u007Bcity}, <b>\u007Bcountry}</b></div>',
+                    '</\u0074pl>',
+                '</div>',
+            '</div>',
+        '</div>'
+    ],
+
+    bind: {
+        record: '\u007Brecord}'
+    }
+});

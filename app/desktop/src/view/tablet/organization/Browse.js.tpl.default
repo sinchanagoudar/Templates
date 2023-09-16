@@ -1,0 +1,80 @@
+Ext.define('{appName}.view.tablet.organization.Browse', {
+    extend: '{appName}.view.organization.Browse',
+    // xtype: 'organizationbrowse', -- set by profile
+
+    requires: [
+        'Ext.plugin.ListPaging'
+    ],
+
+    controller: 'tablet-organizationbrowse',
+    viewModel: {
+        type: 'browse'
+    },
+
+
+    tbar: {
+        xtype: 'organizationbrowsetoolbar'
+    },
+
+    items: [{
+        xtype: 'grid',
+        emptyText: 'No organization was found to match your search',
+        bind: '\u007Bbrowser}',
+        ui: 'listing',
+
+        selectable: {
+            disabled: true
+        },
+
+        plugins: [{
+            type: 'listpaging',
+            autoPaging: true
+        }],
+
+        columns: [{
+            text: 'Name',
+            dataIndex: 'office.name',
+            flex: 2,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: ['<\u0074pl for=".">',
+                '<b><a class="item-title" href="#\u007Burl}">\u007Boffice.name}</a></b>',
+                '</\u0074pl>']
+        }, {
+            text: 'Manager',
+            dataIndex: 'manager.lastname',
+            flex: 2,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<\u0074pl for=".">',
+                '<div class="item-title">',
+                '<b><a href="#\u007Burl}">\u007Bmanager.firstname}\u007Bmanager.lastname}</a></b>',
+                '</div>',
+                '<div class="item-caption">',
+                '<a href="#vurl}">\u007Boffice.name}</a>, ',
+                '\u007Boffice.city} (\u007Boffice.country})',
+                '</div>',
+                '</\u0074pl>'
+            ]
+        }, {
+            text: 'Headcount',
+            dataIndex: 'headcount',
+            flex: 1,
+            cell: {
+                encodeHtml: false
+            },
+            tpl: [
+                '<b><a href="#people/organization/\u007Bid}">',
+                '\u007Bheadcount:plural("employee")}',
+                '</a></b>'
+            ]
+        }],
+
+        listeners: {
+            childdoubletap: 'onChildActivate'
+        }
+    }]
+});

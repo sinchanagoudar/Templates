@@ -1,0 +1,37 @@
+Ext.define('{appName}.view.organization.Show', {
+    extend: '{appName}.view.widgets.Show',
+    xtype: 'organizationshow',
+
+    controller: 'organizationshow',
+    viewModel: {
+        type: 'organizationshow'
+    },
+
+    title: 'Organization',
+
+    items: {
+        header: {
+            items: {
+                title: {
+                    tpl: [
+                        '<div class="icon x-fa fa-sitemap"></div>',
+                        '<div class="name">\u007Bname}</div>',
+                        '<div class="desc">Managed by <b>\u007Bmanager.fullname}</b><div>'
+                    ]
+                }
+            }
+        },
+
+        content: {
+            items: {
+                left: {
+                    items: {
+                        people: {
+                            xtype: 'organizationshowpeople'
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

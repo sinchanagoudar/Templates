@@ -1,0 +1,15 @@
+Ext.define('{appName}.view.phone.person.ListSwiperItem', {
+    extend: 'Ext.dataview.listswiper.Stepper',
+    // xtype: 'personlistswiperitem', -- set by profile
+
+    tpl: [
+        '<div class="x-text">',
+            '<\u0074pl if="text">',
+                '<span class="label">\u007Btext}</span>',
+            '</\u0074pl>',
+            '<\u0074pl if="subject">',
+                '<span class="subject">\u007B[values[values.subject]]}</span>',
+            '</\u0074pl>',
+        '</div>'
+    ]
+});

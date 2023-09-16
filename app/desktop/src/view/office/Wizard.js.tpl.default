@@ -1,0 +1,52 @@
+Ext.define('{appName}.view.office.Wizard', {
+    extend: '{appName}.view.widgets.Wizard',
+    xtype: [
+        'officewizard',
+        'officecreate',
+        'officeedit'
+    ],
+
+    bind: {
+        title: '\u007Brecord.phantom? "Add" : "Edit"} Office'
+    },
+
+    screens: [{
+        title: 'General',
+        iconCls: 'x-fa fa-info',
+        items: [{
+            xtype: 'textfield',
+            reference: 'name',
+            label: 'Name',
+            required: true,
+            bind: '\u007Brecord.name}'
+        }, {
+            xtype: 'textfield',
+            reference: 'address',
+            label: 'Address',
+            required: true,
+            bind: '\u007Brecord.address}'
+        }, {
+            xtype: 'textfield',
+            reference: 'city',
+            label: 'City',
+            required: true,
+            bind: '\u007Brecord.city}'
+        }, {
+            xtype: 'textfield',
+            reference: 'postcode',
+            label: 'ZIP/Postal',
+            bind: '\u007Brecord.postcode}'
+        }, {
+            xtype: 'textfield',
+            reference: 'country',
+            label: 'Country',
+            required: true,
+            bind: '\u007Brecord.country}'
+        }, {
+            xtype: 'textfield',
+            reference: 'region',
+            label: 'Region',
+            bind: '\u007Brecord.region}'
+        }]
+    }]
+});
