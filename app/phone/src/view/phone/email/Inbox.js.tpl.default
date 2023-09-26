@@ -1,0 +1,27 @@
+Ext.define('{appName}.view.phone.email.Inbox', {
+    extend: 'Ext.dataview.DataView',
+    // xtype is assigned by the phone profile
+
+    itemTpl:
+        '<div class="inbox-item">'+
+            '<div class="inbox-inner-row inbox-\u007Bread:pick\u0028\\u0027unread\\u0027,\\u0027read\\u0027\u0029}">'+
+                '<div class="list-cls inbox-from">\u007Bfrom}</div>'+
+                '<div class="inbox-date">'+
+                    '<\u0074pl if="has_attachments">'+
+                        '<span class="x-fa fa-paperclip inbox-attachment"></span>'+
+                    '</\u0074pl>'+
+                    '\u007Breceived_on:date("M d")}'+
+                '</div>'+
+            '</div>'+
+            '<div class="inbox-inner-row">'+
+                '<div class="inbox-summary">\u007Btitle}</div>'+
+                '<div class="inbox-favorite">'+
+                    '<\u0074pl if="favorite">'+
+                        '<span class="x-fa fa-heart inactive"></span>'+
+                    '<\u0074pl else>'+
+                        '<span class="x-fa inbox-favorite-icon fa-heart"></span>'+
+                    '</\u0074pl>'+
+                '</div>'+
+            '</div>' +
+        '</div>'
+});

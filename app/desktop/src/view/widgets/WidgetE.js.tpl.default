@@ -1,0 +1,28 @@
+Ext.define('{appName}.view.widgets.WidgetE', {
+    extend: 'Ext.panel.Panel',
+    xtype: 'widget-e',
+
+    cls: '{appName}-widget-small sale-panel info-card-item shadow',
+
+    containerColor: '',
+
+    height: 170,
+
+    data: {
+        amount: 0,
+        type: '',
+        icon: ''
+    },
+
+    tpl: '<div><h2>\u007Bamount}</h2><div>\u007Btype}</div><span class="x-fa fa-\u007Bicon}"></span></div>',
+
+    initComponent: function(){
+        var me = this;
+
+        Ext.apply(me, {
+            cls: me.config.containerColor
+        });
+
+        me.callParent(arguments);
+    }
+});
