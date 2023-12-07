@@ -5,12 +5,11 @@
 * http://www.sencha.com/license
 */
 
-// var windowIndex = 0;
-
 Ext.define('{appName}.BogusModule', {
     extend: 'Ext.ux.desktop.Module',
 
     init: function() {
+        var windowIndex = 0;
         this.launcher = {
             text: 'Window ' + (++windowIndex),
             iconCls: 'bogus',
