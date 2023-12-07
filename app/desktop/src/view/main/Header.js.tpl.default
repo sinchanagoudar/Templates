@@ -1,11 +1,11 @@
-document.title = 'Ext JS {appName}';
+// document.title = 'Ext JS {appName}';
 
 Ext.define('{appName}.view.main.Header', {
     extend: 'Ext.Container',
 
     xtype: 'app-header',
 
-    title: document.title,
+    title: 'Ext JS {appName}',
     cls: 'app-header',
     height: 52,
 
@@ -20,7 +20,7 @@ Ext.define('{appName}.view.main.Header', {
     }, {
         xtype: 'component',
         cls: 'app-header-title',
-        html: document.title,
+        html: 'Ext JS {appName}',
         flex: 1
     }]
 });

@@ -1,8 +1,8 @@
-var shortLorem =
-    '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, ' +
-    'sodales a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales ' +
-    'non, iaculis ac, lacus. Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet ' +
-    'tincidunt quam turpis vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla.</p>';
+// var shortLorem =
+   //  '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, ' +
+   //  'sodales a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales ' +
+   //  'non, iaculis ac, lacus. Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet ' +
+   //  'tincidunt quam turpis vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla.</p>';
 
 /**
  * A sample portal layout application class.
@@ -59,7 +59,10 @@ Ext.define('{appName}.view.main.Main', {
             }]
         },
         items: [{
-            html: '<div class="portlet-content">' + shortLorem + '</div>',
+            html: '<div class="portlet-content">' + '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, ' +
+    'sodales a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales ' +
+    'non, iaculis ac, lacus. Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet ' +
+    'tincidunt quam turpis vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla.</p>' + '</div>',
             title: 'Navigation',
             scrollable: true,
             border: false,
@@ -67,7 +70,10 @@ Ext.define('{appName}.view.main.Main', {
             // iconCls: 'nav'
         }, {
             title: 'Settings',
-            html: '<div class="portlet-content">' + shortLorem + '</div>',
+            html: '<div class="portlet-content">' + '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, ' +
+    'sodales a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales ' +
+    'non, iaculis ac, lacus. Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet ' +
+    'tincidunt quam turpis vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla.</p>' + '</div>',
             border: false,
             scrollable: true,
             iconCls: 'settings'
