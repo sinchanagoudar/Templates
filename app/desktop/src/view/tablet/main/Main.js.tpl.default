@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.main.Main', {
     extend: 'Ext.Panel',
-    // xtype: 'main', -- set by profile
+    xtype: 'main-tablet', //-- set by profile
 
     controller: 'main',
 

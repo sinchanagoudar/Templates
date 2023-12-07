@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.history.BrowseToolbar', {
     extend: '{appName}.view.widgets.BrowseToolbar',
-    // xtype: 'historybrowsetoolbar', -- set by profile
+    xtype: 'historybrowsetoolbar'-tablet', //-- set by profile
 
     items: {
         employees: {

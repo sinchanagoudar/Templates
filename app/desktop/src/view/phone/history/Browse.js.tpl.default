@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.history.Browse', {
     extend: '{appName}.view.history.Browse',
-    // xtype: 'historybrowse', -- set by profile
+    xtype: 'historybrowse-phone', //-- set by profile
 
     requires: [
         'Ext.dataview.listswiper.ListSwiper',

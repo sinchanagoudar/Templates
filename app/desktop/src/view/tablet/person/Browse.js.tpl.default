@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.person.Browse', {
     extend: '{appName}.view.person.Browse',
-    // xtype: 'personbrowse', -- set by profile
+    xtype: 'personbrowse-tablet', //-- set by profile
 
     requires: [
         'Ext.plugin.ListPaging'

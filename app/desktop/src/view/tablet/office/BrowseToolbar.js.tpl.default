@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.office.BrowseToolbar', {
     extend: '{appName}.view.widgets.BrowseToolbar',
-    // xtype: 'officebrowsetoolbar', -- set by profile
+    xtype: 'officebrowsetoolbar-tablet', //-- set by profile
 
     items: {
         countries: {

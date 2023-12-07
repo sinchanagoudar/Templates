@@ -1,7 +1,7 @@
 Ext.define('{appName}.view.phone.person.BrowseFilters', {
     extend: 'Ext.Container',
-    // xtype: 'personbrowsefilters', -- set by profile
-
+    xtype: 'personbrowsefilters-phone', //-- set by profile
+    
     layout: 'vbox',
 
     items: [{

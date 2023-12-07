@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.main.Main', {
     extend: 'Ext.Container',
-    // xtype: 'main', -- set by profile
+    xtype: 'main-phone', //-- set by profile
 
     controller: 'phone-main',
 

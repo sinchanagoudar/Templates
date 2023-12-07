@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.history.Browse', {
     extend: '{appName}.view.history.Browse',
-    // xtype: 'historybrowse', -- set by profile
+    xtype: 'historybrowse-tablet', //-- set by profile
 
     requires: [
         'Ext.plugin.ListPaging'

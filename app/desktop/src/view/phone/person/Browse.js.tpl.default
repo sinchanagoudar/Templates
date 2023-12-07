@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.person.Browse', {
     extend: '{appName}.view.person.Browse',
-    // xtype: 'personbrowse', -- set by profile
+    xtype: 'personbrowse-phone', //-- set by profile
 
     requires: [
         'Ext.dataview.listswiper.ListSwiper',
