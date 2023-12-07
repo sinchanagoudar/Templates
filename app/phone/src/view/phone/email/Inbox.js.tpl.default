@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.email.Inbox', {
     extend: 'Ext.dataview.DataView',
-    // xtype is assigned by the phone profile
+    xtype: 'inbox-phone',
 
     itemTpl:
         '<div class="inbox-item">'+

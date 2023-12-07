@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.search.Users', {
     extend: 'Ext.dataview.DataView',
-    // xtype:'userssearch',  set by phone profile
+    xtype:'userssearch-phone',
 
     itemTpl:
         '<div class="search-user-item">'+

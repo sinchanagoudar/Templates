@@ -1,5 +1,6 @@
 Ext.define('{appName}.view.tablet.search.Users', {
     extend: 'Ext.grid.Grid',
+    xtype: 'user-tablet',
 
     controller: 'tablet-search-users',
 

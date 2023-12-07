@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.email.Inbox', {
     extend: 'Ext.grid.Grid',
-    // xtype is assigned by the tablet profile
+    xtype: 'inbox-tablet',
 
     requires: [
         'Ext.field.Search',

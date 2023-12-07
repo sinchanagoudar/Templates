@@ -1,5 +1,6 @@
 Ext.define('{appName}.view.tablet.email.Email', {
     extend: 'Ext.Container',
+    xtype: 'email-tablet',
 
     requires: [
         'Ext.dataview.DataView',

@@ -1,5 +1,6 @@
 Ext.define('{appName}.view.phone.email.Email', {
     extend: 'Ext.Container',
+    xtype: 'email-phone',
 
     controller: 'email-phone',
     viewModel: {

@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.tablet.email.Compose', {
     extend: 'Ext.form.Panel',
-    // xtype: 'compose', -- set by profile
+    xtype: 'compose-tablet',
 
     requires: [
         'Ext.Button',

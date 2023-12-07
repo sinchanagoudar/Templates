@@ -1,6 +1,6 @@
 Ext.define('{appName}.view.phone.email.Compose', {
     extend: 'Ext.form.Panel',
-    // xtype: 'compose', -- set by profile
+    xtype: 'compose-phone',
 
     requires: [
         'Ext.Button',
