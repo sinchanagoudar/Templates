@@ -6,7 +6,8 @@
   "template": "{template}",
   "indexHtmlPath": "index.html",
   "requires": [
-    "font-awesome"
+    "font-awesome",
+    "charts"
   ],
 <tpl if="universal == true">
   "builds": {
