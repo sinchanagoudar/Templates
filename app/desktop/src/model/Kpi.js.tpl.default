@@ -1,5 +1,5 @@
 Ext.define('{appName}.model.Kpi', {
-    extend: '{appName}.model.Base',
+    extend: 'Ext.data.Model',
 
     fields: [
         'category',
